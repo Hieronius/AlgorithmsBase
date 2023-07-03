@@ -10,11 +10,11 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    var test = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(noOdds(array: &noOddsArray))
-        print(noOddsArray)
-        // noOddsArray
+        
     }
     
     
@@ -250,7 +250,7 @@ class ViewController: UIViewController {
         marks.reduce(0,+) / marks.count
     }
     
-    // MARK: Task 12 ✅ / ❗️ Can be better.
+    // MARK: Task 12 ✅ / ❗️ Can be better
     
     /*
      12. Конвертировать число в последовательность из 1 и 0
@@ -270,17 +270,17 @@ class ViewController: UIViewController {
         // return (Array(1...num)).map {($0 % 2 == 0) ? result.append("0") : result.append("1") }
         return result
     }
-
-    // MARK: Task 13 ✅
+    
+    // MARK: Task 13 ✅ / ❗️ Can be better
     
     /*
-    13. Посчитать количество пололожительных чисел и сумму отрицательных и вывести в кортеже
-
-    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15] → (10, -65)
-
-    func countOfPositivesSumOfNegatives(_ array: [Int]) -> (Int, Int) {
-    }
-    */
+     13. Посчитать количество пололожительных чисел и сумму отрицательных и вывести в кортеже
+     
+     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15] → (10, -65)
+     
+     func countOfPositivesSumOfNegatives(_ array: [Int]) -> (Int, Int) {
+     }
+     */
     
     func countOfPositivesSumOfNegatives(_ array: [Int]) -> (Int, Int) {
         var counterOfPositiveNumbers = 0
@@ -289,18 +289,18 @@ class ViewController: UIViewController {
         return (counterOfPositiveNumbers, sumOfNegativeNumbers.reduce(0, +))
     }
     
-    // MARK: TASK 14 ✅
+    // MARK: TASK 14 ✅ / ❗️ Can be better
     
     /*
-    14. Реализовать функцию возведения в степень
-
-    (3, 2) -> 9 ( = 3 * 3 )
-    (2, 3) -> 8 ( = 2 * 2 * 2 )
-    (10, 6) -> 1000000
-
-    func numberToPower(_ number: Int, _ power: Int) -> Int {
-    }
-    */
+     14. Реализовать функцию возведения в степень
+     
+     (3, 2) -> 9 ( = 3 * 3 )
+     (2, 3) -> 8 ( = 2 * 2 * 2 )
+     (10, 6) -> 1000000
+     
+     func numberToPower(_ number: Int, _ power: Int) -> Int {
+     }
+     */
     
     func numberToPower(_ number: Int, _ power: Int) -> Int {
         var index = 1
@@ -312,17 +312,17 @@ class ViewController: UIViewController {
         return result
     }
     
-    // MARK: Task 15. Simple difficulty ✅ | Medium  difficulty ✅ (should ask about correct understanding)
+    // MARK: Task 15. Simple difficulty ✅ | Medium  difficulty ❓ (should ask about correct understanding)
     
     /*
      15. Почистить массив от нечетных чисел
-
+     
      [0,1] → [0]
      [0,1,2,3] → [0,2]
-
+     
      func noOdds(array: [Int]) -> [Int] {
      }
-
+     
      (Усложненный вариант - удаление элементов из массива)
      func noOdds(array: inout [Int]) -> [Int] {
      }
@@ -334,10 +334,222 @@ class ViewController: UIViewController {
     
     var noOddsArray = [0, 1, 2, 3]
     func noOdds(array: inout [Int]) -> [Int] {
-        // return array.map { ($0 % 2 != 0) ? array.remove(at: array.firstIndex(of: $0)!) : 5 }
-        return array.filter { ($0 % 2 == 0) ? array.remove(at: array.firstIndex(of: $0)!) : 5 }
+        return array.map { ($0 % 2 != 0) ? array.remove(at: array.firstIndex(of: $0)!) : 5 }
+        // return array.filter { ($0 % 2 == 0) ? array.remove(at: array.firstIndex(of: $0)!) : 5 }
+    }
+    
+    // MARK: Task 16 ✅
+    
+    /*
+     16. Найти сумму минимальных значений
+     
+     [ [ 1, 2, 3, 4, 5 ], [ 5, 6, 7, 8, 9 ], [ 20, 21, 34, 56, 100 ]]
+     -> 1 + 5 + 20 = 26
+     
+     func sumOfMinimums(_ array: [[Int]]) -> Int {
+     }
+     */
+    
+    func sumOfMinimums(_ array: [[Int]]) -> Int {
+        array.map {($0.min()!)}.reduce(0,+)
+    }
+    
+    // MARK: Task 17 ✅
+    
+    /*
+     17. Функция принимает число и символ и возвращает строку
+     
+     6, "I"     -> "IIIIII"
+     5, "Hello" -> "HelloHelloHelloHelloHello"
+     
+     func repeatChar(_ count: Int, string: String) -> String {
+     }
+     */
+    
+    func repeatChar(_ count: Int, string: String) -> String {
+        Array(repeating: string, count: count).joined()
+    }
+    
+    // MARK: Task 18 ✅
+    
+    /*
+     18. Замена всех символов строки на символ (contamination)
+     
+     ("abc","z") → "zzz"
+     ("","z") → ""
+     ("_3ebzgh4","&") → "&&&&&&&&"
+     
+     func contamination(string: String, char: String) -> String {
+     }
+     */
+    
+    func contamination(string: String, char: String) -> String {
+        String(string.map { ($0 != Character(char)) ? Character(char) : $0 })
+    }
+    
+    // MARK: Task 19 ✅ Found solution on the stackoverflow / ❗️ Can make it better
+    
+    /*
+     19. Удалить пустые символы из строкик
+     
+     "8 j 8   mBliB8g  imjB8B8  jl  B" -> "8j8mBliB8gimjB8B8jlB"
+     "8aaaaa dddd r     " -> "8aaaaaddddr"
+     
+     func removeSpaces(string: String) -> String {
+     }
+     */
+    
+    func removeSpaces(string: String) -> String {
+        string.filter { !" ".contains($0) }
         
     }
     
-}
+    // MARK: Task 20 ❌ string.enumerated can be useful
+    
+    /*
+     20. Вывести количество символов самого маленького слова в предложении
+     
+     "Let's travel abroad shall we" → 2
+     
+     func countMinWord(_ string: String) -> Int {
+     }
+     */
+    
+    func countMinWord(_ string: String) -> Int {
+        25
+    }
+    
+    // MARK: Task 21 ❌
+    
+    /*
+     21. Возвести в квадрат число если не берется корень или взять корень числа  и вернуть массив
+     
+     [4,3,9,7,2,1] -> [2,9,3,49,4,1]
+     
+     func rootOrSquare(_ array: [Int]) -> [Int] {
+     }
+     */
+    
+    func rootOrSquare(_ array: [Int]) -> [Int] {
+        var result = [Int]()
+        for number in array {
+            if number % number == 0 {
+                result.append(Int(sqrt(Double(number / number))))
+            } else {
+                result.append(number * number)
+            }
+        }
+        return result
+    }
+    
+    // MARK: Task 22 ❌
+    
+    /*
+     22. Есть отсортированный массив. Найти индекс числа или
+     если нет числа индекс где он должен быть
+     
+     target = 7
+     [1, 2, 3, 4, 6, 8, 9] -> 5
+     [1, 2, 7, 9] -> 2
+     
+     func findIndex(_ array: [Int], target: Int) -> Int {
+     }
+     */
+    
+    func findIndex(_ array: [Int], target: Int) -> Int {
+        var currentIndex = 0
+        var result = 0
+        for number in array {
+            if number == target {
+                
+                return array.firstIndex(of:number)!
+            } else {
+                currentIndex += 1
+            }
+        }
+        return 25
+    }
+    
+    // MARK: Task 23 ✅
+    
+    /*
+     23. Написать функцию которая умножает каждый элемент на индекс
 
+     [1, 2, 3, 4] -> [1 * 0, 2 * 1, 3 * 2, 4 * 3] -> [0, 2, 6, 12]
+
+     func multiplyIndex(_ array: [Int]) -> [Int] {
+     }
+     */
+    
+    func multiplyIndex(_ array: [Int]) -> [Int] {
+        array.map {$0 * array.firstIndex(of: $0)!}
+    }
+    
+    // MARK: Task 24 ✅ / ❗️ Can be better
+    
+    /*
+     24. Написать функцию которая возводит каждый элемент в степень по счету
+     (Переиспользовать функцию (14) возведения в степень)
+
+     [10, 2, 5, 1] -> [10 ^ 1, 2 ^ 2, 5 ^ 3, 1 ^ 4] -> [10, 4, 125, 4]
+
+     func multiplyPower(_ array: [Int]) -> [Int] {
+     }
+     */
+    
+    func multiplyPower(_ array: [Int]) -> [Int] {
+        var index = 0
+        var degree = 1
+        var result = [Int]()
+        while index != array.count {
+            result.append(numberToPower(array[index], degree))
+            index += 1
+            degree += 1
+        }
+        return result
+    }
+    
+    // MARK: Task 25 ✅ / ❗️ It's possible that understanding of the task is wrong.
+    
+    /*
+     25. Написать функцию которая конвертирует строку в массив Character
+
+     let string = "abcdefgh"
+     let array: [Character] = Array(string) //"abc" ->  ["a","b","c"]
+
+     let string1 = String(array) // ["a","b","c"] ->  "abc"
+
+     "abc" -> ["a", "b", "c"]
+     func convertToArray(_ string: String) -> Array<Character> {
+     }
+     */
+    
+    func convertToArray(_ string: String) -> Array<Character> {
+        Array(string)
+    }
+    
+    // MARK: 26
+    
+    /*
+    (string.enumerated, удаление элементов)
+     
+    26. Удалить первый и последний элемент строки
+
+    "place" -> "lac"
+
+    func removeFirstLast(_ string: String?) -> String {
+    }
+    */
+    func removeFirstlast(_ string: String?) -> String {
+        var charArray = [Character]()
+        
+        for char in string!.enumerated() {
+            charArray.append(char)
+        }
+        for (index, value) in string!.enumerated() {
+            print("for index \(index) we use \(value)")
+            string!.enumerated().for
+        }
+        return "hello"
+    }
+}
