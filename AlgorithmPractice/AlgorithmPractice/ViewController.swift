@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(largest(count: 2, array: [7,6,5,4,3,2,1]))
+        print(firstNonConsequitive(array: [1, 2, 3, 4, 5, 7, 8, 9]))
         
     }
     
@@ -466,6 +466,17 @@ class ViewController: UIViewController {
     func findIndex(_ array: [Int], target: Int) -> Int {
         var currentIndex = 0
         var result = 0
+        var step = 1
+        
+        //        for index in 0..<array.count - 1 {
+        //            if array[index] + step == array[index + 1] {
+        //                print("do something")
+        //            } else {
+        //                missedNumbers += 1
+        //            }
+        //        }
+        
+        
         for number in array {
             if number == target {
                 return array.firstIndex(of:number)!
@@ -480,9 +491,9 @@ class ViewController: UIViewController {
     
     /*
      23. Написать функцию которая умножает каждый элемент на индекс
-
+     
      [1, 2, 3, 4] -> [1 * 0, 2 * 1, 3 * 2, 4 * 3] -> [0, 2, 6, 12]
-
+     
      func multiplyIndex(_ array: [Int]) -> [Int] {
      }
      */
@@ -496,9 +507,9 @@ class ViewController: UIViewController {
     /*
      24. Написать функцию которая возводит каждый элемент в степень по счету
      (Переиспользовать функцию (14) возведения в степень)
-
+     
      [10, 2, 5, 1] -> [10 ^ 1, 2 ^ 2, 5 ^ 3, 1 ^ 4] -> [10, 4, 125, 4]
-
+     
      func multiplyPower(_ array: [Int]) -> [Int] {
      }
      */
@@ -519,12 +530,12 @@ class ViewController: UIViewController {
     
     /*
      25. Написать функцию которая конвертирует строку в массив Character
-
+     
      let string = "abcdefgh"
      let array: [Character] = Array(string) //"abc" ->  ["a","b","c"]
-
+     
      let string1 = String(array) // ["a","b","c"] ->  "abc"
-
+     
      "abc" -> ["a", "b", "c"]
      func convertToArray(_ string: String) -> Array<Character> {
      }
@@ -537,15 +548,15 @@ class ViewController: UIViewController {
     // MARK: Task 26 ✅ / Can be better. Possible to understand task conditions ❗️
     
     /*
-    (string.enumerated, удаление элементов)
+     (string.enumerated, удаление элементов)
      
-    26. Удалить первый и последний элемент строки
-
-    "place" -> "lac"
-
-    func removeFirstLast(_ string: String?) -> String {
-    }
-    */
+     26. Удалить первый и последний элемент строки
+     
+     "place" -> "lac"
+     
+     func removeFirstLast(_ string: String?) -> String {
+     }
+     */
     func removeFirstlast(_ string: String?) -> String {
         var testString = string ?? ""
         testString.removeFirst()
@@ -557,11 +568,11 @@ class ViewController: UIViewController {
     
     /*
      27. Найти первый индекс элемента в строке
-
+     
      "Hello", "l" ->  2
      "abcba", "a" -> 0
      "okko", "q" -> -1
-
+     
      func secondSymbolIndex(word: String, symbol: Character) -> Int {
      }
      */
@@ -572,21 +583,21 @@ class ViewController: UIViewController {
                 result = index
             }
         }
-          return result
+        return result
     }
     
     // MARK: Task 28 ✅ / Should be refactored ❗️
     
     /*
-    28. Найти второй индекс элемента в строке
-
-    "Hello", "l" ->  3
-    "abcba", "a" -> 4
-    "okko", "q" -> -1
-
-    func secondSymbolIndex(word: String, symbol: Character) -> Int {
-    }
-    */
+     28. Найти второй индекс элемента в строке
+     
+     "Hello", "l" ->  3
+     "abcba", "a" -> 4
+     "okko", "q" -> -1
+     
+     func secondSymbolIndex(word: String, symbol: Character) -> Int {
+     }
+     */
     
     func secondSymbolIndex(word: String, symbol: Character) -> Int {
         let defaultIndex = -1
@@ -617,9 +628,9 @@ class ViewController: UIViewController {
     
     /*
      29. Суммировать четные числа
-
+     
      [4, 3, 1, 2, 5, 10, 6, 7, 9, 8]  -> 4 + 2 + 10 + 6 + 8 -> 30
-
+     
      func sumEvenNumbers(array: [Int]) -> Int {
      }
      */
@@ -632,10 +643,10 @@ class ViewController: UIViewController {
     
     /*
      30. Посчитать разницу между максимальным и минимальным
-
+     
      [23, 3, 19, 21, 16] -> 20 (23 - 3)
      [1, 434, 555, 34, 112] -> 554 (555 - 1)
-
+     
      func differenceMaxMin(_ array: [Int]) -> Int {
      }
      */
@@ -644,26 +655,28 @@ class ViewController: UIViewController {
         array.max()! - array.min()!
     }
     
-    // Task 31 ✅ / Can be better ❗️
+    // MARK: Task 31 ✅ / Can be better ❗️
     
     /*
-    31. Дана последовательность, найти сколько пропущено между минимальным и максимальным элементом массива
-    (contains)
-
-    [4,6,8] -> 2 (5, 6)
-    [1,2,3,4,6] -> 1 (5)
-    [1,2,3] -> 0 ()
-
-    func consecutive(_ array: [Int]) -> Int {
-    }
-    */
+     31. Дана последовательность, найти сколько пропущено между минимальным и максимальным элементом массива
+     (contains)
+     
+     [4,6,8] -> 2 (5, 6)
+     [1,2,3,4,6] -> 1 (5)
+     [1,2,3] -> 0 ()
+     
+     func consecutive(_ array: [Int]) -> Int {
+     }
+     */
     
     func consecutive(_ array: [Int]) -> Int {
         let step = 1
         var missedNumbers = 0
         
         for index in 0..<array.count - 1 {
+            
             if array[index] + step == array[index + 1] {
+                print("correct number")
             } else {
                 missedNumbers += 1
             }
@@ -675,9 +688,9 @@ class ViewController: UIViewController {
     
     /*
      32. Вытащить максимальные элементы из массива в заданном количестве
-
+     
      largest(2, [7,6,5,4,3,2,1]) -> [6,7]
-
+     
      func largest(count: Int, array: [Int]) -> [Int] {
      }
      */
@@ -685,5 +698,223 @@ class ViewController: UIViewController {
     func largest(count: Int, array: [Int]) -> [Int] {
         var test = array.sorted()
         return Array(test[test.endIndex-2...test.endIndex-1])
+    }
+    
+    // MARK: Task 33 ❌ Let's back later
+    
+    /*
+     33. Написать фукнцию которая проставит тире между нечетными числами
+     
+     "454793" -> "4547-9-3"
+     
+     func insertDash(string: String) -> String {
+     }
+     */
+    
+    func insertDash(string: String) -> String {
+        var previousNumber = ""
+        var nextNumber = ""
+        var testString = string.enumerated()
+        var currentIndex = 0
+        var isPreviousOdd = false
+        var isNextOdd = false
+        
+        // while index != string.count - 1
+        
+        for char in string {
+            guard let number = char.wholeNumberValue else { return "" }
+            if number % 2 != 0 {
+                previousNumber = String(number)
+                print("odd number")
+            } else {
+                print("even number")
+            }
+        }
+        return ""
+    }
+    
+    // MARK: Task 34 ✅ / Should be refactored ❗️
+    
+    /*
+     34. По какоми индексу вставить число в отсортированном массиве
+     
+     ([1, 2, 3, 4, 7], 5) -> 4
+     ([1, 2, 3, 4, 7], 0) -> 0
+     ([1, 1, 2, 2, 2], 2) -> 2
+     
+     func keepOrder(array: [Int], element: Int) -> Int {
+     }
+     */
+    
+    func keepOrder(array: [Int], element: Int) -> Int {
+        var internalArray = array
+        for number in internalArray {
+            if number < element {
+                print("element should be placed further of the current number \(number)")
+            } else {
+                print("element should be placed before the current number \(number)")
+                internalArray.insert(element, at: internalArray.firstIndex(of: number)! + 1)
+            }
+        }
+        return internalArray.firstIndex(of: element)!
+    }
+    
+    // MARK: Task 35 ✅ / Can be better ❗️
+    
+    /*
+     35. Порезать строку
+     
+     
+     trim("He", 1) -> "H..."
+     
+     func trim(_ string: String, _ num: Int) -> String {
+     }
+     */
+    
+    func trim(_ string: String, _ num: Int) -> String {
+        var internalString = string
+        var counter = 0
+        
+        while counter != num {
+            internalString.removeLast()
+            counter += 1
+        }
+        return internalString
+    }
+    
+    // MARK: Task 36 ✅
+    
+    /*
+     36. Каждый элемент поделить на порядок в массиве и суммировать
+     
+     [3,4,6] -> ( 3 / 1 ) + ( 4 / 2 ) + ( 6 / 3 ) = 7
+     
+     
+     func add(array: [Int]) -> Int {
+     }
+     */
+    
+    func add(array: [Int]) -> Int {
+        var total = 0
+        array.enumerated().map { index, value in
+            total += (value / (index + 1))
+        }
+        return total
+    }
+    
+    // MARK: Theoretical question. 4 способа создания пустого массива ❌
+    
+    //    var array1: [Int] = []
+    //    var array2: Array<Int> = []
+    //    var array3 = [Int]()
+    //    var array4 = Array<Int>()
+    
+    // MARK: Task 37 ✅ / Not sure of correct understanding of the task | Can make it better ❗️
+    
+    /*
+     37. Сделать маску для номера кредитной карты чтобы отображались только последние 4 цифры
+     "4556364607935616" -> "************5616"
+     
+     func maskify(string: String) -> String {
+     }
+     */
+    
+    func maskify(string: String) -> String {
+        var index = Int()
+        if string.count > 4 {
+            index = string.count
+        } else {
+            index = 0
+        }
+        var securedNumber = String()
+        
+        for number in string {
+            if index != 0 {
+                securedNumber.append("*")
+                index -= 1
+            } else {
+                securedNumber.append(String(number))
+            }
+        }
+        return securedNumber
+    }
+    
+    // MARK: Task 38 ✅
+    
+    /*
+     38. Найти минимальный элемент в массиве и удалить его из массива
+
+     func removeSmallest(_ array: [Int]) -> [Int] {
+     }
+
+     [1,2,3,4,5] -> [2,3,4,5]
+     [5,3,2,1,4] -> [5,3,2,4]
+     [2,1,2,1,2,1] -> [2,2,2]
+     [0,1,0,1,0] -> [1,1]
+     */
+    
+    func removeSmallest(_ array: [Int]) -> [Int] {
+        var internalArray = array
+        internalArray.remove(at: internalArray.firstIndex(of: internalArray.min()!)!)
+        return internalArray
+    }
+    
+    // MARK: Task 39 ✅ / Can add more variations
+    
+    /*
+     39. Один массив прибавить ко второму массиву - все способы
+
+     [1, 2, 3] + [4, 5] -> [1, 2, 3, 4, 5]
+
+     func sumArrays(lhs: [Int], rhs: [Int]) -> [Int] {
+     }
+     */
+    
+    func sumArrays1(lhs: [Int], rhs: [Int]) -> [Int] {
+        lhs + rhs
+    }
+    
+    func sumArrays2(lhs: [Int], rhs: [Int]) -> [Int] {
+        var internalArray = lhs
+        internalArray.append(contentsOf: rhs)
+        return internalArray
+    }
+    
+    func sumArrays3(lhs: [Int], rhs: [Int]) -> [Int] {
+        var internalArray = lhs
+        
+        for number in rhs {
+            internalArray.append(number)
+        }
+        return internalArray
+    }
+
+    // MARK: Task 40 ❌
+    
+    /*
+    40. Вернуть первый непоследовательный элемент и его индекс
+
+    [1, 2, 3, 4, 5, 7, 8, 9] -> 7
+
+    func firstNonConsequitive(array: [Int]) -> Int {
+    }
+    */
+    
+    func firstNonConsequitive(array: [Int]) -> Int {
+        let step = 1
+        var number = Int()
+        var numberIndex = Int()
+        
+        for index in 0..<array.count - 1 {
+            
+            if array[index] + step == array[index + 1] {
+                print("correct number")
+            } else {
+                print("found nonsequitive number - \(index)")
+                number = index
+                numberIndex = array.firstIndex(of: index)!
+            }
+        }
+        return numberIndex
     }
 }
