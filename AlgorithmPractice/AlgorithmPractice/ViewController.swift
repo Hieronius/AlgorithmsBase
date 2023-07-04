@@ -6,14 +6,17 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
     
     
-    var test = String()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(largest(count: 2, array: [7,6,5,4,3,2,1]))
         
     }
     
@@ -312,7 +315,11 @@ class ViewController: UIViewController {
         return result
     }
     
-    // MARK: Task 15. Simple difficulty ✅ | Medium  difficulty ❓ (should ask about correct understanding)
+    // MARK: Task 15. Simple difficulty ✅
+    
+    
+    
+    // MARK: | Medium  difficulty  (should ask about correct understanding) ❓
     
     /*
      15. Почистить массив от нечетных чисел
@@ -387,7 +394,7 @@ class ViewController: UIViewController {
         String(string.map { ($0 != Character(char)) ? Character(char) : $0 })
     }
     
-    // MARK: Task 19 ✅ Found solution on the stackoverflow / ❗️ Can make it better
+    // MARK: Task 19 ✅ Found solution on the stackoverflow / Can make it better ❗️
     
     /*
      19. Удалить пустые символы из строкик
@@ -442,7 +449,7 @@ class ViewController: UIViewController {
         return result
     }
     
-    // MARK: Task 22 ❌
+    // MARK: Task 22 ❌ Task 31 can be useful
     
     /*
      22. Есть отсортированный массив. Найти индекс числа или
@@ -461,7 +468,6 @@ class ViewController: UIViewController {
         var result = 0
         for number in array {
             if number == target {
-                
                 return array.firstIndex(of:number)!
             } else {
                 currentIndex += 1
@@ -485,7 +491,7 @@ class ViewController: UIViewController {
         array.map {$0 * array.firstIndex(of: $0)!}
     }
     
-    // MARK: Task 24 ✅ / ❗️ Can be better
+    // MARK: Task 24 ✅ / Can be better ❗️
     
     /*
      24. Написать функцию которая возводит каждый элемент в степень по счету
@@ -509,7 +515,7 @@ class ViewController: UIViewController {
         return result
     }
     
-    // MARK: Task 25 ✅ / ❗️ It's possible that understanding of the task is wrong.
+    // MARK: Task 25 ✅ / It's possible that understanding of the task is wrong ❗️
     
     /*
      25. Написать функцию которая конвертирует строку в массив Character
@@ -528,7 +534,7 @@ class ViewController: UIViewController {
         Array(string)
     }
     
-    // MARK: 26
+    // MARK: Task 26 ✅ / Can be better. Possible to understand task conditions ❗️
     
     /*
     (string.enumerated, удаление элементов)
@@ -541,15 +547,143 @@ class ViewController: UIViewController {
     }
     */
     func removeFirstlast(_ string: String?) -> String {
-        var charArray = [Character]()
+        var testString = string ?? ""
+        testString.removeFirst()
+        testString.removeLast()
+        return testString
+    }
+    
+    // MARK: Task 27 ✅ /  Can be better ❗️
+    
+    /*
+     27. Найти первый индекс элемента в строке
+
+     "Hello", "l" ->  2
+     "abcba", "a" -> 0
+     "okko", "q" -> -1
+
+     func secondSymbolIndex(word: String, symbol: Character) -> Int {
+     }
+     */
+    func firstSymbolIndex(word: String, symbol: Character) -> Int {
+        var result = -1
+        word.enumerated().map { (index, value) in
+            if value == symbol {
+                result = index
+            }
+        }
+          return result
+    }
+    
+    // MARK: Task 28 ✅ / Should be refactored ❗️
+    
+    /*
+    28. Найти второй индекс элемента в строке
+
+    "Hello", "l" ->  3
+    "abcba", "a" -> 4
+    "okko", "q" -> -1
+
+    func secondSymbolIndex(word: String, symbol: Character) -> Int {
+    }
+    */
+    
+    func secondSymbolIndex(word: String, symbol: Character) -> Int {
+        let defaultIndex = -1
+        var repetition = false
+        var hit = false
+        var result = 0
+        var copy = 0
+        word.enumerated().map { (index, value) in
+            if value == symbol && hit == false {
+                result = index
+                hit = true
+            } else if value == symbol && hit == true {
+                copy = index
+                repetition = true
+            }
+        }
         
-        for char in string!.enumerated() {
-            charArray.append(char)
+        if repetition && hit {
+            return copy
+        } else if repetition == false && hit {
+            return result
+        } else {
+            return defaultIndex
         }
-        for (index, value) in string!.enumerated() {
-            print("for index \(index) we use \(value)")
-            string!.enumerated().for
+    }
+    
+    // MARK: Task 29 ✅
+    
+    /*
+     29. Суммировать четные числа
+
+     [4, 3, 1, 2, 5, 10, 6, 7, 9, 8]  -> 4 + 2 + 10 + 6 + 8 -> 30
+
+     func sumEvenNumbers(array: [Int]) -> Int {
+     }
+     */
+    
+    func sumEvenNumbers(array: [Int]) -> Int {
+        array.filter {$0 % 2 == 0}.reduce(0, +)
+    }
+    
+    // MARK: Task 30 ✅
+    
+    /*
+     30. Посчитать разницу между максимальным и минимальным
+
+     [23, 3, 19, 21, 16] -> 20 (23 - 3)
+     [1, 434, 555, 34, 112] -> 554 (555 - 1)
+
+     func differenceMaxMin(_ array: [Int]) -> Int {
+     }
+     */
+    
+    func differenceMaxMin(_ array: [Int]) -> Int {
+        array.max()! - array.min()!
+    }
+    
+    // Task 31 ✅ / Can be better ❗️
+    
+    /*
+    31. Дана последовательность, найти сколько пропущено между минимальным и максимальным элементом массива
+    (contains)
+
+    [4,6,8] -> 2 (5, 6)
+    [1,2,3,4,6] -> 1 (5)
+    [1,2,3] -> 0 ()
+
+    func consecutive(_ array: [Int]) -> Int {
+    }
+    */
+    
+    func consecutive(_ array: [Int]) -> Int {
+        let step = 1
+        var missedNumbers = 0
+        
+        for index in 0..<array.count - 1 {
+            if array[index] + step == array[index + 1] {
+            } else {
+                missedNumbers += 1
+            }
         }
-        return "hello"
+        return missedNumbers
+    }
+    
+    // MARK: Task 32 ✅
+    
+    /*
+     32. Вытащить максимальные элементы из массива в заданном количестве
+
+     largest(2, [7,6,5,4,3,2,1]) -> [6,7]
+
+     func largest(count: Int, array: [Int]) -> [Int] {
+     }
+     */
+    
+    func largest(count: Int, array: [Int]) -> [Int] {
+        var test = array.sorted()
+        return Array(test[test.endIndex-2...test.endIndex-1])
     }
 }
