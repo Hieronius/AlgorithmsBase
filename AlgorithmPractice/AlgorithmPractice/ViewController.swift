@@ -16,7 +16,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(firstNonConsequitive(array: [1, 2, 3, 4, 5, 7, 8, 9]))
+        print(Double("2.2"))
+        // print(sumOfValues(array:  ["1", 2, 3.5]))
+        
         
     }
     
@@ -889,7 +891,7 @@ class ViewController: UIViewController {
         return internalArray
     }
 
-    // MARK: Task 40 ❌
+    // MARK: Task 40 ✅ / Not sure solution was right ❗️
     
     /*
     40. Вернуть первый непоследовательный элемент и его индекс
@@ -903,18 +905,147 @@ class ViewController: UIViewController {
     func firstNonConsequitive(array: [Int]) -> Int {
         let step = 1
         var number = Int()
-        var numberIndex = Int()
         
         for index in 0..<array.count - 1 {
             
             if array[index] + step == array[index + 1] {
                 print("correct number")
             } else {
-                print("found nonsequitive number - \(index)")
-                number = index
-                numberIndex = array.firstIndex(of: index)!
+                print("found nonsequitive number - \(array[index + 1])")
+                number = array[index + 1]
             }
         }
-        return numberIndex
+        return number
+    }
+    
+    // MARK: Task 41 ✅ / Can do it better ❗️
+    
+    /*
+     41. Проверить что массив монотонно убывающий
+
+     [10, 9, 8, 7, 6, 6, 5] -> true
+     [10, 9, 8, 8, 7, 9] -> false
+     [10,10,10] -> true
+
+     func isIncreasing(array: [Int]) -> Bool {
+     }
+     */
+    
+    func isDecreasing(array: [Int]) -> Bool {
+        var delta = false
+        var internalArray = array
+        var currentIndex = 0
+        
+        while currentIndex < internalArray.count - 2  {
+            
+           if internalArray[currentIndex] >= internalArray[currentIndex + 1] &&
+                internalArray[currentIndex + 1] >= internalArray[currentIndex + 2] {
+               currentIndex += 1
+               delta = true
+               
+           } else {
+               delta = false
+               break
+           }
+        }
+         return delta
+    }
+    
+    // MARK: Task 42 ✅ / Not tested enough | can be better ❗️
+    
+    /*
+     42. Написать функцию которая принимает массив чисел и проверяет монотонный он или нет
+
+
+     [1,3,6,8] → true
+     [6, 3, 2, 1] → true
+     [5,5] → true
+     [1, 2, 2, 5, 5, 7] → true
+     [1, 2, 3, 3, 3, 1] → false
+     [5, 4, 3, 2, 1, 2, 3] → false
+
+     func isMonotone(_ array: [Int]) -> Int {
+     }
+     */
+    
+    func isMonotone(_ array: [Int]) -> Bool {
+        var delta = false
+        // let internalArray = array
+        var currentIndex = 0
+        
+        while currentIndex < array.count - 2  {
+            
+           if array[currentIndex] >= array[currentIndex + 1] &&
+                array[currentIndex + 1] >= array[currentIndex + 2] {
+               
+               currentIndex += 1
+               delta = true
+               
+           } else if array[currentIndex] <= array[currentIndex + 1] &&
+                        array[currentIndex + 1] <= array[currentIndex + 2] {
+               
+               currentIndex += 1
+               delta = true
+               
+           } else {
+               delta = false
+               break
+           }
+        }
+         return delta
+    }
+    
+    // MARK: Task 43 ✅ The same as 37 task
+    
+    /*
+    43.Маскировать кредитную карту
+
+    "12345678" -> "****4678"
+    "1234" -> "1234"
+    "123456" -> "**3456"
+
+    func masked(string: String) -> String {
+    }
+     
+    */
+    
+    // MARK: Task 44 ✅ Already has been solved
+    
+    /*
+     44. Сконвертироват значение типа Any в тип данных Int
+
+     func someToInt(_ value: Any) → Int {
+
+             if let value = value as? Int {
+                     return value
+             }
+             return 0
+     }
+     */
+    
+    func someToInt(_ value: Any) -> Int {
+        
+        guard let number = value as? Int else { return 0 }
+        
+        return number
+    }
+    
+    // MARK: Task 45
+    
+    /*
+     45. Написать фукнцию суммирования всех элементов массива
+
+     ["1", 2, 3.5] -> 6.5
+
+
+     func sumOfValues(array: [Any]) -> Double {
+     }
+     */
+    
+    func sumOfValues(array: [Any]) -> Double {
+        var internalArray = array.map { $0 as? Double }
+        return internalArray.reduce(0) { partialResult, double in
+            partialResult += Double(double!)!
+        }
     }
 }
