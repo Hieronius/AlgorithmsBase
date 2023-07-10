@@ -8,22 +8,56 @@
 import UIKit
 import Foundation
 
-class ViewController: UIViewController {
-    
-    
+/*
+ 
+ // PART OF THE TASK OVERALL
+ reduce()
+ for-in
+ while
+ // PART OF THE TASK OVERALL
+ 
+ №1
+ for number in array.enumerated() {
+     
+ }
+ 
+ №2
+ for index in 0..<array.count {
+     if array[index] > 0 {
+         counter += 1
+     }
+ }
+ 
+ №3
+ for number in array {
+ }
+ 
+ May be i should solve all these problems with each of these methods.
+ Like one task - three kinds of solutions.
+ 
+ */
+
+/*
+ 
+ № 4
+ while
+ 
+ */
+
+
+class TestViewController: UIViewController {
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(Double("2.2"))
-        // print(sumOfValues(array:  ["1", 2, 3.5]))
+       print(numberToPower(2,3))
+        print(multiplyPower([10, 2, 5, 1]))
         
         
     }
     
-    
-    // MARK: Task 1 ✅
+    // MARK: Task 1 ✅ for-in
     /*
      1. Посчитать сумму позитивных чисел в массиве
      
@@ -32,26 +66,21 @@ class ViewController: UIViewController {
      func sumOfPositives(_ array: [Int]) -> Int {
      }
      
-     reduce()
-     for-in
-     while
      */
     
-    let array1 = [1,-4,7,12]
-    
-    
-    func getSumWithForIn(array: [Int]) -> Int {
-        var counter = 0
+    func sumOfPositives(_ array: [Int]) -> Int {
+        var sum = 0
         for number in array {
             if number > 0 {
-                counter += number
+                sum += number
             }
         }
-        return counter
+        return sum
     }
-    
-    // MARK: Task 2 ✅
-    
+
+
+    // MARK: Task 2 ✅ for-in
+
     /*
      2. Посчитать произведение элементов в массиве
      
@@ -61,14 +90,17 @@ class ViewController: UIViewController {
      }
      */
     
-    let array2 = [1, 2, 3, 4]
-    
     func multiplyOfElements(_ array: [Int]) -> Int {
-        array.reduce(1, *)
+        var result = 1
+        for number in array {
+            result *= number
+        }
+        return result
     }
-    
-    // MARK: Task 3 ✅
-    
+
+
+    // MARK: Task 3 ✅ for-in
+
     /*
      3. Посчитать сумму от 1 до num
      
@@ -81,17 +113,15 @@ class ViewController: UIViewController {
     
     func summation(_ num: Int) -> Int {
         var sum = 0
-        var counter = 0
-        while counter <= num {
-            sum += counter
-            counter += 1
-            
+        for number in 1...num {
+            sum += number
         }
-        return counter
+        return sum
     }
-    
-    // MARK: Task 4 ✅
-    
+
+
+    // MARK: Task 4 ✅ for-in
+
     /*
      4. Возвести каждый элемент массива в квадрат
      
@@ -102,11 +132,17 @@ class ViewController: UIViewController {
      */
     
     func doubled(_ array: Array<Int>) -> Array<Int> {
-        array.map {$0 * $0}
+        var internalArray = [Int]()
+        
+        for element in array {
+            internalArray.append(element * element)
+        }
+        return internalArray
     }
-    
-    // MARK: Task 5 ✅
-    
+
+    // MARK: Task 5 ✅ for-in
+
+
     /*
      5. Инвертировать элементы массива
      
@@ -117,13 +153,17 @@ class ViewController: UIViewController {
      func invert(_ array: [Int]) -> [Int] {
      }
      */
-    
     func invert(_ array: [Int]) -> [Int] {
-        array.map { $0 * -1}
+        var internalArray = [Int]()
+        for element in array {
+            internalArray.append(element * -1)
+        }
+        return internalArray
     }
-    
-    // MARK: Task 6 ✅
-    
+
+
+    // MARK: Task 6 ✅ for-in
+
     /*
      6. Найти минимальное число в массиве
      
@@ -135,38 +175,19 @@ class ViewController: UIViewController {
      
      */
     
-    func bubbleSort(_ input: [Int]) -> [Int] {
-        guard input.count > 1 else {
-            return input
-        }
-        var result = input
-        
-        let count = result.count
-        
-        var isSwapped = false
-        
-        repeat {
-            
-            isSwapped = false
-            
-            for index in 1..<count {
-                if result[index] < result[index-1] {
-                    print(result)
-                    result.swapAt(index-1, index)
-                    isSwapped = true
-                }
-            }
-        } while isSwapped
-        
-        return result
-    }
-    
     func findSmallest(_ array: [Int]) -> Int {
-        bubbleSort(array).first ?? 1
+        var number = array[0]
+        
+        for element in array {
+            if element < number {
+                number = element
+            }
+        }
+        return number
     }
-    
-    // MARK: Task 7 ✅
-    
+
+    // MARK: Task 7 ✅ for-in
+
     /*
      7. Найти максимальное и минимальное число в массиве и вывести в кортеже
      
@@ -177,11 +198,22 @@ class ViewController: UIViewController {
      */
     
     func minMax(_ array: [Int]) -> (Int, Int) {
-        (bubbleSort(array).first ?? 1, bubbleSort(array).last ?? 1)
+        var min = array[0]
+        var max = array[0]
+        
+        for element in array {
+            if element < min {
+                min = element
+            } else if element > max {
+                max = element
+            }
+        }
+        return (min, max)
     }
-    
-    // MARK: Task 8 ✅
-    
+
+
+    // MARK: Task 8 ✅ for-in
+
     /*
      8. Сумма всех элементов по модулю
      
@@ -192,19 +224,21 @@ class ViewController: UIViewController {
      */
     
     func sumOfAbs(_ array: [Int]) -> Int {
-        var result = 0
+        var sum = 0
+        
         for number in array {
             if number > 0 {
-                result += number
-            } else {
-                result += -(number)
+                sum += number
+            } else if number < 0 {
+                sum += -number
             }
         }
-        return result
+        return sum
     }
-    
-    // MARK: Task 9 ✅
-    
+
+
+    // MARK: Task 9 ✅ for-in
+
     /*
      9. Подсчитать количество true в массиве
      
@@ -220,11 +254,19 @@ class ViewController: UIViewController {
      */
     
     func countTrues(_ array: [Bool]) -> Int {
-        array.filter {$0 == true}.count
+        var result = 0
+        
+        for element in array {
+            if element {
+                result += 1
+            }
+        }
+        return result
     }
-    
-    // MARK: Task 10 ✅
-    
+
+
+    // MARK: Task 10 ✅ for-in
+
     /*
      10. Посчитать сумму от n до m
      
@@ -236,11 +278,16 @@ class ViewController: UIViewController {
      */
     
     func summation(n: Int, m: Int) -> Int {
-        Array(n...m).reduce(0, +)
+        var sum = 0
+        for number in n...m {
+            sum += number
+        }
+        return sum
     }
-    
-    // MARK: Task 11 ✅
-    
+
+
+    // MARK: Task 11 Here ✅ for-in
+
     /*
      11. Подсчитать среднюю оценку в массиве
      
@@ -250,13 +297,19 @@ class ViewController: UIViewController {
      
      }
      */
-    
+
     func average(_ marks: [Int]) -> Int {
-        marks.reduce(0,+) / marks.count
+        var sum = 0
+        
+        for number in marks {
+            sum += number
+        }
+        return sum / marks.count
     }
     
-    // MARK: Task 12 ✅ / ❗️ Can be better
-    
+
+    // MARK: Task 12 ✅ for-in
+
     /*
      12. Конвертировать число в последовательность из 1 и 0
      
@@ -268,16 +321,21 @@ class ViewController: UIViewController {
      */
     
     func convert(num: Int) -> String {
-        var result = String()
-        for number in Array(1...num) {
-            number % 2 == 0 ? result.append("0") : result.append("1")
+        var result = ""
+        for number in 1...num {
+            if number % 2 != 0 {
+                result.append("1")
+            } else {
+                result.append("0")
+            }
         }
-        // return (Array(1...num)).map {($0 % 2 == 0) ? result.append("0") : result.append("1") }
         return result
     }
+
     
-    // MARK: Task 13 ✅ / ❗️ Can be better
-    
+
+    // MARK: Task 13 ✅ for-in
+
     /*
      13. Посчитать количество пололожительных чисел и сумму отрицательных и вывести в кортеже
      
@@ -288,14 +346,22 @@ class ViewController: UIViewController {
      */
     
     func countOfPositivesSumOfNegatives(_ array: [Int]) -> (Int, Int) {
-        var counterOfPositiveNumbers = 0
-        var sumOfNegativeNumbers = [Int]()
-        array.map { ($0 > 0) ? (counterOfPositiveNumbers += 1) : (sumOfNegativeNumbers.append($0)) }
-        return (counterOfPositiveNumbers, sumOfNegativeNumbers.reduce(0, +))
+        var sumOfPositives = 0
+        var sumOfNegatives = 0
+        
+        for number in array {
+            if number > 0 {
+                sumOfPositives += 1
+            } else {
+                sumOfNegatives += number
+            }
+        }
+        return (sumOfPositives, sumOfNegatives)
     }
     
-    // MARK: TASK 14 ✅ / ❗️ Can be better
-    
+
+    // MARK: TASK 14 ✅ for-in
+
     /*
      14. Реализовать функцию возведения в степень
      
@@ -308,21 +374,31 @@ class ViewController: UIViewController {
      */
     
     func numberToPower(_ number: Int, _ power: Int) -> Int {
-        var index = 1
         var result = number
-        while index != power {
+        var counter = power
+        
+        for degree in (1...power) {
             result *= number
-            index += 1
+            counter -= 1
+            if counter == 0 {
+                break
+            }
         }
         return result
+        
+//        var index = 1
+//        var result = number
+//        while index != power {
+//            result *= number
+//            index += 1
+//        }
+//        return result
     }
     
-    // MARK: Task 15. Simple difficulty ✅
-    
-    
-    
-    // MARK: | Medium  difficulty  (should ask about correct understanding) ❓
-    
+
+    // MARK: Task 15. Simple difficulty ✅ for-in | Hard difficulty ✅ for-in
+
+
     /*
      15. Почистить массив от нечетных чисел
      
@@ -338,17 +414,26 @@ class ViewController: UIViewController {
      */
     
     func noOdds(array: [Int]) -> [Int] {
-        array.filter {$0 % 2 == 0}
+        var internalArray = array
+        for number in array {
+            if number % 2 != 0 {
+                internalArray.remove(at: internalArray.firstIndex(of: number)!)
+            }
+        }
+        return internalArray
     }
     
-    var noOddsArray = [0, 1, 2, 3]
     func noOdds(array: inout [Int]) -> [Int] {
-        return array.map { ($0 % 2 != 0) ? array.remove(at: array.firstIndex(of: $0)!) : 5 }
-        // return array.filter { ($0 % 2 == 0) ? array.remove(at: array.firstIndex(of: $0)!) : 5 }
+        for number in array {
+            if number % 2 != 0 {
+                array.remove(at: array.firstIndex(of: number)!)
+            }
+        }
+        return array
     }
-    
-    // MARK: Task 16 ✅
-    
+
+    // MARK: Task 16 ✅ for-in
+
     /*
      16. Найти сумму минимальных значений
      
@@ -359,12 +444,27 @@ class ViewController: UIViewController {
      }
      */
     
-    func sumOfMinimums(_ array: [[Int]]) -> Int {
-        array.map {($0.min()!)}.reduce(0,+)
+    func sumOfMinimums(array: [[Int]]) -> Int {
+        var result = 0
+        var smallestNumber = 0
+        
+        for subArray in array {
+            for number in subArray {
+                var smallest = subArray[0]
+                
+                if number < smallest {
+                    smallest = number
+                }
+                smallestNumber = smallest
+            }
+            result += smallestNumber
+        }
+        return result
     }
-    
-    // MARK: Task 17 ✅
-    
+
+
+    // MARK: Task 17 ✅ for-in
+
     /*
      17. Функция принимает число и символ и возвращает строку
      
@@ -376,11 +476,17 @@ class ViewController: UIViewController {
      */
     
     func repeatChar(_ count: Int, string: String) -> String {
-        Array(repeating: string, count: count).joined()
+        var result = String()
+        for attempt in 1...count {
+            result.append(string)
+        }
+        return result
     }
+
     
-    // MARK: Task 18 ✅
-    
+
+    // MARK: Task 18 ✅ for-in
+
     /*
      18. Замена всех символов строки на символ (contamination)
      
@@ -393,11 +499,16 @@ class ViewController: UIViewController {
      */
     
     func contamination(string: String, char: String) -> String {
-        String(string.map { ($0 != Character(char)) ? Character(char) : $0 })
+        var internalString = String()
+        for awdawd in 1...string.count {
+            internalString += char
+        }
+        return internalString
     }
-    
-    // MARK: Task 19 ✅ Found solution on the stackoverflow / Can make it better ❗️
-    
+
+
+    // MARK: Task 19 ✅ for-in
+
     /*
      19. Удалить пустые символы из строкик
      
@@ -407,14 +518,20 @@ class ViewController: UIViewController {
      func removeSpaces(string: String) -> String {
      }
      */
-    
+
     func removeSpaces(string: String) -> String {
-        string.filter { !" ".contains($0) }
+        var internalString = string
         
+        for char in internalString {
+            if char == " " {
+                internalString.remove(at: internalString.firstIndex(of: char)!)
+            }
+        }
+        return internalString
     }
-    
-    // MARK: Task 20 ❌ string.enumerated can be useful
-    
+
+    // MARK: Task 20 ✅ for-in | Should be refactored later ❗️
+
     /*
      20. Вывести количество символов самого маленького слова в предложении
      
@@ -425,11 +542,35 @@ class ViewController: UIViewController {
      */
     
     func countMinWord(_ string: String) -> Int {
-        25
+        var smallestAmount = [Int]()
+        var numberOfChars = 0
+        var totalNumberOfLettersPerWord = [Int]()
+        var counter = 0
+        for char in string {
+            
+            if char == " " {
+                smallestAmount.append(numberOfChars)
+                numberOfChars = 0
+            } else {
+                numberOfChars += 1
+            }
+            
+        }
+        smallestAmount.append(numberOfChars)
+        
+        totalNumberOfLettersPerWord = smallestAmount
+        var total = totalNumberOfLettersPerWord[0]
+        for number in totalNumberOfLettersPerWord {
+            if number < total {
+                total = number
+            }
+        }
+        return total
     }
-    
-    // MARK: Task 21 ❌
-    
+
+
+    // MARK: Task 21 ❌ 4.squareRoot() can be useful
+
     /*
      21. Возвести в квадрат число если не берется корень или взять корень числа  и вернуть массив
      
@@ -439,20 +580,31 @@ class ViewController: UIViewController {
      }
      */
     
-    func rootOrSquare(_ array: [Int]) -> [Int] {
-        var result = [Int]()
-        for number in array {
-            if number % number == 0 {
-                result.append(Int(sqrt(Double(number / number))))
-            } else {
-                result.append(number * number)
-            }
-        }
-        return result
-    }
-    
-    // MARK: Task 22 ❌ Task 31 can be useful
-    
+//    func rootOrSquare(_ array: [Int]) -> [Int] {
+//
+//
+//        // 4.squareRoot() - working. May be useful
+//
+//
+//
+//        var result = [Int]()
+//
+//        for number in array {
+//            if Int(sqrt(Double(number))) == Int(sqrt(Double(number)) * sqrt(Double(number)) {
+//                result.append(Int(sqrt(Double(number / number))))
+//                print("sqrt can be taken")
+//            } else {
+//                print("should be squared")
+//                result.append(number * number)
+//            }
+//        }
+//        return 25
+//
+//    }
+
+
+    // MARK: Task 22 ❌
+
     /*
      22. Есть отсортированный массив. Найти индекс числа или
      если нет числа индекс где он должен быть
@@ -466,31 +618,20 @@ class ViewController: UIViewController {
      */
     
     func findIndex(_ array: [Int], target: Int) -> Int {
-        var currentIndex = 0
-        var result = 0
-        var step = 1
-        
-        //        for index in 0..<array.count - 1 {
-        //            if array[index] + step == array[index + 1] {
-        //                print("do something")
-        //            } else {
-        //                missedNumbers += 1
-        //            }
-        //        }
-        
-        
+        var index = 0
         for number in array {
             if number == target {
-                return array.firstIndex(of:number)!
+                index = number
             } else {
-                currentIndex += 1
+                
             }
         }
-        return 25
+        return index
     }
-    
-    // MARK: Task 23 ✅
-    
+
+
+    // MARK: Task 23 ✅ for-in, enumerated()
+
     /*
      23. Написать функцию которая умножает каждый элемент на индекс
      
@@ -501,11 +642,17 @@ class ViewController: UIViewController {
      */
     
     func multiplyIndex(_ array: [Int]) -> [Int] {
-        array.map {$0 * array.firstIndex(of: $0)!}
+        var internalArray = [Int]()
+        for (index, value) in array.enumerated() {
+            internalArray.append(value * index)
+        }
+        return internalArray
     }
+
     
-    // MARK: Task 24 ✅ / Can be better ❗️
-    
+
+    // MARK: Task 24 ❌
+
     /*
      24. Написать функцию которая возводит каждый элемент в степень по счету
      (Переиспользовать функцию (14) возведения в степень)
@@ -516,20 +663,14 @@ class ViewController: UIViewController {
      }
      */
     
-    func multiplyPower(_ array: [Int]) -> [Int] {
-        var index = 0
-        var degree = 1
-        var result = [Int]()
-        while index != array.count {
-            result.append(numberToPower(array[index], degree))
-            index += 1
-            degree += 1
-        }
-        return result
-    }
     
-    // MARK: Task 25 ✅ / It's possible that understanding of the task is wrong ❗️
     
+    
+
+
+
+    // MARK: Task 25
+
     /*
      25. Написать функцию которая конвертирует строку в массив Character
      
@@ -542,13 +683,11 @@ class ViewController: UIViewController {
      func convertToArray(_ string: String) -> Array<Character> {
      }
      */
+
     
-    func convertToArray(_ string: String) -> Array<Character> {
-        Array(string)
-    }
-    
-    // MARK: Task 26 ✅ / Can be better. Possible to understand task conditions ❗️
-    
+
+    // MARK: Task 26
+
     /*
      (string.enumerated, удаление элементов)
      
@@ -559,15 +698,10 @@ class ViewController: UIViewController {
      func removeFirstLast(_ string: String?) -> String {
      }
      */
-    func removeFirstlast(_ string: String?) -> String {
-        var testString = string ?? ""
-        testString.removeFirst()
-        testString.removeLast()
-        return testString
-    }
     
-    // MARK: Task 27 ✅ /  Can be better ❗️
-    
+
+    // MARK: Task 27
+
     /*
      27. Найти первый индекс элемента в строке
      
@@ -578,18 +712,10 @@ class ViewController: UIViewController {
      func secondSymbolIndex(word: String, symbol: Character) -> Int {
      }
      */
-    func firstSymbolIndex(word: String, symbol: Character) -> Int {
-        var result = -1
-        word.enumerated().map { (index, value) in
-            if value == symbol {
-                result = index
-            }
-        }
-        return result
-    }
     
-    // MARK: Task 28 ✅ / Should be refactored ❗️
-    
+
+    // MARK: Task 28
+
     /*
      28. Найти второй индекс элемента в строке
      
@@ -600,34 +726,11 @@ class ViewController: UIViewController {
      func secondSymbolIndex(word: String, symbol: Character) -> Int {
      }
      */
+
     
-    func secondSymbolIndex(word: String, symbol: Character) -> Int {
-        let defaultIndex = -1
-        var repetition = false
-        var hit = false
-        var result = 0
-        var copy = 0
-        word.enumerated().map { (index, value) in
-            if value == symbol && hit == false {
-                result = index
-                hit = true
-            } else if value == symbol && hit == true {
-                copy = index
-                repetition = true
-            }
-        }
-        
-        if repetition && hit {
-            return copy
-        } else if repetition == false && hit {
-            return result
-        } else {
-            return defaultIndex
-        }
-    }
-    
-    // MARK: Task 29 ✅
-    
+
+    // MARK: Task 29
+
     /*
      29. Суммировать четные числа
      
@@ -636,13 +739,11 @@ class ViewController: UIViewController {
      func sumEvenNumbers(array: [Int]) -> Int {
      }
      */
+
     
-    func sumEvenNumbers(array: [Int]) -> Int {
-        array.filter {$0 % 2 == 0}.reduce(0, +)
-    }
-    
-    // MARK: Task 30 ✅
-    
+
+    // MARK: Task 30
+
     /*
      30. Посчитать разницу между максимальным и минимальным
      
@@ -652,13 +753,11 @@ class ViewController: UIViewController {
      func differenceMaxMin(_ array: [Int]) -> Int {
      }
      */
-    
-    func differenceMaxMin(_ array: [Int]) -> Int {
-        array.max()! - array.min()!
-    }
-    
-    // MARK: Task 31 ✅ / Can be better ❗️
-    
+
+
+
+    // MARK: Task 31
+
     /*
      31. Дана последовательность, найти сколько пропущено между минимальным и максимальным элементом массива
      (contains)
@@ -670,24 +769,11 @@ class ViewController: UIViewController {
      func consecutive(_ array: [Int]) -> Int {
      }
      */
+
     
-    func consecutive(_ array: [Int]) -> Int {
-        let step = 1
-        var missedNumbers = 0
-        
-        for index in 0..<array.count - 1 {
-            
-            if array[index] + step == array[index + 1] {
-                print("correct number")
-            } else {
-                missedNumbers += 1
-            }
-        }
-        return missedNumbers
-    }
-    
-    // MARK: Task 32 ✅
-    
+
+    // MARK: Task 32
+
     /*
      32. Вытащить максимальные элементы из массива в заданном количестве
      
@@ -696,14 +782,10 @@ class ViewController: UIViewController {
      func largest(count: Int, array: [Int]) -> [Int] {
      }
      */
-    
-    func largest(count: Int, array: [Int]) -> [Int] {
-        var test = array.sorted()
-        return Array(test[test.endIndex-2...test.endIndex-1])
-    }
-    
-    // MARK: Task 33 ❌ Let's back later
-    
+
+
+    // MARK: Task 33
+
     /*
      33. Написать фукнцию которая проставит тире между нечетными числами
      
@@ -712,31 +794,11 @@ class ViewController: UIViewController {
      func insertDash(string: String) -> String {
      }
      */
+
     
-    func insertDash(string: String) -> String {
-        var previousNumber = ""
-        var nextNumber = ""
-        var testString = string.enumerated()
-        var currentIndex = 0
-        var isPreviousOdd = false
-        var isNextOdd = false
-        
-        // while index != string.count - 1
-        
-        for char in string {
-            guard let number = char.wholeNumberValue else { return "" }
-            if number % 2 != 0 {
-                previousNumber = String(number)
-                print("odd number")
-            } else {
-                print("even number")
-            }
-        }
-        return ""
-    }
-    
-    // MARK: Task 34 ✅ / Should be refactored ❗️
-    
+
+    // MARK: Task 34
+
     /*
      34. По какоми индексу вставить число в отсортированном массиве
      
@@ -747,22 +809,11 @@ class ViewController: UIViewController {
      func keepOrder(array: [Int], element: Int) -> Int {
      }
      */
+
     
-    func keepOrder(array: [Int], element: Int) -> Int {
-        var internalArray = array
-        for number in internalArray {
-            if number < element {
-                print("element should be placed further of the current number \(number)")
-            } else {
-                print("element should be placed before the current number \(number)")
-                internalArray.insert(element, at: internalArray.firstIndex(of: number)! + 1)
-            }
-        }
-        return internalArray.firstIndex(of: element)!
-    }
-    
-    // MARK: Task 35 ✅ / Can be better ❗️
-    
+
+    // MARK: Task 35
+
     /*
      35. Порезать строку
      
@@ -772,20 +823,11 @@ class ViewController: UIViewController {
      func trim(_ string: String, _ num: Int) -> String {
      }
      */
+
     
-    func trim(_ string: String, _ num: Int) -> String {
-        var internalString = string
-        var counter = 0
-        
-        while counter != num {
-            internalString.removeLast()
-            counter += 1
-        }
-        return internalString
-    }
-    
-    // MARK: Task 36 ✅
-    
+
+    // MARK: Task 36
+
     /*
      36. Каждый элемент поделить на порядок в массиве и суммировать
      
@@ -795,24 +837,18 @@ class ViewController: UIViewController {
      func add(array: [Int]) -> Int {
      }
      */
+
     
-    func add(array: [Int]) -> Int {
-        var total = 0
-        array.enumerated().map { index, value in
-            total += (value / (index + 1))
-        }
-        return total
-    }
-    
-    // MARK: Theoretical question. 4 способа создания пустого массива ❌
-    
+
+    // MARK: Theoretical question. 4 способа создания пустого массива
+
     //    var array1: [Int] = []
     //    var array2: Array<Int> = []
     //    var array3 = [Int]()
     //    var array4 = Array<Int>()
-    
-    // MARK: Task 37 ✅ / Not sure of correct understanding of the task | Can make it better ❗️
-    
+
+    // MARK: Task 37
+
     /*
      37. Сделать маску для номера кредитной карты чтобы отображались только последние 4 цифры
      "4556364607935616" -> "************5616"
@@ -820,29 +856,11 @@ class ViewController: UIViewController {
      func maskify(string: String) -> String {
      }
      */
+
     
-    func maskify(string: String) -> String {
-        var index = Int()
-        if string.count > 4 {
-            index = string.count
-        } else {
-            index = 0
-        }
-        var securedNumber = String()
-        
-        for number in string {
-            if index != 0 {
-                securedNumber.append("*")
-                index -= 1
-            } else {
-                securedNumber.append(String(number))
-            }
-        }
-        return securedNumber
-    }
-    
-    // MARK: Task 38 ✅
-    
+
+    // MARK: Task 38
+
     /*
      38. Найти минимальный элемент в массиве и удалить его из массива
 
@@ -854,15 +872,11 @@ class ViewController: UIViewController {
      [2,1,2,1,2,1] -> [2,2,2]
      [0,1,0,1,0] -> [1,1]
      */
+
     
-    func removeSmallest(_ array: [Int]) -> [Int] {
-        var internalArray = array
-        internalArray.remove(at: internalArray.firstIndex(of: internalArray.min()!)!)
-        return internalArray
-    }
-    
-    // MARK: Task 39 ✅ / Can add more variations
-    
+
+    // MARK: Task 39
+
     /*
      39. Один массив прибавить ко второму массиву - все способы
 
@@ -871,28 +885,10 @@ class ViewController: UIViewController {
      func sumArrays(lhs: [Int], rhs: [Int]) -> [Int] {
      }
      */
-    
-    func sumArrays1(lhs: [Int], rhs: [Int]) -> [Int] {
-        lhs + rhs
-    }
-    
-    func sumArrays2(lhs: [Int], rhs: [Int]) -> [Int] {
-        var internalArray = lhs
-        internalArray.append(contentsOf: rhs)
-        return internalArray
-    }
-    
-    func sumArrays3(lhs: [Int], rhs: [Int]) -> [Int] {
-        var internalArray = lhs
-        
-        for number in rhs {
-            internalArray.append(number)
-        }
-        return internalArray
-    }
 
-    // MARK: Task 40 ✅ / Not sure solution was right ❗️
-    
+
+    // MARK: Task 40
+
     /*
     40. Вернуть первый непоследовательный элемент и его индекс
 
@@ -901,25 +897,10 @@ class ViewController: UIViewController {
     func firstNonConsequitive(array: [Int]) -> Int {
     }
     */
-    
-    func firstNonConsequitive(array: [Int]) -> Int {
-        let step = 1
-        var number = Int()
-        
-        for index in 0..<array.count - 1 {
-            
-            if array[index] + step == array[index + 1] {
-                print("correct number")
-            } else {
-                print("found nonsequitive number - \(array[index + 1])")
-                number = array[index + 1]
-            }
-        }
-        return number
-    }
-    
-    // MARK: Task 41 ✅ / Can do it better ❗️
-    
+
+
+    // MARK: Task 41
+
     /*
      41. Проверить что массив монотонно убывающий
 
@@ -930,29 +911,10 @@ class ViewController: UIViewController {
      func isIncreasing(array: [Int]) -> Bool {
      }
      */
-    
-    func isDecreasing(array: [Int]) -> Bool {
-        var delta = false
-        var internalArray = array
-        var currentIndex = 0
-        
-        while currentIndex < internalArray.count - 2  {
-            
-           if internalArray[currentIndex] >= internalArray[currentIndex + 1] &&
-                internalArray[currentIndex + 1] >= internalArray[currentIndex + 2] {
-               currentIndex += 1
-               delta = true
-               
-           } else {
-               delta = false
-               break
-           }
-        }
-         return delta
-    }
-    
-    // MARK: Task 42 ✅ / Not tested enough | can be better ❗️
-    
+
+
+    // MARK: Task 42
+
     /*
      42. Написать функцию которая принимает массив чисел и проверяет монотонный он или нет
 
@@ -967,36 +929,11 @@ class ViewController: UIViewController {
      func isMonotone(_ array: [Int]) -> Int {
      }
      */
+
     
-    func isMonotone(_ array: [Int]) -> Bool {
-        var delta = false
-        // let internalArray = array
-        var currentIndex = 0
-        
-        while currentIndex < array.count - 2  {
-            
-           if array[currentIndex] >= array[currentIndex + 1] &&
-                array[currentIndex + 1] >= array[currentIndex + 2] {
-               
-               currentIndex += 1
-               delta = true
-               
-           } else if array[currentIndex] <= array[currentIndex + 1] &&
-                        array[currentIndex + 1] <= array[currentIndex + 2] {
-               
-               currentIndex += 1
-               delta = true
-               
-           } else {
-               delta = false
-               break
-           }
-        }
-         return delta
-    }
-    
-    // MARK: Task 43 ✅ The same as 37 task
-    
+
+    // MARK: Task 43
+
     /*
     43.Маскировать кредитную карту
 
@@ -1008,9 +945,9 @@ class ViewController: UIViewController {
     }
      
     */
-    
-    // MARK: Task 44 ✅ Already has been solved
-    
+
+    // MARK: Task 44
+
     /*
      44. Сконвертироват значение типа Any в тип данных Int
 
@@ -1022,16 +959,10 @@ class ViewController: UIViewController {
              return 0
      }
      */
-    
-    func someToInt(_ value: Any) -> Int {
-        
-        guard let number = value as? Int else { return 0 }
-        
-        return number
-    }
-    
+
+
     // MARK: Task 45
-    
+
     /*
      45. Написать фукнцию суммирования всех элементов массива
 
@@ -1041,11 +972,7 @@ class ViewController: UIViewController {
      func sumOfValues(array: [Any]) -> Double {
      }
      */
+
     
-    func sumOfValues(array: [Any]) -> Double {
-        var internalArray = array.map { $0 as? Double }
-        return internalArray.reduce(0) { partialResult, double in
-            partialResult += Double(double!)!
-        }
-    }
+
 }
