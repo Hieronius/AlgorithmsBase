@@ -50,10 +50,10 @@ class TestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(removeSmallest([1,2,3,4,5]))
-        
-        
-    }
+        print(trim("Arsenty", 3))
+        print(trim("Arsenty", 3))
+        print(trim("Arsenty", 3))
+        }
     
     // MARK: Task 1 ✅ for-in
     /*
@@ -567,7 +567,7 @@ class TestViewController: UIViewController {
     }
 
 
-    // MARK: Task 21 ❌ 4.squareRoot() can be useful
+    // MARK: Task 21 ✅ for-in
 
     /*
      21. Возвести в квадрат число если не берется корень или взять корень числа  и вернуть массив
@@ -578,30 +578,21 @@ class TestViewController: UIViewController {
      }
      */
     
-//    func rootOrSquare(_ array: [Int]) -> [Int] {
-//
-//
-//        // 4.squareRoot() - working. May be useful
-//
-//
-//
-//        var result = [Int]()
-//
-//        for number in array {
-//            if Int(sqrt(Double(number))) == Int(sqrt(Double(number)) * sqrt(Double(number)) {
-//                result.append(Int(sqrt(Double(number / number))))
-//                print("sqrt can be taken")
-//            } else {
-//                print("should be squared")
-//                result.append(number * number)
-//            }
-//        }
-//        return 25
-//
-//    }
+    func rootOrSquare(_ array: [Int]) -> [Int] {
+        var internalArray = [Int]()
+        for number in array {
+            if (Double(number).squareRoot() * (Double(number).squareRoot()) == (Double(number))) {
+                internalArray.append(Int(Double(number).squareRoot()))
+            } else {
+                internalArray.append(number * number)
+            }
+        }
+        return internalArray
+    }
+    
 
 
-    // MARK: Task 22 ❌
+    // MARK: Task 22 ✅ for-in, enumerated()
 
     /*
      22. Есть отсортированный массив. Найти индекс числа или
@@ -615,16 +606,25 @@ class TestViewController: UIViewController {
      }
      */
     
+    // may be i should just add two checks for the "target" input?
+    // Like the first one should compare it to value and another just should check is possibe target
+    // smaller or bigger than the previous one.
+    // our index should be equal to the value + 1 when target can't be bigger than the next one
+    
     func findIndex(_ array: [Int], target: Int) -> Int {
-        var index = 0
-        for number in array {
-            if number == target {
-                index = number
+        var result = Int()
+        for (index, value) in array.enumerated() {
+            if target >= value {
+                if value == target {
+                    result = index
+                    break
+                } else {
+                }
             } else {
-                
+                result = index - 1
             }
         }
-        return index
+        return result
     }
 
 
@@ -870,7 +870,7 @@ class TestViewController: UIViewController {
         return missedNumbers
     }
 
-    // MARK: Task 32 ❗️Back later
+    // MARK: Task 32 ❌ Back later
 
     /*
      32. Вытащить максимальные элементы из массива в заданном количестве
@@ -883,17 +883,23 @@ class TestViewController: UIViewController {
     
     func largest(count: Int, array: [Int]) -> [Int] {
         // I can create a special array for all maximum values
-        var result = [Int]()
-        var maxNumber = array[0]
-        for number in array {
-            if number > maxNumber {
-                maxNumber == number
+        var internalArray = array
+        var maxNumbers = [Int]()
+        var firstNumber = array[0]
+            
+        for number in 0..<count {
+            
+            for number in internalArray {
+                if number > firstNumber {
+                    firstNumber = number
+                }
             }
-        }
-        for count in 0..<count + 1 {
+            print("Remove highnest number from array and repeat search again")
+            internalArray.remove(at: internalArray.firstIndex(of: firstNumber)!)
+            maxNumbers.append(firstNumber)
             
         }
-        return [25]
+        return maxNumbers
     }
 
 
@@ -925,7 +931,7 @@ class TestViewController: UIViewController {
 
     
 
-    // MARK: Task 34 ❌ Back later
+    // MARK: Task 34 ✅ Back later
 
     /*
      34. По какоми индексу вставить число в отсортированном массиве
@@ -938,13 +944,20 @@ class TestViewController: UIViewController {
      }
      */
     
-//    func keepOrder(array: [Int], element: Int) -> Int {
-//
-//    }
+    func keepOrder(array: [Int], element: Int) -> Int {
+        var position = Int()
+        for (index, value) in array.enumerated() {
+            if value > element {
+                position = index
+                break
+            }
+        }
+        return position
+    }
 
     
 
-    // MARK: Task 35 ❌ back later
+    // MARK: Task 35 ✅ for-in
 
     /*
      35. Порезать строку
@@ -956,14 +969,22 @@ class TestViewController: UIViewController {
      }
      */
     
-//    func trim(_ string: String, _ num: Int) -> String {
-//        var counter = num
-//        if string.count > num {
-//            for char in string {
-//
-//            }
-//        }
-//    }
+    func trim(_ string: String, _ num: Int) -> String {
+        var result = String()
+        var counter = num
+        var indexToTrim = string.count - num
+        for (index, value) in string.enumerated() {
+            if index >= indexToTrim {
+                print("yo-yo")
+                result.append("")
+            } else {
+                print("hop-hop")
+                result.append(value)
+            }
+        }
+        print(result)
+        return result
+    }
 
     
 
