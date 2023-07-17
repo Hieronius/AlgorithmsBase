@@ -354,12 +354,12 @@ func numberToPower(_ number: Int, _ power: Int) -> Int {
  }
  */
 
-func noOdds(array: [Int]) -> [Int] {
+func noOdds3(array: [Int]) -> [Int] {
     array.filter {$0 % 2 == 0}
 }
 
 var noOddsArray = [0, 1, 2, 3]
-func noOdds(array: inout [Int]) -> [Int] {
+func noOdds3(array: inout [Int]) -> [Int] {
     return array.map { ($0 % 2 != 0) ? array.remove(at: array.firstIndex(of: $0)!) : 5 }
     // return array.filter { ($0 % 2 == 0) ? array.remove(at: array.firstIndex(of: $0)!) : 5 }
 }
