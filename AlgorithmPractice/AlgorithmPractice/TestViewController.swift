@@ -17,8 +17,11 @@ class TestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print(invert([-1, 2, -3, 4, -5]))
+        print("you")
+        // findSmallest([1])
+        // print(findSmallest([34, -345, -1, 100]))
+        print(findSmallest1([34, -345, -1, 100]))
+        print("hello")
         
     }
     
@@ -157,9 +160,19 @@ class TestViewController: UIViewController {
      
      */
     
-//    func findSmallest(_ array: [Int]) -> Int {
-//
-//    }
+    func findSmallest(_ array: [Int]) -> Int {
+        var index = 0
+        var startNumber = array[0]
+        
+        while index != array.count {
+            if array[index] < startNumber {
+                startNumber = array[index]
+                index += 1
+            }
+        }
+        print("result here")
+        return startNumber
+    }
     
     
     
