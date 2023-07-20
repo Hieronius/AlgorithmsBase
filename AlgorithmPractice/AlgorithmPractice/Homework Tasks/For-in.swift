@@ -616,7 +616,7 @@ func multiplyIndex1(_ array: [Int]) -> [Int] {
 func multiplyPower1(_ array: [Int]) -> [Int] {
     var result = [Int]()
     for number in array {
-        result.append(numberToPower(number, array.firstIndex(of: number)!))
+        result.append(numberToPower1(number, array.firstIndex(of: number)!))
     }
     return result
 }

@@ -53,7 +53,7 @@ import Foundation
 let array1 = [1,-4,7,12]
 
 
-func getSumWithForIn(array: [Int]) -> Int {
+func getSumWithForIn3(array: [Int]) -> Int {
     
     
 
@@ -80,7 +80,7 @@ func getSumWithForIn(array: [Int]) -> Int {
 
 let array2 = [1, 2, 3, 4]
 
-func multiplyOfElements(_ array: [Int]) -> Int {
+func multiplyOfElements3(_ array: [Int]) -> Int {
     array.reduce(1, *)
 }
 
@@ -96,7 +96,7 @@ func multiplyOfElements(_ array: [Int]) -> Int {
  }
  */
 
-func summation(_ num: Int) -> Int {
+func summation3(_ num: Int) -> Int {
     var sum = 0
     var counter = 0
     while counter <= num {
@@ -118,7 +118,7 @@ func summation(_ num: Int) -> Int {
  }
  */
 
-func doubled(_ array: Array<Int>) -> Array<Int> {
+func doubled3(_ array: Array<Int>) -> Array<Int> {
     array.map {$0 * $0}
 }
 
@@ -135,7 +135,7 @@ func doubled(_ array: Array<Int>) -> Array<Int> {
  }
  */
 
-func invert(_ array: [Int]) -> [Int] {
+func invert3(_ array: [Int]) -> [Int] {
     array.map { $0 * -1}
 }
 
@@ -178,7 +178,7 @@ func invert(_ array: [Int]) -> [Int] {
 //    return result
 //}
 
-func findSmallest(_ array: [Int]) -> Int {
+func findSmallest3(_ array: [Int]) -> Int {
     bubbleSort(array).first ?? 1
 }
 
@@ -193,7 +193,7 @@ func findSmallest(_ array: [Int]) -> Int {
  }
  */
 
-func minMax(_ array: [Int]) -> (Int, Int) {
+func minMax3(_ array: [Int]) -> (Int, Int) {
     (bubbleSort(array).first ?? 1, bubbleSort(array).last ?? 1)
 }
 
@@ -208,7 +208,7 @@ func minMax(_ array: [Int]) -> (Int, Int) {
  }
  */
 
-func sumOfAbs(_ array: [Int]) -> Int {
+func sumOfAbs3(_ array: [Int]) -> Int {
     var result = 0
     for number in array {
         if number > 0 {
@@ -236,7 +236,7 @@ func sumOfAbs(_ array: [Int]) -> Int {
  }
  */
 
-func countTrues(_ array: [Bool]) -> Int {
+func countTrues3(_ array: [Bool]) -> Int {
     array.filter {$0 == true}.count
 }
 
@@ -252,7 +252,7 @@ func countTrues(_ array: [Bool]) -> Int {
  }
  */
 
-func summation(n: Int, m: Int) -> Int {
+func summation3(n: Int, m: Int) -> Int {
     Array(n...m).reduce(0, +)
 }
 
@@ -268,7 +268,7 @@ func summation(n: Int, m: Int) -> Int {
  }
  */
 
-func average(_ marks: [Int]) -> Int {
+func average3(_ marks: [Int]) -> Int {
     marks.reduce(0,+) / marks.count
 }
 
@@ -284,7 +284,7 @@ func average(_ marks: [Int]) -> Int {
  }
  */
 
-func convert(num: Int) -> String {
+func convert3(num: Int) -> String {
     var result = String()
     for number in Array(1...num) {
         number % 2 == 0 ? result.append("0") : result.append("1")
@@ -304,7 +304,7 @@ func convert(num: Int) -> String {
  }
  */
 
-func countOfPositivesSumOfNegatives(_ array: [Int]) -> (Int, Int) {
+func countOfPositivesSumOfNegatives3(_ array: [Int]) -> (Int, Int) {
     var counterOfPositiveNumbers = 0
     var sumOfNegativeNumbers = [Int]()
     array.map { ($0 > 0) ? (counterOfPositiveNumbers += 1) : (sumOfNegativeNumbers.append($0)) }
@@ -324,7 +324,7 @@ func countOfPositivesSumOfNegatives(_ array: [Int]) -> (Int, Int) {
  }
  */
 
-func numberToPower(_ number: Int, _ power: Int) -> Int {
+func numberToPower3(_ number: Int, _ power: Int) -> Int {
     var index = 1
     var result = number
     while index != power {
@@ -376,7 +376,7 @@ func noOdds3(array: inout [Int]) -> [Int] {
  }
  */
 
-func sumOfMinimums(_ array: [[Int]]) -> Int {
+func sumOfMinimums3(_ array: [[Int]]) -> Int {
     array.map {($0.min()!)}.reduce(0,+)
 }
 
@@ -392,7 +392,7 @@ func sumOfMinimums(_ array: [[Int]]) -> Int {
  }
  */
 
-func repeatChar(_ count: Int, string: String) -> String {
+func repeatChar3(_ count: Int, string: String) -> String {
     Array(repeating: string, count: count).joined()
 }
 
@@ -409,7 +409,7 @@ func repeatChar(_ count: Int, string: String) -> String {
  }
  */
 
-func contamination(string: String, char: String) -> String {
+func contamination3(string: String, char: String) -> String {
     String(string.map { ($0 != Character(char)) ? Character(char) : $0 })
 }
 
@@ -425,7 +425,7 @@ func contamination(string: String, char: String) -> String {
  }
  */
 
-func removeSpaces(string: String) -> String {
+func removeSpaces3(string: String) -> String {
     string.filter { !" ".contains($0) }
     
 }
@@ -441,7 +441,7 @@ func removeSpaces(string: String) -> String {
  }
  */
 
-func countMinWord(_ string: String) -> Int {
+func countMinWord3(_ string: String) -> Int {
     25
 }
 
@@ -456,7 +456,7 @@ func countMinWord(_ string: String) -> Int {
  }
  */
 
-func rootOrSquare(_ array: [Int]) -> [Int] {
+func rootOrSquare3(_ array: [Int]) -> [Int] {
     var result = [Int]()
     for number in array {
         if number % number == 0 {
@@ -482,7 +482,7 @@ func rootOrSquare(_ array: [Int]) -> [Int] {
  }
  */
 
-func findIndex(_ array: [Int], target: Int) -> Int {
+func findIndex3(_ array: [Int], target: Int) -> Int {
     var currentIndex = 0
     var result = 0
     var step = 1
@@ -517,7 +517,7 @@ func findIndex(_ array: [Int], target: Int) -> Int {
  }
  */
 
-func multiplyIndex(_ array: [Int]) -> [Int] {
+func multiplyIndex3(_ array: [Int]) -> [Int] {
     array.map {$0 * array.firstIndex(of: $0)!}
 }
 
@@ -533,12 +533,12 @@ func multiplyIndex(_ array: [Int]) -> [Int] {
  }
  */
 
-func multiplyPower(_ array: [Int]) -> [Int] {
+func multiplyPower3(_ array: [Int]) -> [Int] {
     var index = 0
     var degree = 1
     var result = [Int]()
     while index != array.count {
-        result.append(numberToPower(array[index], degree))
+        result.append(numberToPower3(array[index], degree))
         index += 1
         degree += 1
     }
@@ -560,7 +560,7 @@ func multiplyPower(_ array: [Int]) -> [Int] {
  }
  */
 
-func convertToArray(_ string: String) -> Array<Character> {
+func convertToArray3(_ string: String) -> Array<Character> {
     Array(string)
 }
 
@@ -576,7 +576,7 @@ func convertToArray(_ string: String) -> Array<Character> {
  func removeFirstLast(_ string: String?) -> String {
  }
  */
-func removeFirstlast(_ string: String?) -> String {
+func removeFirstlast3(_ string: String?) -> String {
     var testString = string ?? ""
     testString.removeFirst()
     testString.removeLast()
@@ -595,7 +595,7 @@ func removeFirstlast(_ string: String?) -> String {
  func secondSymbolIndex(word: String, symbol: Character) -> Int {
  }
  */
-func firstSymbolIndex(word: String, symbol: Character) -> Int {
+func firstSymbolIndex3(word: String, symbol: Character) -> Int {
     var result = -1
     word.enumerated().map { (index, value) in
         if value == symbol {
@@ -618,7 +618,7 @@ func firstSymbolIndex(word: String, symbol: Character) -> Int {
  }
  */
 
-func secondSymbolIndex(word: String, symbol: Character) -> Int {
+func secondSymbolIndex3(word: String, symbol: Character) -> Int {
     let defaultIndex = -1
     var repetition = false
     var hit = false
@@ -654,7 +654,7 @@ func secondSymbolIndex(word: String, symbol: Character) -> Int {
  }
  */
 
-func sumEvenNumbers(array: [Int]) -> Int {
+func sumEvenNumbers3(array: [Int]) -> Int {
     array.filter {$0 % 2 == 0}.reduce(0, +)
 }
 
@@ -670,7 +670,7 @@ func sumEvenNumbers(array: [Int]) -> Int {
  }
  */
 
-func differenceMaxMin(_ array: [Int]) -> Int {
+func differenceMaxMin3(_ array: [Int]) -> Int {
     array.max()! - array.min()!
 }
 
@@ -688,7 +688,7 @@ func differenceMaxMin(_ array: [Int]) -> Int {
  }
  */
 
-func consecutive(_ array: [Int]) -> Int {
+func consecutive3(_ array: [Int]) -> Int {
     let step = 1
     var missedNumbers = 0
     
@@ -714,7 +714,7 @@ func consecutive(_ array: [Int]) -> Int {
  }
  */
 
-func largest(count: Int, array: [Int]) -> [Int] {
+func largest3(count: Int, array: [Int]) -> [Int] {
     var test = array.sorted()
     return Array(test[test.endIndex-2...test.endIndex-1])
 }
@@ -730,7 +730,7 @@ func largest(count: Int, array: [Int]) -> [Int] {
  }
  */
 
-func insertDash(string: String) -> String {
+func insertDash3(string: String) -> String {
     var previousNumber = ""
     var nextNumber = ""
     var testString = string.enumerated()
@@ -765,7 +765,7 @@ func insertDash(string: String) -> String {
  }
  */
 
-func keepOrder(array: [Int], element: Int) -> Int {
+func keepOrder3(array: [Int], element: Int) -> Int {
     var internalArray = array
     for number in internalArray {
         if number < element {
@@ -790,7 +790,7 @@ func keepOrder(array: [Int], element: Int) -> Int {
  }
  */
 
-func trim(_ string: String, _ num: Int) -> String {
+func trim3(_ string: String, _ num: Int) -> String {
     var internalString = string
     var counter = 0
     
@@ -813,7 +813,7 @@ func trim(_ string: String, _ num: Int) -> String {
  }
  */
 
-func add(array: [Int]) -> Int {
+func add3(array: [Int]) -> Int {
     var total = 0
     array.enumerated().map { index, value in
         total += (value / (index + 1))
@@ -838,7 +838,7 @@ func add(array: [Int]) -> Int {
  }
  */
 
-func maskify(string: String) -> String {
+func maskify3(string: String) -> String {
     var index = Int()
     if string.count > 4 {
         index = string.count
@@ -872,7 +872,7 @@ func maskify(string: String) -> String {
  [0,1,0,1,0] -> [1,1]
  */
 
-func removeSmallest(_ array: [Int]) -> [Int] {
+func removeSmallest3(_ array: [Int]) -> [Int] {
     var internalArray = array
     internalArray.remove(at: internalArray.firstIndex(of: internalArray.min()!)!)
     return internalArray
@@ -889,17 +889,17 @@ func removeSmallest(_ array: [Int]) -> [Int] {
  }
  */
 
-func sumArrays1(lhs: [Int], rhs: [Int]) -> [Int] {
+func sumArrays13(lhs: [Int], rhs: [Int]) -> [Int] {
     lhs + rhs
 }
 
-func sumArrays2(lhs: [Int], rhs: [Int]) -> [Int] {
+func sumArrays23(lhs: [Int], rhs: [Int]) -> [Int] {
     var internalArray = lhs
     internalArray.append(contentsOf: rhs)
     return internalArray
 }
 
-func sumArrays3(lhs: [Int], rhs: [Int]) -> [Int] {
+func sumArrays333(lhs: [Int], rhs: [Int]) -> [Int] {
     var internalArray = lhs
     
     for number in rhs {
@@ -919,7 +919,7 @@ func firstNonConsequitive(array: [Int]) -> Int {
 }
 */
 
-func firstNonConsequitive(array: [Int]) -> Int {
+func firstNonConsequitive3(array: [Int]) -> Int {
     let step = 1
     var number = Int()
     
@@ -948,7 +948,7 @@ func firstNonConsequitive(array: [Int]) -> Int {
  }
  */
 
-func isDecreasing(array: [Int]) -> Bool {
+func isDecreasing3(array: [Int]) -> Bool {
     var delta = false
     var internalArray = array
     var currentIndex = 0
@@ -985,7 +985,7 @@ func isDecreasing(array: [Int]) -> Bool {
  }
  */
 
-func isMonotone(_ array: [Int]) -> Bool {
+func isMonotone3(_ array: [Int]) -> Bool {
     var delta = false
     // let internalArray = array
     var currentIndex = 0
@@ -1040,7 +1040,7 @@ func masked(string: String) -> String {
  }
  */
 
-func someToInt(_ value: Any) -> Int {
+func someToInt3(_ value: Any) -> Int {
     
     guard let number = value as? Int else { return 0 }
     

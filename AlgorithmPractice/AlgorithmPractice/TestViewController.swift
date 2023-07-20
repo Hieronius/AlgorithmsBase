@@ -17,11 +17,7 @@ class TestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("you")
-        // findSmallest([1])
-        // print(findSmallest([34, -345, -1, 100]))
-        print(findSmallest1([34, -345, -1, 100]))
-        print("hello")
+        print(countOfPositivesSumOfNegatives2([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]))
         
     }
     
@@ -36,7 +32,7 @@ class TestViewController: UIViewController {
      
      */
     
-    func sumOfPositives(_ array: [Int]) -> Int {
+    func sumOfPositives2(_ array: [Int]) -> Int {
         var index = 0
         var summ = 0
         
@@ -62,7 +58,7 @@ class TestViewController: UIViewController {
      }
      */
     
-    func multiplyOfElements(_ array: [Int]) -> Int {
+    func multiplyOfElements2(_ array: [Int]) -> Int {
         var total = 1
         var index = 0
         
@@ -87,7 +83,7 @@ class TestViewController: UIViewController {
      }
      */
     
-    func summation(_ num: Int) -> Int {
+    func summation2(_ num: Int) -> Int {
         var counter = 0
         var sum = 0
         
@@ -110,7 +106,7 @@ class TestViewController: UIViewController {
      func doubled(_ array: Array<Int>) -> Array<Int> {
      }
      */
-    func doubled(_ array: Array<Int>) -> Array<Int> {
+    func doubled2(_ array: Array<Int>) -> Array<Int> {
         var index = 0
         var internalArray = [Int]()
         while index != array.count {
@@ -135,7 +131,7 @@ class TestViewController: UIViewController {
      }
      */
     
-    func invert(_ array: [Int]) -> [Int] {
+    func invert2(_ array: [Int]) -> [Int] {
         var index = 0
         var internalArray = [Int]()
         
@@ -147,7 +143,7 @@ class TestViewController: UIViewController {
     }
     
     
-    // MARK: Task 6
+    // MARK: Task 6 ✅ while
     
     /*
      6. Найти минимальное число в массиве
@@ -160,7 +156,7 @@ class TestViewController: UIViewController {
      
      */
     
-    func findSmallest(_ array: [Int]) -> Int {
+    func findSmallest2(_ array: [Int]) -> Int {
         var index = 0
         var startNumber = array[0]
         
@@ -168,15 +164,16 @@ class TestViewController: UIViewController {
             if array[index] < startNumber {
                 startNumber = array[index]
                 index += 1
+            } else {
+                index += 1
             }
         }
-        print("result here")
         return startNumber
     }
     
     
     
-    // MARK: Task 7
+    // MARK: Task 7 ✅ While
     
     /*
      7. Найти максимальное и минимальное число в массиве и вывести в кортеже
@@ -187,10 +184,28 @@ class TestViewController: UIViewController {
      }
      */
     
+    func minMax2(_ array: [Int]) -> (Int, Int) {
+        var index = 0
+        var startNumber = array[0]
+        var minNumber = array[0]
+        var maxNumber = array[0]
+        
+        while index != array.count {
+            if array[index] < minNumber {
+                minNumber = array[index]
+                index += 1
+            } else if array[index] > maxNumber {
+                maxNumber = array[index]
+                index += 1
+            } else {
+                index += 1
+            }
+        }
+        return (minNumber, maxNumber)
+    }
     
     
-    
-    // MARK: Task 8
+    // MARK: Task 8 ✅ while
     
     /*
      8. Сумма всех элементов по модулю
@@ -201,9 +216,26 @@ class TestViewController: UIViewController {
      }
      */
     
+    func sumOfAbs2(_ array: [Int]) -> Int {
+        var index = 0
+        var sum = Int()
+        
+        while index != array.count {
+            var internalNumber = Int()
+            if array[index] < 0 {
+                internalNumber = array[index] * -1
+            } else {
+                internalNumber = array[index]
+            }
+            sum += internalNumber
+            index += 1
+        }
+        return sum
+    }
     
     
-    // MARK: Task 9
+    
+    // MARK: Task 9 ✅ while
     
     /*
      9. Подсчитать количество true в массиве
@@ -219,10 +251,23 @@ class TestViewController: UIViewController {
      }
      */
     
+    func countTrues2(_ array: [Bool]) -> Int {
+        var counter = 0
+        var index = 0
+        
+        while index != array.count {
+            if array[index] == true{
+                counter += 1
+                index += 1
+            } else {
+                index += 1
+            }
+        }
+        return counter
+    }
     
     
-    
-    // MARK: Task 10
+    // MARK: Task 10 ✅ while
     
     /*
      10. Посчитать сумму от n до m
@@ -234,10 +279,19 @@ class TestViewController: UIViewController {
      }
      */
     
+    func summation2(n: Int, m: Int) -> Int {
+        var summ = 0
+        var step = n
+        
+        while step <= m {
+            summ += step
+            step += 1
+        }
+        return summ
+    }
     
     
-    
-    // MARK: Task 11
+    // MARK: Task 11 ✅ while
     
     /*
      11. Подсчитать среднюю оценку в массиве
@@ -249,10 +303,21 @@ class TestViewController: UIViewController {
      }
      */
     
+    func average2(_ marks: [Int]) -> Int {
+        var sum = 0
+        var index = 0
+        
+        while index != marks.count {
+            sum += marks[index]
+            index += 1
+        }
+        
+        return sum / marks.count
+    }
     
     
     
-    // MARK: Task 12
+    // MARK: Task 12 ✅
     
     /*
      12. Конвертировать число в последовательность из 1 и 0
@@ -264,11 +329,26 @@ class TestViewController: UIViewController {
      }
      */
     
+    func convert2(num: Int) -> String {
+        var index = 1
+        var result = String()
+        
+        while index != Array(0...num).count {
+            if index % 2 == 0 {
+                result.append("0")
+                index += 1
+            } else {
+                result.append("1")
+                index += 1
+            }
+        }
+        return result
+    }
     
     
     
     
-    // MARK: Task 13
+    // MARK: Task 13 ✅
     
     /*
      13. Посчитать количество пололожительных чисел и сумму отрицательных и вывести в кортеже
@@ -279,7 +359,23 @@ class TestViewController: UIViewController {
      }
      */
     
-    
+    func countOfPositivesSumOfNegatives2(_ array: [Int]) -> (Int, Int) {
+        var numberOfPositive = 0
+        var numberOfNegative = 0
+        var index = 0
+        
+        while index != array.count {
+            if array[index] > 0 {
+                numberOfPositive += 1
+                index += 1
+            } else {
+                numberOfNegative += array[index]
+                index += 1
+            }
+        }
+        
+        return (numberOfPositive, numberOfNegative)
+    }
     
     
     // MARK: TASK 14
