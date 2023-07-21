@@ -14,10 +14,11 @@ import Foundation
 
 class TestViewController: UIViewController {
     
+    var arr = [0,1,2,3]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(countOfPositivesSumOfNegatives2([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]))
+        print(noOdds2Hard( array: inout arr))
         
     }
     
@@ -378,7 +379,7 @@ class TestViewController: UIViewController {
     }
     
     
-    // MARK: TASK 14
+    // MARK: TASK 14 ✅ while
     
     /*
      14. Реализовать функцию возведения в степень
@@ -391,11 +392,20 @@ class TestViewController: UIViewController {
      }
      */
     
+    func numberToPower2(_ number: Int, _ power: Int) -> Int {
+        var degree = 1
+        var result = number
+        
+        while degree != power {
+            result *= number
+            degree += 1
+        }
+        return result
+    }
     
     
     
-    
-    // MARK: Task 15.
+    // MARK: Task 15. Simple version ✅ while | Hard version ❌
     
     
     /*
@@ -407,14 +417,44 @@ class TestViewController: UIViewController {
      func noOdds(array: [Int]) -> [Int] {
      }
      
+     
      (Усложненный вариант - удаление элементов из массива)
      func noOdds(array: inout [Int]) -> [Int] {
      }
      */
     
+    func noOdds2(array: [Int]) -> [Int] {
+        var index = 0
+        var internalArray = array
+        
+        while index != array.count {
+            if array[index] % 2 != 0 {
+                internalArray.remove(at: internalArray.firstIndex(of: array[index])!)
+                index += 1
+            } else {
+                index += 1
+            }
+        }
+        return internalArray
+    }
+    
+    func noOdds2Hard(array: inout [Int]) -> [Int] {
+        var index = 0
+        // var internalArray = array
+        
+        while index != array.count {
+            if array[index] % 2 != 0 {
+                array.remove(at: array.firstIndex(of: array[index])!)
+                index += 1
+            } else {
+                index += 1
+            }
+        }
+        return array
+    }
     
     
-    // MARK: Task 16
+    // MARK: Task 16 ✅ while
     
     /*
      16. Найти сумму минимальных значений
@@ -426,7 +466,26 @@ class TestViewController: UIViewController {
      }
      */
     
-    
+    func sumOfMinimums2(_ array: [[Int]]) -> Int {
+        var minNumber = 0
+        var index = 0
+        var subIndex = 0
+        var firstNumber = 0
+        var result = Int()
+        
+        while index != array.count {
+            minNumber = array[index][0]
+            if minNumber < array[index][subIndex] {
+                firstNumber = array[index][subIndex]
+                subIndex += 1
+            } else {
+                subIndex += 1
+            }
+            result += minNumber
+            index += 1
+        }
+        return result
+    }
     
     
     // MARK: Task 17
