@@ -558,11 +558,6 @@ func rootOrSquare1(_ array: [Int]) -> [Int] {
  }
  */
 
-// may be i should just add two checks for the "target" input?
-// Like the first one should compare it to value and another just should check is possibe target
-// smaller or bigger than the previous one.
-// our index should be equal to the value + 1 when target can't be bigger than the next one
-
 func findIndex1(_ array: [Int], target: Int) -> Int {
     var result = Int()
     for (index, value) in array.enumerated() {

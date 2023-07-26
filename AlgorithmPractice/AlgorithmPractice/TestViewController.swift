@@ -18,7 +18,8 @@ class TestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(noOdds2Hard( array: inout arr))
+        print(differenceMaxMin2([1, 434, 555, 34, 112]))
+        
         
     }
     
@@ -405,7 +406,7 @@ class TestViewController: UIViewController {
     
     
     
-    // MARK: Task 15. Simple version ✅ while | Hard version ❌
+    // MARK: Task 15. Simple version ✅ while | Hard version ✅
     
     
     /*
@@ -440,16 +441,17 @@ class TestViewController: UIViewController {
     
     func noOdds2Hard(array: inout [Int]) -> [Int] {
         var index = 0
-        // var internalArray = array
+        var internalArray = array
         
         while index != array.count {
             if array[index] % 2 != 0 {
-                array.remove(at: array.firstIndex(of: array[index])!)
+                internalArray.remove(at: internalArray.firstIndex(of: array[index])!)
                 index += 1
             } else {
                 index += 1
             }
         }
+        array = internalArray
         return array
     }
     
@@ -488,7 +490,7 @@ class TestViewController: UIViewController {
     }
     
     
-    // MARK: Task 17
+    // MARK: Task 17 ✅ while
     
     /*
      17. Функция принимает число и символ и возвращает строку
@@ -500,11 +502,20 @@ class TestViewController: UIViewController {
      }
      */
     
+    func repeatChar(_ count: Int, string: String) -> String {
+        var index = 0
+        var result = String()
+        
+        while index != count {
+            result.append(string)
+            index += 1
+        }
+        return result
+    }
     
     
     
-    
-    // MARK: Task 18
+    // MARK: Task 18 ✅ while
     
     /*
      18. Замена всех символов строки на символ (contamination)
@@ -517,13 +528,22 @@ class TestViewController: UIViewController {
      }
      */
     
+    func contamination(string: String, char: String) -> String {
+        var index = 0
+        var internalString = String()
+        
+        while index != string.count {
+            internalString += char
+            index += 1
+        }
+        return internalString
+    }
     
     
-    
-    // MARK: Task 19
+    // MARK: Task 19 ✅ while
     
     /*
-     19. Удалить пустые символы из строкик
+     19. Удалить пустые символы из строки
      
      "8 j 8   mBliB8g  imjB8B8  jl  B" -> "8j8mBliB8gimjB8B8jlB"
      "8aaaaa dddd r     " -> "8aaaaaddddr"
@@ -532,9 +552,22 @@ class TestViewController: UIViewController {
      }
      */
     
+    func removeSpaces(string: String) -> String {
+        var index = 0
+        var internalString = Array(string)
+        
+        while index != internalString.count {
+            if internalString[index] == " " {
+                internalString.remove(at: internalString.firstIndex(of: internalString[index])!)
+            } else {
+                index += 1
+            }
+        }
+        return String(internalString)
+    }
     
     
-    // MARK: Task 20
+    // MARK: Task 20 ✅
     
     /*
      20. Вывести количество символов самого маленького слова в предложении
@@ -545,10 +578,39 @@ class TestViewController: UIViewController {
      }
      */
     
+    func countMinWord2(_ string: String) -> Int {
+        var index = 0
+        var count = 0
+        var internalArray = Array(string)
+        var arrayOfWordsCount = [Int]()
+        
+        while index != internalArray.count{
+            if internalArray[index] == " " || index == internalArray.count {
+                arrayOfWordsCount.append(count)
+                count = 0
+                index += 1
+            } else {
+                count += 1
+                index += 1
+            }
+        }
+         arrayOfWordsCount.append(count)
+        
+        var subIndex = 0
+        var firstCountNumber = arrayOfWordsCount[0]
+        while subIndex != arrayOfWordsCount.count {
+            if arrayOfWordsCount[subIndex] < firstCountNumber {
+                firstCountNumber = arrayOfWordsCount[subIndex]
+                subIndex += 1
+            } else {
+                subIndex += 1
+            }
+        }
+        return firstCountNumber
+    }
     
     
-    
-    // MARK: Task 21
+    // MARK: Task 21 ✅
     
     /*
      21. Возвести в квадрат число если не берется корень или взять корень числа  и вернуть массив
@@ -559,11 +621,36 @@ class TestViewController: UIViewController {
      }
      */
     
+    func rootOrSquare2(_ array: [Int]) -> [Int] {
+        var index = 0
+        var internalArray = [Int]()
+        
+        while index != array.count {
+            if (Double(array[index]).squareRoot() *
+               (Double(array[index]).squareRoot())) ==
+                Double(array[index]) {
+                internalArray.append(Int(Double(array[index]).squareRoot()))
+                index += 1
+            } else {
+                internalArray.append(array[index] * array[index])
+                index += 1
+            }
+        }
+        return internalArray
+    }
+    
+//    for number in array {
+//        if (Double(number).squareRoot() * (Double(number).squareRoot()) == (Double(number))) {
+//            internalArray.append(Int(Double(number).squareRoot()))
+//        } else {
+//            internalArray.append(number * number)
+//        }
+//    }
     
     
     
     
-    // MARK: Task 22
+    // MARK: Task 22 ❌
     
     /*
      22. Есть отсортированный массив. Найти индекс числа или
@@ -577,15 +664,18 @@ class TestViewController: UIViewController {
      }
      */
     
-    // may be i should just add two checks for the "target" input?
-    // Like the first one should compare it to value and another just should check is possibe target
-    // smaller or bigger than the previous one.
-    // our index should be equal to the value + 1 when target can't be bigger than the next one
+//    func findIndex(_ array: [Int], target: Int) -> Int {
+//        var index = 0
+//
+//        while index != array.count {
+//
+//        }
+//    }
     
     
     
     
-    // MARK: Task 23
+    // MARK: Task 23 ✅
     
     /*
      23. Написать функцию которая умножает каждый элемент на индекс
@@ -595,11 +685,20 @@ class TestViewController: UIViewController {
      func multiplyIndex(_ array: [Int]) -> [Int] {
      }
      */
+    func multiplyIndex2(_ array: [Int]) -> [Int] {
+        var index = 0
+        var internalArray = [Int]()
+        
+        while index != array.count {
+            internalArray.append(array[index] * index)
+            index += 1
+        }
+        return internalArray
+    }
     
     
     
-    
-    // MARK: Task 24
+    // MARK: Task 24 ❌
     
     /*
      24. Написать функцию которая возводит каждый элемент в степень по счету
@@ -611,6 +710,15 @@ class TestViewController: UIViewController {
      }
      */
     
+//    func multiplyPower2(_ array: [Int]) -> [Int] {
+//        var index = 0
+//        var internalArray = [Int]()
+//        while index != array.count {
+//            internalArray.append(numberToPower2(array[index], index))
+//            index += 1
+//        }
+//        return internalArray
+//    }
     
     
     
@@ -618,8 +726,7 @@ class TestViewController: UIViewController {
     
     
     
-    
-    // MARK: Task 25
+    // MARK: Task 25 ✅
     
     /*
      25. Написать функцию которая конвертирует строку в массив Character
@@ -633,7 +740,15 @@ class TestViewController: UIViewController {
      func convertToArray(_ string: String) -> Array<Character> {
      }
      */
-    
+    func converToArray2(_ string: String) -> Array<Character> {
+        var index = 0
+        var charArr = [Character]()
+        while index != string.count {
+             charArr.append(Array(string)[index])
+            index += 1
+        }
+        return charArr
+    }
     
     
     
@@ -653,7 +768,7 @@ class TestViewController: UIViewController {
     
     
     
-    // MARK: Task 27
+    // MARK: Task 27 ✅
     
     /*
      27. Найти первый индекс элемента в строке
@@ -666,10 +781,25 @@ class TestViewController: UIViewController {
      }
      */
     
+    func firstSymbolIndex2(word: String, symbol: Character) -> Int {
+        var index = 0
+        var internalString = Array(word)
+        var result = Int()
+        while index != word.count {
+            if internalString[index] == symbol {
+                result = index
+                break
+            } else {
+                index += 1
+            }
+        }
+        return result
+    }
     
     
     
-    // MARK: Task 28
+    
+    // MARK: Task 28 ✅
     
     /*
      28. Найти второй индекс элемента в строке
@@ -681,13 +811,31 @@ class TestViewController: UIViewController {
      func secondSymbolIndex(word: String, symbol: Character) -> Int {
      }
      */
+    func secondSymbolIndex2(word: String, symbol: Character) -> Int {
+        var index = 0
+        var internalString = Array(word)
+        var result = Int()
+        var hit = false
+        while index != word.count {
+            if internalString[index] == symbol {
+                result = index
+                hit = true
+                index += 1
+            } else if internalString[index] == symbol && hit == true {
+                result = index
+                break
+            } else {
+                index += 1
+            }
+        }
+        return result
+    }
     
     
     
     
     
-    
-    // MARK: Task 29
+    // MARK: Task 29 ✅
     
     /*
      29. Суммировать четные числа
@@ -698,10 +846,22 @@ class TestViewController: UIViewController {
      }
      */
     
+    func sumEvenNumbers2(array: [Int]) -> Int {
+        var index = 0
+        var summ = 0
+        while index != array.count {
+            if array[index] % 2 == 0 {
+                summ += array[index]
+                index += 1
+            } else {
+                index += 1
+            }
+        }
+        return summ
+    }
     
     
-    
-    // MARK: Task 30
+    // MARK: Task 30 ✅
     
     /*
      30. Посчитать разницу между максимальным и минимальным
@@ -712,7 +872,23 @@ class TestViewController: UIViewController {
      func differenceMaxMin(_ array: [Int]) -> Int {
      }
      */
-    
+    func differenceMaxMin2(_ array: [Int]) -> Int {
+        var index = 0
+        var minNumber = array[0]
+        var maxNumber = array[0]
+        while index != array.count {
+            if array[index] > maxNumber {
+                maxNumber = array[index]
+                index += 1
+            } else if array[index] < minNumber {
+                minNumber = array[index]
+                index += 1
+            } else {
+                index += 1
+            }
+        }
+        return maxNumber - minNumber
+    }
     
     
     
@@ -730,7 +906,6 @@ class TestViewController: UIViewController {
      func consecutive(_ array: [Int]) -> Int {
      }
      */
-    
     
     
     // MARK: Task 32
