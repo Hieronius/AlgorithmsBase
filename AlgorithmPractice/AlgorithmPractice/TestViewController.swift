@@ -18,8 +18,7 @@ class TestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(differenceMaxMin2([1, 434, 555, 34, 112]))
-        
+        print(largest2(count: 2, array: [7,6,5,4,3,2,1]))
         
     }
     
@@ -752,7 +751,7 @@ class TestViewController: UIViewController {
     
     
     
-    // MARK: Task 26
+    // MARK: Task 26 ❌
     
     /*
      (string.enumerated, удаление элементов)
@@ -764,7 +763,9 @@ class TestViewController: UIViewController {
      func removeFirstLast(_ string: String?) -> String {
      }
      */
-    
+//    func removeFirstLast(_ string: String?) -> String {
+//
+//    }
     
     
     
@@ -893,7 +894,7 @@ class TestViewController: UIViewController {
     
     
     
-    // MARK: Task 31
+    // MARK: Task 31 ✅
     
     /*
      31. Дана последовательность, найти сколько пропущено между минимальным и максимальным элементом массива
@@ -906,9 +907,26 @@ class TestViewController: UIViewController {
      func consecutive(_ array: [Int]) -> Int {
      }
      */
+    func consecutive2(_ array: [Int]) -> Int {
+        var index = 0
+        var step = 1
+        var result = 0
+        
+        while index != array.count - 1 {
+            if array[index] + 1 == array[index + 1] {
+                print("this number is correct")
+                index += 1
+            } else {
+                print("gotcha missed element")
+                result += 1
+                index += 1
+            }
+        }
+        return result
+    }
     
     
-    // MARK: Task 32
+    // MARK: Task 32 ❌ Here
     
     /*
      32. Вытащить максимальные элементы из массива в заданном количестве
@@ -918,6 +936,32 @@ class TestViewController: UIViewController {
      func largest(count: Int, array: [Int]) -> [Int] {
      }
      */
+    
+    func largest2(count: Int, array: [Int]) -> [Int] {
+        var index = 0
+        var result = [Int]()
+        var attempt = 0
+        var internalArray = array
+        var firstNumber = internalArray[index]
+        
+        while attempt != count {
+            while index != internalArray.count + 1 {
+                if internalArray[index] > firstNumber {
+                    firstNumber == internalArray[index]
+                    index += 1
+                    print("got a bigger number")
+                } else {
+                    index += 1
+                    print("got nothing")
+                }
+            }
+            print(firstNumber)
+            result.append(firstNumber)
+            internalArray.remove(at: internalArray.firstIndex(of: firstNumber)!)
+            attempt += 1
+        }
+        return result
+    }
     
     
     
@@ -1130,3 +1174,38 @@ class TestViewController: UIViewController {
      */
     
 }
+
+//var array = [1, 2, 5, 1, 1, 1, 3, 2, 1, 5, 6, 4]
+//
+//func removeNumber(_ array: inout [Int]) -> [Int] {
+//    var leftIndex = 0
+//    var rightIndex = array.count
+//
+//
+//    while leftIndex < rightIndex {
+//
+//        if array[leftIndex] == 1 {
+//            array.remove(at: leftIndex)
+//            rightIndex -= 1
+//        } else {
+//            leftIndex += 1
+//        }
+//        if array[rightIndex] == 1 {
+//            array.remove(at: rightIndex)
+//            //rightIndex -= 1
+//        } else {
+//            rightIndex -= 1
+//        }
+//
+//
+//    }
+//
+//    while index != array.count {
+//        if array[index] == 1 {
+//            array.remove(at: index)
+//        } else {
+//            index += 1
+//         }
+//    }
+//    return array
+//}
