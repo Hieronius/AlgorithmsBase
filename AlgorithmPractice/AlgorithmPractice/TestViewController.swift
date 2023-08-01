@@ -18,7 +18,7 @@ class TestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(largest2(count: 2, array: [7,6,5,4,3,2,1]))
+        print(insertDash2(string: "454793"))
         
     }
     
@@ -966,7 +966,7 @@ class TestViewController: UIViewController {
     
     
     
-    // MARK: Task 33
+    // MARK: Task 33 ❌ Here
     
     /*
      33. Написать фукнцию которая проставит тире между нечетными числами
@@ -977,7 +977,24 @@ class TestViewController: UIViewController {
      }
      */
     
-    
+    func insertDash2(string: String) -> String {
+        var index = 0
+        var internalArray = Array(string)
+        var example = Int(String(internalArray[0]))
+        
+        while index != internalArray.count + 1 {
+            if Int(String(internalArray[index]))! % 2 != 0 && Int(String(internalArray[index + 1]))! % 2 != 0 {
+                print("it's an odd number")
+                internalArray[index] = "-"
+                internalArray.insert("-", at: index + 1)
+                index += 1
+            } else {
+                print("it's an even number")
+                index += 1
+            }
+        }
+        return String(internalArray)
+    }
     
     
     
