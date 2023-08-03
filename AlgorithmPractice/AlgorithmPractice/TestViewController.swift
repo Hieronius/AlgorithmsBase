@@ -18,7 +18,8 @@ class TestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(insertDash2(string: "454793"))
+        print(maskify2(string: "4556364607935616"))
+        
         
     }
     
@@ -998,7 +999,7 @@ class TestViewController: UIViewController {
     
     
     
-    // MARK: Task 34
+    // MARK: Task 34 ✅
     
     /*
      34. По какоми индексу вставить число в отсортированном массиве
@@ -1010,12 +1011,26 @@ class TestViewController: UIViewController {
      func keepOrder(array: [Int], element: Int) -> Int {
      }
      */
+    func keepOrder2(array: [Int], element: Int) -> Int {
+        var index = 0
+        var result = 0
+        while index != array.count {
+            if array[index] > element {
+                print("there is a place")
+                result = index
+                break
+            } else {
+                print("wrong position")
+                index += 1
+            }
+        }
+        return result
+    }
     
     
     
     
-    
-    // MARK: Task 35
+    // MARK: Task 35 ✅
     
     /*
      35. Порезать строку
@@ -1026,12 +1041,23 @@ class TestViewController: UIViewController {
      func trim(_ string: String, _ num: Int) -> String {
      }
      */
+    func trim2(_ string: String, _ num: Int) -> String {
+        var index = 0
+        let internalArray = Array(string)
+        var resultArray = String()
+        
+        while index != internalArray.count - num {
+            resultArray.append(internalArray[index])
+            index += 1
+        }
+        
+        return resultArray
+    }
     
     
     
     
-    
-    // MARK: Task 36
+    // MARK: Task 36 ✅
     
     /*
      36. Каждый элемент поделить на порядок в массиве и суммировать
@@ -1042,7 +1068,16 @@ class TestViewController: UIViewController {
      func add(array: [Int]) -> Int {
      }
      */
-    
+    func add2(array: [Int]) -> Int {
+        var index = 0
+        var result = 0
+        
+        while index != array.count {
+            result += array[index] / (index + 1)
+            index += 1
+        }
+        return result
+    }
     
     
     // MARK: Theoretical question. 4 способа создания пустого массива
@@ -1052,7 +1087,7 @@ class TestViewController: UIViewController {
     //    var array3 = [Int]()
     //    var array4 = Array<Int>()
     
-    // MARK: Task 37
+    // MARK: Task 37 ✅
     
     /*
      37. Сделать маску для номера кредитной карты чтобы отображались только последние 4 цифры
@@ -1061,7 +1096,17 @@ class TestViewController: UIViewController {
      func maskify(string: String) -> String {
      }
      */
-    
+    func maskify2(string: String) -> String {
+        var index = 0
+        var internalArray = Array(string)
+        var resultArray = String()
+        
+        while index != internalArray.count - 4 {
+            internalArray[index] = "*"
+            index += 1
+        }
+        return String(internalArray)
+    }
     
     
     
