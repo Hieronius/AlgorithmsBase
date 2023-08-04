@@ -18,7 +18,7 @@ class TestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(removeSmallest2([5,3,2,1,4]))
+        print(firstNonConsequitive2(array: [1, 2, 3, 4, 5, 7, 8, 9]))
         
         
     }
@@ -1145,7 +1145,7 @@ class TestViewController: UIViewController {
     
     
     
-    // MARK: Task 39
+    // MARK: Task 39 ✅ Done in previous iteration with "for-in"
     
     /*
      39. Один массив прибавить ко второму массиву - все способы
@@ -1159,7 +1159,7 @@ class TestViewController: UIViewController {
     
     
     
-    // MARK: Task 40
+    // MARK: Task 40 ✅
     
     /*
      40. Вернуть первый непоследовательный элемент и его индекс
@@ -1169,7 +1169,21 @@ class TestViewController: UIViewController {
      func firstNonConsequitive(array: [Int]) -> Int {
      }
      */
-    
+    func firstNonConsequitive2(array: [Int]) -> Int {
+        var index = 0
+        var step = 1
+        var result = Int()
+        
+        while index != array.count - 1 {
+            if array[index] + step == array[index + 1] {
+                index += 1
+            } else {
+                result = array[index + 1]
+                break
+            }
+        }
+        return result
+    }
     
     
     
