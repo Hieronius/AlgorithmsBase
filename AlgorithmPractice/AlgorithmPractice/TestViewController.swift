@@ -18,7 +18,7 @@ class TestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(maskify2(string: "4556364607935616"))
+        print(removeSmallest2([5,3,2,1,4]))
         
         
     }
@@ -1111,7 +1111,7 @@ class TestViewController: UIViewController {
     
     
     
-    // MARK: Task 38
+    // MARK: Task 38 ✅
     
     /*
      38. Найти минимальный элемент в массиве и удалить его из массива
@@ -1124,6 +1124,22 @@ class TestViewController: UIViewController {
      [2,1,2,1,2,1] -> [2,2,2]
      [0,1,0,1,0] -> [1,1]
      */
+    func removeSmallest2(_ array: [Int]) -> [Int] {
+        var index = 0
+        var smallestNumber = array[0]
+        var internalArray = array
+        
+        while index != internalArray.count {
+            if internalArray[index] < smallestNumber {
+                smallestNumber = internalArray[index]
+                index += 1
+            } else {
+                index += 1
+            }
+        }
+        internalArray.remove(at: internalArray.firstIndex(of: smallestNumber)!)
+        return internalArray
+    }
     
     
     
