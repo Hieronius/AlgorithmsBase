@@ -18,7 +18,8 @@ class TestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(masked2(string: "123123123124312"))
+         print(sumOfValues2(array: ["1", 2, 3.5]))
+        // print(Double("4.3"))
         
         
     }
@@ -1315,7 +1316,7 @@ class TestViewController: UIViewController {
     
     
     
-    // MARK: Task 45
+    // MARK: Task 45 ✅
     
     /*
      45. Написать фукнцию суммирования всех элементов массива
@@ -1326,6 +1327,23 @@ class TestViewController: UIViewController {
      func sumOfValues(array: [Any]) -> Double {
      }
      */
+    func sumOfValues2(array: [Any]) -> Double {
+        var index = 0
+        var result = Double()
+        
+        while index != array.count {
+            if let value = array[index] as? Double {
+                result += value
+                index += 1
+            } else if let value = array[index] as? Int {
+                result += Double(value)
+                index += 1
+            } else if let value = array[index] as? String {
+                result += Double(value)!
+                index += 1
+            }
+        }
+        return result
+    }
     
 }
-
