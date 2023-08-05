@@ -935,7 +935,7 @@ func firstNonConsequitive3(array: [Int]) -> Int {
     return number
 }
 
-// MARK: Task 41 ✅ / Can do it better ❗️
+// MARK: Task 41 ❌
 
 /*
  41. Проверить что массив монотонно убывающий
@@ -948,27 +948,9 @@ func firstNonConsequitive3(array: [Int]) -> Int {
  }
  */
 
-func isDecreasing3(array: [Int]) -> Bool {
-    var delta = false
-    var internalArray = array
-    var currentIndex = 0
-    
-    while currentIndex < internalArray.count - 2  {
-        
-       if internalArray[currentIndex] >= internalArray[currentIndex + 1] &&
-            internalArray[currentIndex + 1] >= internalArray[currentIndex + 2] {
-           currentIndex += 1
-           delta = true
-           
-       } else {
-           delta = false
-           break
-       }
-    }
-     return delta
-}
 
-// MARK: Task 42 ✅ / Not tested enough | can be better ❗️
+
+// MARK: Task 42 ❌ / Not tested enough | can be better ❗️
 
 /*
  42. Написать функцию которая принимает массив чисел и проверяет монотонный он или нет
@@ -985,32 +967,7 @@ func isDecreasing3(array: [Int]) -> Bool {
  }
  */
 
-func isMonotone3(_ array: [Int]) -> Bool {
-    var delta = false
-    // let internalArray = array
-    var currentIndex = 0
-    
-    while currentIndex < array.count - 2  {
-        
-       if array[currentIndex] >= array[currentIndex + 1] &&
-            array[currentIndex + 1] >= array[currentIndex + 2] {
-           
-           currentIndex += 1
-           delta = true
-           
-       } else if array[currentIndex] <= array[currentIndex + 1] &&
-                    array[currentIndex + 1] <= array[currentIndex + 2] {
-           
-           currentIndex += 1
-           delta = true
-           
-       } else {
-           delta = false
-           break
-       }
-    }
-     return delta
-}
+
 
 // MARK: Task 43 ✅ The same as 37 task
 

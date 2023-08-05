@@ -18,7 +18,7 @@ class TestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(firstNonConsequitive2(array: [1, 2, 3, 4, 5, 7, 8, 9]))
+        print(masked2(string: "123123123124312"))
         
         
     }
@@ -1187,7 +1187,7 @@ class TestViewController: UIViewController {
     
     
     
-    // MARK: Task 41
+    // MARK: Task 41 ✅
     
     /*
      41. Проверить что массив монотонно убывающий
@@ -1199,11 +1199,29 @@ class TestViewController: UIViewController {
      func isIncreasing(array: [Int]) -> Bool {
      }
      */
+    func isDecreasing2(array: [Int]) -> Bool {
+        var delta = false
+        var internalArray = array
+        var currentIndex = 0
+        
+        while currentIndex < internalArray.count - 2  {
+            
+           if internalArray[currentIndex] >= internalArray[currentIndex + 1] &&
+                internalArray[currentIndex + 1] >= internalArray[currentIndex + 2] {
+               currentIndex += 1
+               delta = true
+               
+           } else {
+               delta = false
+               break
+           }
+        }
+         return delta
+    }
     
     
     
-    
-    // MARK: Task 42
+    // MARK: Task 42 ✅
     
     /*
      42. Написать функцию которая принимает массив чисел и проверяет монотонный он или нет
@@ -1219,10 +1237,35 @@ class TestViewController: UIViewController {
      func isMonotone(_ array: [Int]) -> Int {
      }
      */
+    func isMonotone2(_ array: [Int]) -> Bool {
+        var delta = false
+        // let internalArray = array
+        var currentIndex = 0
+        
+        while currentIndex < array.count - 2  {
+            
+           if array[currentIndex] >= array[currentIndex + 1] &&
+                array[currentIndex + 1] >= array[currentIndex + 2] {
+               
+               currentIndex += 1
+               delta = true
+               
+           } else if array[currentIndex] <= array[currentIndex + 1] &&
+                        array[currentIndex + 1] <= array[currentIndex + 2] {
+               
+               currentIndex += 1
+               delta = true
+               
+           } else {
+               delta = false
+               break
+           }
+        }
+         return delta
+    }
     
     
-    
-    // MARK: Task 43
+    // MARK: Task 43 ✅
     
     /*
      43.Маскировать кредитную карту
@@ -1233,10 +1276,22 @@ class TestViewController: UIViewController {
      
      func masked(string: String) -> String {
      }
-     
      */
     
-    // MARK: Task 44
+    func masked2(string: String) -> String {
+        
+        var index = 0
+        var internalArray = Array(string)
+        var resultArray = String()
+        
+        while index != internalArray.count - 4 {
+            internalArray[index] = "*"
+            index += 1
+        }
+        return String(internalArray)
+    }
+    
+    // MARK: Task 44 ✅
     
     /*
      44. Сконвертироват значение типа Any в тип данных Int
@@ -1249,6 +1304,13 @@ class TestViewController: UIViewController {
      return 0
      }
      */
+    func someToInt2(_ value: Any) -> Int {
+        if let value = value as? Int {
+            return value
+        } else {
+            return 0
+        }
+    }
     
     
     
@@ -1267,37 +1329,3 @@ class TestViewController: UIViewController {
     
 }
 
-//var array = [1, 2, 5, 1, 1, 1, 3, 2, 1, 5, 6, 4]
-//
-//func removeNumber(_ array: inout [Int]) -> [Int] {
-//    var leftIndex = 0
-//    var rightIndex = array.count
-//
-//
-//    while leftIndex < rightIndex {
-//
-//        if array[leftIndex] == 1 {
-//            array.remove(at: leftIndex)
-//            rightIndex -= 1
-//        } else {
-//            leftIndex += 1
-//        }
-//        if array[rightIndex] == 1 {
-//            array.remove(at: rightIndex)
-//            //rightIndex -= 1
-//        } else {
-//            rightIndex -= 1
-//        }
-//
-//
-//    }
-//
-//    while index != array.count {
-//        if array[index] == 1 {
-//            array.remove(at: index)
-//        } else {
-//            index += 1
-//         }
-//    }
-//    return array
-//}
