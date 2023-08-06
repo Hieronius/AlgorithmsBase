@@ -7,34 +7,6 @@
 
 import Foundation
 
-/*
- №1
- for number in array.enumerated() {
-     
- }
- 
- №2
- for index in 0..<array.count {
-     if array[index] > 0 {
-         counter += 1
-     }
- }
- 
- №3
- for number in array {
- }
- 
- */
-
-/*
- 
- № 4
- while
- 
- */
-
-
-
 
 // MARK: Task 1 ✅
 /*
@@ -45,26 +17,10 @@ import Foundation
  func sumOfPositives(_ array: [Int]) -> Int {
  }
  
- reduce()
- for-in
- while
+ 
  */
-
-let array1 = [1,-4,7,12]
-
-
-func getSumWithForIn3(array: [Int]) -> Int {
-    
-    
-
-    
-    var counter = 0
-    for number in array {
-        if number > 0 {
-            counter += number
-        }
-    }
-    return counter
+func getSumWithForInt3(array: [Int]) -> Int {
+    array.filter {$0>0}.reduce(0,+)
 }
 
 // MARK: Task 2 ✅
@@ -97,14 +53,7 @@ func multiplyOfElements3(_ array: [Int]) -> Int {
  */
 
 func summation3(_ num: Int) -> Int {
-    var sum = 0
-    var counter = 0
-    while counter <= num {
-        sum += counter
-        counter += 1
-        
-    }
-    return counter
+    Array(1...num).reduce(0,+)
 }
 
 // MARK: Task 4 ✅
@@ -151,33 +100,6 @@ func invert3(_ array: [Int]) -> [Int] {
  }
  
  */
-
-//func bubbleSort(_ input: [Int]) -> [Int] {
-//    guard input.count > 1 else {
-//        return input
-//    }
-//    var result = input
-//
-//    let count = result.count
-//
-//    var isSwapped = false
-//
-//    repeat {
-//
-//        isSwapped = false
-//
-//        for index in 1..<count {
-//            if result[index] < result[index-1] {
-//                print(result)
-//                result.swapAt(index-1, index)
-//                isSwapped = true
-//            }
-//        }
-//    } while isSwapped
-//
-//    return result
-//}
-
 func findSmallest3(_ array: [Int]) -> Int {
     bubbleSort(array).first ?? 1
 }
@@ -209,15 +131,7 @@ func minMax3(_ array: [Int]) -> (Int, Int) {
  */
 
 func sumOfAbs3(_ array: [Int]) -> Int {
-    var result = 0
-    for number in array {
-        if number > 0 {
-            result += number
-        } else {
-            result += -(number)
-        }
-    }
-    return result
+    array.map {(abs($0))}.reduce(0,+)
 }
 
 // MARK: Task 9 ✅

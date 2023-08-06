@@ -17,6 +17,7 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print(sumOfAbs3([-1, 2, -3, 4, -5]))
     }
 }
 

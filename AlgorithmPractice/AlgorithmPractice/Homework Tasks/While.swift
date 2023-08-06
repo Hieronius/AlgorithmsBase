@@ -1328,5 +1328,3 @@ func sumOfValues2(array: [Any]) -> Double {
     }
     return result
 }
-
-}
