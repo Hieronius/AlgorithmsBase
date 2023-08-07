@@ -200,10 +200,9 @@ func average3(_ marks: [Int]) -> Int {
 
 func convert3(num: Int) -> String {
     var result = String()
-    for number in Array(1...num) {
-        number % 2 == 0 ? result.append("0") : result.append("1")
+    Array(0..<num).filter { $0 % 2 == 0 ? result.append("1") : result.append("0")
+        return true
     }
-    // return (Array(1...num)).map {($0 % 2 == 0) ? result.append("0") : result.append("1") }
     return result
 }
 
