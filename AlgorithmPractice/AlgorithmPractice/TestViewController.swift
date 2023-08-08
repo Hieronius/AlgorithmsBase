@@ -17,7 +17,7 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(convert3(num: 12))
+        print(numberToPower3(2, 4))
     }
 }
 

@@ -224,7 +224,7 @@ func countOfPositivesSumOfNegatives3(_ array: [Int]) -> (Int, Int) {
     return (counterOfPositiveNumbers, sumOfNegativeNumbers.reduce(0, +))
 }
 
-// MARK: TASK 14 ✅ / ❗️ Can be better
+// MARK: TASK 14 ✅ / ❗️ Can be better / ❌ Here
 
 /*
  14. Реализовать функцию возведения в степень
@@ -238,13 +238,16 @@ func countOfPositivesSumOfNegatives3(_ array: [Int]) -> (Int, Int) {
  */
 
 func numberToPower3(_ number: Int, _ power: Int) -> Int {
-    var index = 1
-    var result = number
-    while index != power {
-        result *= number
-        index += 1
-    }
-    return result
+    
+    return (number * power) + number
+    
+//    var index = 1
+//    var result = number
+//    while index != power {
+//        result *= number
+//        index += 1
+//    }
+//    return result
 }
 
 // MARK: Task 15. Simple difficulty ✅
