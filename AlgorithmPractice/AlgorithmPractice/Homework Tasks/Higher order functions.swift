@@ -374,12 +374,13 @@ func countMinWord3(_ string: String) -> Int {
 
 func rootOrSquare3(_ array: [Int]) -> [Int] {
     var result = [Int]()
-    for number in array {
-        if number % number == 0 {
-            result.append(Int(sqrt(Double(number / number))))
+    array.filter { number in
+        if sqrt(Double(number)) * sqrt(Double(number)) == Double(number) {
+            result.append(Int(sqrt(Double(number))))
         } else {
             result.append(number * number)
         }
+        return true
     }
     return result
 }

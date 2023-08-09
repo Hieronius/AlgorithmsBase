@@ -17,7 +17,7 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(numberToPower3(2, 4))
+        print(rootOrSquare3([4,3,9,7,2,1]))
     }
 }
 
