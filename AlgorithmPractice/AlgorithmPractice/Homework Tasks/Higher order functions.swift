@@ -224,7 +224,7 @@ func countOfPositivesSumOfNegatives3(_ array: [Int]) -> (Int, Int) {
     return (counterOfPositiveNumbers, sumOfNegativeNumbers.reduce(0, +))
 }
 
-// MARK: TASK 14 ✅ / ❗️ Can be better / ❌ Here
+// MARK: TASK 14 ❌ Here
 
 /*
  14. Реализовать функцию возведения в степень
@@ -361,7 +361,7 @@ func countMinWord3(_ string: String) -> Int {
     25
 }
 
-// MARK: Task 21 ❌
+// MARK: Task 21 ✅
 
 /*
  21. Возвести в квадрат число если не берется корень или взять корень числа  и вернуть массив
@@ -451,14 +451,20 @@ func multiplyIndex3(_ array: [Int]) -> [Int] {
  */
 
 func multiplyPower3(_ array: [Int]) -> [Int] {
-    var index = 0
-    var degree = 1
+    
     var result = [Int]()
-    while index != array.count {
-        result.append(numberToPower3(array[index], degree))
-        index += 1
-        degree += 1
-    }
+    // result = array.map {$0 * (array.firstIndex(of: $0)! + 1)}
+    result = array.map {numberToPower3($0, array.firstIndex(of: $0)!)}
+    
+    
+//    var index = 0
+//    var degree = 1
+//    var result = [Int]()
+//    while index != array.count {
+//        result.append(numberToPower3(array[index], degree))
+//        index += 1
+//        degree += 1
+//    }
     return result
 }
 
