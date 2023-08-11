@@ -239,7 +239,9 @@ func countOfPositivesSumOfNegatives3(_ array: [Int]) -> (Int, Int) {
 
 func numberToPower3(_ number: Int, _ power: Int) -> Int {
     
-    return (number * power) + number
+    Array(1...power).map {$0 * number}.reduce(1,*)
+    
+    // return (number * power) + number
     
 //    var index = 1
 //    var result = number
