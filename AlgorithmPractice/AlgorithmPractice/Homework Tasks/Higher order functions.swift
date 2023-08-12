@@ -224,7 +224,7 @@ func countOfPositivesSumOfNegatives3(_ array: [Int]) -> (Int, Int) {
     return (counterOfPositiveNumbers, sumOfNegativeNumbers.reduce(0, +))
 }
 
-// MARK: TASK 14 ❌ Here
+// MARK: TASK 14 ❌ / ✅ Solved with while but not with High Order function
 
 /*
  14. Реализовать функцию возведения в степень
@@ -239,17 +239,19 @@ func countOfPositivesSumOfNegatives3(_ array: [Int]) -> (Int, Int) {
 
 func numberToPower3(_ number: Int, _ power: Int) -> Int {
     
-    Array(1...power).map {$0 * number}.reduce(1,*)
+    var index = 1
+    var result = number
     
-    // return (number * power) + number
     
-//    var index = 1
-//    var result = number
-//    while index != power {
-//        result *= number
-//        index += 1
-//    }
-//    return result
+    if power > 0 {
+        while index != power {
+            result *= number
+            index += 1
+        }
+    } else {
+        print("Power can't be 0")
+    }
+    return result
 }
 
 // MARK: Task 15. Simple difficulty ✅
@@ -279,7 +281,6 @@ func noOdds3(array: [Int]) -> [Int] {
 var noOddsArray = [0, 1, 2, 3]
 func noOdds3(array: inout [Int]) -> [Int] {
     return array.map { ($0 % 2 != 0) ? array.remove(at: array.firstIndex(of: $0)!) : 5 }
-    // return array.filter { ($0 % 2 == 0) ? array.remove(at: array.firstIndex(of: $0)!) : 5 }
 }
 
 // MARK: Task 16 ✅
@@ -453,21 +454,7 @@ func multiplyIndex3(_ array: [Int]) -> [Int] {
  */
 
 func multiplyPower3(_ array: [Int]) -> [Int] {
-    
-    var result = [Int]()
-    // result = array.map {$0 * (array.firstIndex(of: $0)! + 1)}
-    result = array.map {numberToPower3($0, array.firstIndex(of: $0)!)}
-    
-    
-//    var index = 0
-//    var degree = 1
-//    var result = [Int]()
-//    while index != array.count {
-//        result.append(numberToPower3(array[index], degree))
-//        index += 1
-//        degree += 1
-//    }
-    return result
+    array.map {numberToPower3($0, array.firstIndex(of: $0)! + 1)}
 }
 
 // MARK: Task 25 ✅ / It's possible that understanding of the task is wrong ❗️
