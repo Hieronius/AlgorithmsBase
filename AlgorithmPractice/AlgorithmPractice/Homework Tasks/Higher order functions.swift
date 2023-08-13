@@ -583,18 +583,23 @@ func differenceMaxMin3(_ array: [Int]) -> Int {
  */
 
 func consecutive3(_ array: [Int]) -> Int {
-    let step = 1
-    var missedNumbers = 0
     
-    for index in 0..<array.count - 1 {
-        
-        if array[index] + step == array[index + 1] {
-            print("correct number")
-        } else {
-            missedNumbers += 1
-        }
-    }
-    return missedNumbers
+    // MARK: Trying to apply a new solution here
+    var counter = 0
+    array.map { $0 + 1 == $0 }
+//    let step = 1
+//    var missedNumbers = 0
+//
+//    for index in 0..<array.count - 1 {
+//
+//        if array[index] + step == array[index + 1] {
+//            print("correct number")
+//        } else {
+//            missedNumbers += 1
+//        }
+//    }
+//    return missedNumbers
+    return 10
 }
 
 // MARK: Task 32 ✅
