@@ -508,16 +508,10 @@ func removeFirstlast3(_ string: String?) -> String {
  }
  */
 func firstSymbolIndex3(word: String, symbol: Character) -> Int {
-    var result = -1
-    word.enumerated().map { (index, value) in
-        if value == symbol {
-            result = index
-        }
-    }
-    return result
+    Array(word).firstIndex(of: symbol) ?? 999
 }
 
-// MARK: Task 28 ✅ / Should be refactored ❗️
+// MARK: Task 28 ✅ / Can be better ❗️
 
 /*
  28. Найти второй индекс элемента в строке
@@ -531,28 +525,16 @@ func firstSymbolIndex3(word: String, symbol: Character) -> Int {
  */
 
 func secondSymbolIndex3(word: String, symbol: Character) -> Int {
-    let defaultIndex = -1
-    var repetition = false
-    var hit = false
-    var result = 0
-    var copy = 0
-    word.enumerated().map { (index, value) in
-        if value == symbol && hit == false {
-            result = index
-            hit = true
-        } else if value == symbol && hit == true {
-            copy = index
-            repetition = true
+    var internalString = Array(word)
+    var firstHit = internalString.firstIndex(of: symbol) ?? 999
+    
+    if firstHit != 999 {
+        internalString.remove(at: firstHit)
+        if internalString.contains(symbol) {
+            firstHit = internalString.firstIndex(of: symbol)! + 1 ?? 999
         }
     }
-    
-    if repetition && hit {
-        return copy
-    } else if repetition == false && hit {
-        return result
-    } else {
-        return defaultIndex
-    }
+    return firstHit
 }
 
 // MARK: Task 29 ✅
