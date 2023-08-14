@@ -915,9 +915,21 @@ func someToInt3(_ value: Any) -> Int {
  }
  */
 
-//func sumOfValues(array: [Any]) -> Double {
-//    var internalArray = array.map { $0 as? Double }
-//    return internalArray.reduce(0) { partialResult, double in
-//        partialResult += Double(double!)!
-//    }
-//}
+func sumOfValues3(array: [Any]) -> Double {
+    var internalArray = [Double]()
+     
+     for item in array {
+         if let stringItem = item as? String {
+             if let doubleValue = Double(stringItem) {
+                 internalArray.append(doubleValue)
+             }
+         } else if let intItem = item as? Int {
+             let doubleValue = Double(intItem)
+                 internalArray.append(doubleValue)
+         } else if let doubleItem = item as? Double {
+             internalArray.append(doubleItem)
+         }
+     }
+     return internalArray.reduce(0.0, +)
+    }
+
