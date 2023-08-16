@@ -12,41 +12,63 @@ import Foundation
 
 class TestViewController: UIViewController {
     
-    /*
-     45. Написать фукнцию суммирования всех элементов массива
-
-     ["1", 2, 3.5] -> 6.5
-
-
-     func sumOfValues(array: [Any]) -> Double {
-     }
-     */
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        print(sumOfValues(array: ["1", 2, 3.5]))
+        print(insertDash3(string: "454793"))
     }
     
-    func sumOfValues(array: [Any]) -> Double {
-       var internalArray = [Double]()
+    /*
+     33. Написать фукнцию которая проставит тире между нечетными числами
+     
+     "454793" -> "4547-9-3"
+     
+     func insertDash(string: String) -> String {
+     }
+     */
+
+    func insertDash3(string: String) -> String {
         
-        array.map { item in
-            if let stringItem = item as? String {
-                if let doubleValue = Double(stringItem) {
-                    internalArray.append(doubleValue)
+        var internalString = String()
+        var internalArray = Array(string)
+        print(type(of:internalArray))
+        
+        for char in internalArray {
+            if internalArray.firstIndex(of: char)! < internalArray.count - 1 {
+                var previousNumber = Int(String(char))!
+                var secondNumber = Int(String(internalArray[internalArray.firstIndex(of: char)! + 1]))!
+                print(previousNumber)
+                print(secondNumber)
+                if previousNumber % 2 != 0 &&
+                    secondNumber % 2 != 0 {
+                    print("previous and next numbers are odd")
+                    internalString.append(String(previousNumber))
+                    internalString.append("-")
+                    internalString.append(String(secondNumber))
+                } else {
+                    print("previous and next number are even")
+                    internalString.append(String(previousNumber))
                 }
-            } else if let intItem = item as? Int {
-                let doubleValue = Double(intItem)
-                    internalArray.append(doubleValue)
-            } else if let doubleItem = item as? Double {
-                internalArray.append(doubleItem)
+//                internalString.append(char)
             }
         }
-        return internalArray.reduce(0.0, +)
+        
+        
+//        internalArray.map { character in
+//            if let number = character as? Character {
+//                if let intNumber = Int(character) {
+//                    if intNumber % 2 == 0 {
+//                        print("even number")
+//                        internalString += String(number)
+//                    }
+//                } else {
+//                    print("odd number")
+//                    internalString += String(number)
+//                    internalString += "-"
+//                }
+//            }
+//        }
+        return internalString
     }
-    
-    
+
 }
 

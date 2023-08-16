@@ -629,26 +629,20 @@ func largest3(count: Int, array: [Int]) -> [Int] {
  }
  */
 
-func insertDash3(string: String) -> String {
-    var previousNumber = ""
-    var nextNumber = ""
-    var testString = string.enumerated()
-    var currentIndex = 0
-    var isPreviousOdd = false
-    var isNextOdd = false
+func insertDash4(string: String) -> String {
     
-    // while index != string.count - 1
+    var internalString = String()
     
-    for char in string {
-        guard let number = char.wholeNumberValue else { return "" }
-        if number % 2 != 0 {
-            previousNumber = String(number)
-            print("odd number")
-        } else {
+    Array(arrayLiteral: string).map { number in
+        if Int(number)! % 2 == 0 {
             print("even number")
+            internalString += number
+        } else {
+            internalString += number
+            internalString += "-"
         }
     }
-    return ""
+    return internalString
 }
 
 // MARK: Task 34 ✅ / Should be refactored ❗️
@@ -847,6 +841,11 @@ func firstNonConsequitive3(array: [Int]) -> Int {
  }
  */
 
+func isIncreasing(array: [Int]) -> Bool {
+    // array.map { $0 >= $1 }.map {$0 == true}
+    return true
+}
+
 
 
 // MARK: Task 42 ❌ / Not tested enough | can be better ❗️
@@ -903,7 +902,7 @@ func someToInt3(_ value: Any) -> Int {
     return number
 }
 
-// MARK: Task 45
+// MARK: Task 45 ✅
 
 /*
  45. Написать фукнцию суммирования всех элементов массива
