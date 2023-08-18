@@ -390,9 +390,25 @@ func rootOrSquare3(_ array: [Int]) -> [Int] {
  */
 
 func findIndex3(_ array: [Int], target: Int) -> Int {
-    var currentIndex = 0
     var result = 0
     var step = 1
+    var currentIndex = 0
+    
+    array.enumerated().map { index, element in
+        if index < array.count - 1 {
+            if array[index] + step == array[index + 1] {
+                print("this is corrent index for target")
+                if array[index] == target {
+                    result = index
+                }
+            } else {
+                print("This is correct place for target")
+                result = index
+            }
+        }
+    }
+    
+    
     
     //        for index in 0..<array.count - 1 {
     //            if array[index] + step == array[index + 1] {
@@ -403,14 +419,15 @@ func findIndex3(_ array: [Int], target: Int) -> Int {
     //        }
     
     
-    for number in array {
-        if number == target {
-            return array.firstIndex(of:number)!
-        } else {
-            currentIndex += 1
-        }
-    }
-    return 25
+//    for number in array {
+//        if number == target {
+//            return array.firstIndex(of:number)!
+//        } else {
+//            currentIndex += 1
+//        }
+//    }
+    
+    return result
 }
 
 // MARK: Task 23 ✅
