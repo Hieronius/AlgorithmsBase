@@ -375,7 +375,7 @@ func rootOrSquare3(_ array: [Int]) -> [Int] {
     return result
 }
 
-// MARK: Task 22 ❌ Task 31 can be useful
+// MARK: Task 22 ✅ Task 31 can be useful
 
 /*
  22. Есть отсортированный массив. Найти индекс числа или
@@ -391,43 +391,19 @@ func rootOrSquare3(_ array: [Int]) -> [Int] {
 
 func findIndex3(_ array: [Int], target: Int) -> Int {
     var result = 0
-    var step = 1
-    var currentIndex = 0
     
     array.enumerated().map { index, element in
         if index < array.count - 1 {
-            if array[index] + step == array[index + 1] {
-                print("this is corrent index for target")
+            if array[index] + 1 == array[index + 1] {
                 if array[index] == target {
                     result = index
                 }
             } else {
-                print("This is correct place for target")
-                result = index
+                result = index + 1
             }
         }
     }
-    
-    
-    
-    //        for index in 0..<array.count - 1 {
-    //            if array[index] + step == array[index + 1] {
-    //                print("do something")
-    //            } else {
-    //                missedNumbers += 1
-    //            }
-    //        }
-    
-    
-//    for number in array {
-//        if number == target {
-//            return array.firstIndex(of:number)!
-//        } else {
-//            currentIndex += 1
-//        }
-//    }
-    
-    return result
+     return result
 }
 
 // MARK: Task 23 ✅
