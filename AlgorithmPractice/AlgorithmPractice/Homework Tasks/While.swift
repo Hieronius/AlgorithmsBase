@@ -564,33 +564,22 @@ func removeSpaces(string: String) -> String {
 
 func countMinWord2(_ string: String) -> Int {
     var index = 0
-    var count = 0
-    var internalArray = Array(string)
-    var arrayOfWordsCount = [Int]()
+    var internalString = String()
+    var arrayOfCharsAmount = [Int]()
+    var stringArray = Array(string)
     
-    while index != internalArray.count{
-        if internalArray[index] == " " || index == internalArray.count {
-            arrayOfWordsCount.append(count)
-            count = 0
+    while index != stringArray.count {
+        if stringArray[index] == " " {
+            arrayOfCharsAmount.append(internalString.count)
+            internalString = String()
             index += 1
         } else {
-            count += 1
+            internalString.append(stringArray[index])
             index += 1
         }
     }
-     arrayOfWordsCount.append(count)
-    
-    var subIndex = 0
-    var firstCountNumber = arrayOfWordsCount[0]
-    while subIndex != arrayOfWordsCount.count {
-        if arrayOfWordsCount[subIndex] < firstCountNumber {
-            firstCountNumber = arrayOfWordsCount[subIndex]
-            subIndex += 1
-        } else {
-            subIndex += 1
-        }
-    }
-    return firstCountNumber
+    arrayOfCharsAmount.append(internalString.count)
+    return arrayOfCharsAmount.sorted(by: <)[0]
 }
 
 

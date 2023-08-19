@@ -336,7 +336,7 @@ func removeSpaces3(string: String) -> String {
     
 }
 
-// MARK: Task 20 ❌ string.enumerated can be useful
+// MARK: Task 20 ✅
 
 /*
  20. Вывести количество символов самого маленького слова в предложении
@@ -348,7 +348,19 @@ func removeSpaces3(string: String) -> String {
  */
 
 func countMinWord3(_ string: String) -> Int {
-    25
+    var internalString = String()
+    var arrayOfCharsAmount = [Int]()
+    
+    string.map { value in
+        if value == " " {
+            arrayOfCharsAmount.append(internalString.count)
+            internalString = String()
+        } else {
+            internalString.append(value)
+        }
+    }
+    arrayOfCharsAmount.append(internalString.count)
+    return arrayOfCharsAmount.sorted(by: <)[0]
 }
 
 // MARK: Task 21 ✅
