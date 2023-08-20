@@ -624,16 +624,29 @@ func largest3(count: Int, array: [Int]) -> [Int] {
 func insertDash4(string: String) -> String {
     
     var internalString = String()
+    var arrayOfString = Array(string)
     
-    Array(arrayLiteral: string).map { number in
-        if Int(number)! % 2 == 0 {
-            print("even number")
-            internalString += number
-        } else {
-            internalString += number
-            internalString += "-"
-        }
+//    string.enumerated().map { index, value in
+//        if Int(String(value))! % 2 == 0 {
+//            print("yo")
+//        }
+//    }
+    
+    arrayOfString.enumerated().map { index, value in
+        if let currentValue = Int(String(value)),
+           let nextValue = Int(String(arrayOfString[index + 1])) {
+            print("success")
     }
+                               }
+//    Array(arrayLiteral: string).map { number in
+//        if Int(number)! % 2 == 0 {
+//            print("even number")
+//            internalString += number
+//        } else {
+//            internalString += number
+//            internalString += "-"
+//        }
+//    }
     return internalString
 }
 

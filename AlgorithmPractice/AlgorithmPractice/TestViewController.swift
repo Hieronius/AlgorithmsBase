@@ -15,7 +15,7 @@ class TestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print(insertDash4(string: "454793"))
     }
     
 }
