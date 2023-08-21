@@ -633,11 +633,22 @@ func insertDash4(string: String) -> String {
 //    }
     
     arrayOfString.enumerated().map { index, value in
-        if let currentValue = Int(String(value)),
-           let nextValue = Int(String(arrayOfString[index + 1])) {
-            print("success")
+        if index < arrayOfString.count - 1 {
+            if let currentValue = Int(String(value)),
+               let nextValue = Int(String(arrayOfString[index + 1])) {
+                internalString.append(String(currentValue))
+                if currentValue % 2 != 0 && nextValue % 2 != 0 {
+                    internalString.append("-")
+                
+                    internalString.append(String(currentValue))
+                }
+            } else {
+                print("failure")
+            }
+        } else {
+            internalString.append(arrayOfString[index])
+        }
     }
-                               }
 //    Array(arrayLiteral: string).map { number in
 //        if Int(number)! % 2 == 0 {
 //            print("even number")
