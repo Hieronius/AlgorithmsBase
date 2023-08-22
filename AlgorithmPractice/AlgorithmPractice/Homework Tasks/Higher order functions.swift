@@ -857,7 +857,7 @@ func firstNonConsequitive3(array: [Int]) -> Int {
  }
  */
 
-func isIncreasing(array: [Int]) -> Bool {
+func isIncreasing3(array: [Int]) -> Bool {
     // array.map { $0 >= $1 }.map {$0 == true}
     return true
 }
