@@ -844,7 +844,7 @@ func firstNonConsequitive3(array: [Int]) -> Int {
     return number
 }
 
-// MARK: Task 41 ❌
+// MARK: Task 41 ✅
 
 /*
  41. Проверить что массив монотонно убывающий
@@ -858,8 +858,14 @@ func firstNonConsequitive3(array: [Int]) -> Int {
  */
 
 func isIncreasing3(array: [Int]) -> Bool {
-    // array.map { $0 >= $1 }.map {$0 == true}
-    return true
+    array.map { element in
+        if let nextIndex = array.firstIndex(of: element)?.advanced(by: 1) {
+            return element >= array[nextIndex]
+        } else {
+            print("failure")
+            return false
+        }
+    }.allSatisfy {$0}
 }
 
 
