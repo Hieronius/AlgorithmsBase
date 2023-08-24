@@ -858,14 +858,14 @@ func firstNonConsequitive3(array: [Int]) -> Int {
  */
 
 func isIncreasing3(array: [Int]) -> Bool {
-    array.map { element in
+        array.dropLast().reduce(true) { (partialResult, element) in
         if let nextIndex = array.firstIndex(of: element)?.advanced(by: 1) {
-            return element >= array[nextIndex]
+            return partialResult && element >= array[nextIndex]
         } else {
             print("failure")
             return false
         }
-    }.allSatisfy {$0}
+    }
 }
 
 
