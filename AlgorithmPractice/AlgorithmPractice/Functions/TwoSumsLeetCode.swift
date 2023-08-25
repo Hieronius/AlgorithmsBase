@@ -14,7 +14,7 @@ class Solution {
         var firstIndex = 0
         var secondIndex = firstIndex + 1
 
-        while result != target {
+        while firstIndex != nums.count - 1 {
             result = nums[firstIndex] + nums[secondIndex]
             if result != target {
                 firstIndex += 1
@@ -23,6 +23,6 @@ class Solution {
             }
 
         }
-        return [nums[firstIndex], nums[secondIndex]]
+        return [firstIndex, secondIndex]
     }
 }
