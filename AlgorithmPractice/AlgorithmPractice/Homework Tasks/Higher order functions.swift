@@ -606,8 +606,19 @@ func consecutive3(_ array: [Int]) -> Int {
  */
 
 func largest3(count: Int, array: [Int]) -> [Int] {
-    var test = array.sorted()
-    return Array(test[test.endIndex-2...test.endIndex-1])
+    var internalArray = array
+    var arrayOfResult = [Int]()
+    var maxNumber = internalArray[0]
+    for attempt in 1...count {
+        for number in internalArray {
+            if number > maxNumber {
+                maxNumber = number
+            }
+        }
+        arrayOfResult.insert(maxNumber, at: 0)
+        maxNumber = internalArray[0]
+    }
+    return arrayOfResult
 }
 
 // MARK: Task 33 ❌ Let's back later
