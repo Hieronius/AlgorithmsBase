@@ -336,13 +336,13 @@ func numberToPower1(_ number: Int, _ power: Int) -> Int {
     }
     return result
     
-//        var index = 1
-//        var result = number
-//        while index != power {
-//            result *= number
-//            index += 1
-//        }
-//        return result
+    //        var index = 1
+    //        var result = number
+    //        while index != power {
+    //            result *= number
+    //            index += 1
+    //        }
+    //        return result
 }
 
 
@@ -833,7 +833,7 @@ func largest1(count: Int, array: [Int]) -> [Int] {
     var internalArray = array
     var maxNumbers = [Int]()
     var firstNumber = array[0]
-        
+    
     for number in 0..<count {
         
         for number in internalArray {
@@ -999,10 +999,10 @@ func maskify1(string: String) -> String {
 
 /*
  38. Найти минимальный элемент в массиве и удалить его из массива
-
+ 
  func removeSmallest(_ array: [Int]) -> [Int] {
  }
-
+ 
  [1,2,3,4,5] -> [2,3,4,5]
  [5,3,2,1,4] -> [5,3,2,4]
  [2,1,2,1,2,1] -> [2,2,2]
@@ -1033,9 +1033,9 @@ func removeSmallest1(_ array: [Int]) -> [Int] {
 
 /*
  39. Один массив прибавить ко второму массиву - все способы
-
+ 
  [1, 2, 3] + [4, 5] -> [1, 2, 3, 4, 5]
-
+ 
  func sumArrays(lhs: [Int], rhs: [Int]) -> [Int] {
  }
  */
@@ -1066,13 +1066,13 @@ func sumArrays33(lhs: [Int], rhs: [Int]) -> [Int] {
 // MARK: Task 40 ✅ / Not sure solution was right ❗️
 
 /*
-40. Вернуть первый непоследовательный элемент и его индекс
-
-[1, 2, 3, 4, 5, 7, 8, 9] -> 7
-
-func firstNonConsequitive(array: [Int]) -> Int {
-}
-*/
+ 40. Вернуть первый непоследовательный элемент и его индекс
+ 
+ [1, 2, 3, 4, 5, 7, 8, 9] -> 7
+ 
+ func firstNonConsequitive(array: [Int]) -> Int {
+ }
+ */
 
 func firstNonConsequitive1(array: [Int]) -> Int {
     let step = 1
@@ -1095,11 +1095,11 @@ func firstNonConsequitive1(array: [Int]) -> Int {
 
 /*
  41. Проверить что массив монотонно убывающий
-
+ 
  [10, 9, 8, 7, 6, 6, 5] -> true
  [10, 9, 8, 8, 7, 9] -> false
  [10,10,10] -> true
-
+ 
  func isIncreasing(array: [Int]) -> Bool {
  }
  */
@@ -1111,17 +1111,17 @@ func isDecreasing1(array: [Int]) -> Bool {
     
     while currentIndex < internalArray.count - 2  {
         
-       if internalArray[currentIndex] >= internalArray[currentIndex + 1] &&
+        if internalArray[currentIndex] >= internalArray[currentIndex + 1] &&
             internalArray[currentIndex + 1] >= internalArray[currentIndex + 2] {
-           currentIndex += 1
-           delta = true
-           
-       } else {
-           delta = false
-           break
-       }
+            currentIndex += 1
+            delta = true
+            
+        } else {
+            delta = false
+            break
+        }
     }
-     return delta
+    return delta
 }
 
 
@@ -1129,15 +1129,15 @@ func isDecreasing1(array: [Int]) -> Bool {
 
 /*
  42. Написать функцию которая принимает массив чисел и проверяет монотонный он или нет
-
-
+ 
+ 
  [1,3,6,8] → true
  [6, 3, 2, 1] → true
  [5,5] → true
  [1, 2, 2, 5, 5, 7] → true
  [1, 2, 3, 3, 3, 1] → false
  [5, 4, 3, 2, 1, 2, 3] → false
-
+ 
  func isMonotone(_ array: [Int]) -> Int {
  }
  */
@@ -1147,28 +1147,28 @@ func isDecreasing1(array: [Int]) -> Bool {
 // MARK: Task 43 ✅ The same as 37 task
 
 /*
-43.Маскировать кредитную карту
-
-"12345678" -> "****4678"
-"1234" -> "1234"
-"123456" -> "**3456"
-
-func masked(string: String) -> String {
-}
+ 43.Маскировать кредитную карту
  
-*/
+ "12345678" -> "****4678"
+ "1234" -> "1234"
+ "123456" -> "**3456"
+ 
+ func masked(string: String) -> String {
+ }
+ 
+ */
 
 // MARK: Task 44 ✅ Already has been solved
 
 /*
  44. Сконвертироват значение типа Any в тип данных Int
-
+ 
  func someToInt(_ value: Any) → Int {
-
-         if let value = value as? Int {
-                 return value
-         }
-         return 0
+ 
+ if let value = value as? Int {
+ return value
+ }
+ return 0
  }
  */
 
@@ -1184,10 +1184,10 @@ func someToInt1(_ value: Any) -> Int {
 
 /*
  45. Написать фукнцию суммирования всех элементов массива
-
+ 
  ["1", 2, 3.5] -> 6.5
-
-
+ 
+ 
  func sumOfValues(array: [Any]) -> Double {
  }
  */

@@ -415,7 +415,7 @@ func findIndex3(_ array: [Int], target: Int) -> Int {
             }
         }
     }
-     return result
+    return result
 }
 
 // MARK: Task 23 ✅
@@ -579,18 +579,18 @@ func consecutive3(_ array: [Int]) -> Int {
     // MARK: Trying to apply a new solution here
     var counter = 0
     array.map { $0 + 1 == $0 }
-//    let step = 1
-//    var missedNumbers = 0
-//
-//    for index in 0..<array.count - 1 {
-//
-//        if array[index] + step == array[index + 1] {
-//            print("correct number")
-//        } else {
-//            missedNumbers += 1
-//        }
-//    }
-//    return missedNumbers
+    //    let step = 1
+    //    var missedNumbers = 0
+    //
+    //    for index in 0..<array.count - 1 {
+    //
+    //        if array[index] + step == array[index + 1] {
+    //            print("correct number")
+    //        } else {
+    //            missedNumbers += 1
+    //        }
+    //    }
+    //    return missedNumbers
     return 10
 }
 
@@ -637,11 +637,11 @@ func insertDash4(string: String) -> String {
     var internalString = String()
     var arrayOfString = Array(string)
     
-//    string.enumerated().map { index, value in
-//        if Int(String(value))! % 2 == 0 {
-//            print("yo")
-//        }
-//    }
+    //    string.enumerated().map { index, value in
+    //        if Int(String(value))! % 2 == 0 {
+    //            print("yo")
+    //        }
+    //    }
     
     arrayOfString.enumerated().map { index, value in
         if index < arrayOfString.count - 1 {
@@ -650,7 +650,7 @@ func insertDash4(string: String) -> String {
                 internalString.append(String(currentValue))
                 if currentValue % 2 != 0 && nextValue % 2 != 0 {
                     internalString.append("-")
-                
+                    
                     internalString.append(String(currentValue))
                 }
             } else {
@@ -660,15 +660,15 @@ func insertDash4(string: String) -> String {
             internalString.append(arrayOfString[index])
         }
     }
-//    Array(arrayLiteral: string).map { number in
-//        if Int(number)! % 2 == 0 {
-//            print("even number")
-//            internalString += number
-//        } else {
-//            internalString += number
-//            internalString += "-"
-//        }
-//    }
+    //    Array(arrayLiteral: string).map { number in
+    //        if Int(number)! % 2 == 0 {
+    //            print("even number")
+    //            internalString += number
+    //        } else {
+    //            internalString += number
+    //            internalString += "-"
+    //        }
+    //    }
     return internalString
 }
 
@@ -782,10 +782,10 @@ func maskify3(string: String) -> String {
 
 /*
  38. Найти минимальный элемент в массиве и удалить его из массива
-
+ 
  func removeSmallest(_ array: [Int]) -> [Int] {
  }
-
+ 
  [1,2,3,4,5] -> [2,3,4,5]
  [5,3,2,1,4] -> [5,3,2,4]
  [2,1,2,1,2,1] -> [2,2,2]
@@ -802,9 +802,9 @@ func removeSmallest3(_ array: [Int]) -> [Int] {
 
 /*
  39. Один массив прибавить ко второму массиву - все способы
-
+ 
  [1, 2, 3] + [4, 5] -> [1, 2, 3, 4, 5]
-
+ 
  func sumArrays(lhs: [Int], rhs: [Int]) -> [Int] {
  }
  */
@@ -831,13 +831,13 @@ func sumArrays333(lhs: [Int], rhs: [Int]) -> [Int] {
 // MARK: Task 40 ✅ / Not sure solution was right ❗️
 
 /*
-40. Вернуть первый непоследовательный элемент и его индекс
-
-[1, 2, 3, 4, 5, 7, 8, 9] -> 7
-
-func firstNonConsequitive(array: [Int]) -> Int {
-}
-*/
+ 40. Вернуть первый непоследовательный элемент и его индекс
+ 
+ [1, 2, 3, 4, 5, 7, 8, 9] -> 7
+ 
+ func firstNonConsequitive(array: [Int]) -> Int {
+ }
+ */
 
 func firstNonConsequitive3(array: [Int]) -> Int {
     let step = 1
@@ -859,17 +859,17 @@ func firstNonConsequitive3(array: [Int]) -> Int {
 
 /*
  41. Проверить что массив монотонно убывающий
-
+ 
  [10, 9, 8, 7, 6, 6, 5] -> true
  [10, 9, 8, 8, 7, 9] -> false
  [10,10,10] -> true
-
+ 
  func isIncreasing(array: [Int]) -> Bool {
  }
  */
 
 func isIncreasing3(array: [Int]) -> Bool {
-        array.dropLast().reduce(true) { (partialResult, element) in
+    array.dropLast().reduce(true) { (partialResult, element) in
         if let nextIndex = array.firstIndex(of: element)?.advanced(by: 1) {
             return partialResult && element >= array[nextIndex]
         } else {
@@ -885,15 +885,15 @@ func isIncreasing3(array: [Int]) -> Bool {
 
 /*
  42. Написать функцию которая принимает массив чисел и проверяет монотонный он или нет
-
-
+ 
+ 
  [1,3,6,8] → true
  [6, 3, 2, 1] → true
  [5,5] → true
  [1, 2, 2, 5, 5, 7] → true
  [1, 2, 3, 3, 3, 1] → false
  [5, 4, 3, 2, 1, 2, 3] → false
-
+ 
  func isMonotone(_ array: [Int]) -> Int {
  }
  */
@@ -903,28 +903,28 @@ func isIncreasing3(array: [Int]) -> Bool {
 // MARK: Task 43 ✅ The same as 37 task
 
 /*
-43.Маскировать кредитную карту
-
-"12345678" -> "****4678"
-"1234" -> "1234"
-"123456" -> "**3456"
-
-func masked(string: String) -> String {
-}
+ 43.Маскировать кредитную карту
  
-*/
+ "12345678" -> "****4678"
+ "1234" -> "1234"
+ "123456" -> "**3456"
+ 
+ func masked(string: String) -> String {
+ }
+ 
+ */
 
 // MARK: Task 44 ✅ Already has been solved
 
 /*
  44. Сконвертироват значение типа Any в тип данных Int
-
+ 
  func someToInt(_ value: Any) → Int {
-
-         if let value = value as? Int {
-                 return value
-         }
-         return 0
+ 
+ if let value = value as? Int {
+ return value
+ }
+ return 0
  }
  */
 
@@ -939,29 +939,29 @@ func someToInt3(_ value: Any) -> Int {
 
 /*
  45. Написать фукнцию суммирования всех элементов массива
-
+ 
  ["1", 2, 3.5] -> 6.5
-
-
+ 
+ 
  func sumOfValues(array: [Any]) -> Double {
  }
  */
 
 func sumOfValues3(array: [Any]) -> Double {
     var internalArray = [Double]()
-     
+    
     array.map { item in
-         if let stringItem = item as? String {
-             if let doubleValue = Double(stringItem) {
-                 internalArray.append(doubleValue)
-             }
-         } else if let intItem = item as? Int {
-             let doubleValue = Double(intItem)
-                 internalArray.append(doubleValue)
-         } else if let doubleItem = item as? Double {
-             internalArray.append(doubleItem)
-         }
-     }
-     return internalArray.reduce(0.0, +)
+        if let stringItem = item as? String {
+            if let doubleValue = Double(stringItem) {
+                internalArray.append(doubleValue)
+            }
+        } else if let intItem = item as? Int {
+            let doubleValue = Double(intItem)
+            internalArray.append(doubleValue)
+        } else if let doubleItem = item as? Double {
+            internalArray.append(doubleItem)
+        }
     }
+    return internalArray.reduce(0.0, +)
+}
 

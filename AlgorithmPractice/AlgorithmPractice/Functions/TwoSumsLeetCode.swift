@@ -10,10 +10,10 @@ import Foundation
 class Solution {
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
         var result = 0
-
+        
         var firstIndex = 0
         var secondIndex = firstIndex + 1
-
+        
         while firstIndex != nums.count - 1 {
             result = nums[firstIndex] + nums[secondIndex]
             if result != target {
@@ -21,7 +21,7 @@ class Solution {
             } else {
                 break
             }
-
+            
         }
         return [firstIndex, secondIndex]
     }

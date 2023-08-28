@@ -33,7 +33,7 @@ func bubbleSort(_ input: [Int]) -> [Int] {
             }
         }
     } while isSwapped
-                
+    
     return result
 }
 

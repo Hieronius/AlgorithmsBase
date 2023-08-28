@@ -580,7 +580,7 @@ func countMinWord2(_ string: String) -> Int {
             index += 1
         }
     }
-     arrayOfWordsCount.append(count)
+    arrayOfWordsCount.append(count)
     
     var subIndex = 0
     var firstCountNumber = arrayOfWordsCount[0]
@@ -613,7 +613,7 @@ func rootOrSquare2(_ array: [Int]) -> [Int] {
     
     while index != array.count {
         if (Double(array[index]).squareRoot() *
-           (Double(array[index]).squareRoot())) ==
+            (Double(array[index]).squareRoot())) ==
             Double(array[index]) {
             internalArray.append(Int(Double(array[index]).squareRoot()))
             index += 1
@@ -730,7 +730,7 @@ func converToArray2(_ string: String) -> Array<Character> {
     var index = 0
     var charArr = [Character]()
     while index != string.count {
-         charArr.append(Array(string)[index])
+        charArr.append(Array(string)[index])
         index += 1
     }
     return charArr
@@ -1205,17 +1205,17 @@ func isDecreasing2(array: [Int]) -> Bool {
     
     while currentIndex < internalArray.count - 2  {
         
-       if internalArray[currentIndex] >= internalArray[currentIndex + 1] &&
+        if internalArray[currentIndex] >= internalArray[currentIndex + 1] &&
             internalArray[currentIndex + 1] >= internalArray[currentIndex + 2] {
-           currentIndex += 1
-           delta = true
-           
-       } else {
-           delta = false
-           break
-       }
+            currentIndex += 1
+            delta = true
+            
+        } else {
+            delta = false
+            break
+        }
     }
-     return delta
+    return delta
 }
 
 
@@ -1243,24 +1243,24 @@ func isMonotone2(_ array: [Int]) -> Bool {
     
     while currentIndex < array.count - 2  {
         
-       if array[currentIndex] >= array[currentIndex + 1] &&
+        if array[currentIndex] >= array[currentIndex + 1] &&
             array[currentIndex + 1] >= array[currentIndex + 2] {
-           
-           currentIndex += 1
-           delta = true
-           
-       } else if array[currentIndex] <= array[currentIndex + 1] &&
+            
+            currentIndex += 1
+            delta = true
+            
+        } else if array[currentIndex] <= array[currentIndex + 1] &&
                     array[currentIndex + 1] <= array[currentIndex + 2] {
-           
-           currentIndex += 1
-           delta = true
-           
-       } else {
-           delta = false
-           break
-       }
+            
+            currentIndex += 1
+            delta = true
+            
+        } else {
+            delta = false
+            break
+        }
     }
-     return delta
+    return delta
 }
 
 
