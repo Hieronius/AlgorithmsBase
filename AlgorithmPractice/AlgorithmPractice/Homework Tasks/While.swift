@@ -748,9 +748,22 @@ func converToArray2(_ string: String) -> Array<Character> {
  func removeFirstLast(_ string: String?) -> String {
  }
  */
-//    func removeFirstLast(_ string: String?) -> String {
-//
-//    }
+
+func removeFirstLast2(_ string: String?) -> String {
+    var internalString = Array(string!)
+    var index = 0
+    
+    while index != internalString.count {
+        if index == internalString.count - 1 {
+            internalString.remove(at: index)
+            internalString.remove(at: 0)
+            break
+        } else {
+            index += 1
+        }
+    }
+    return String(internalString)
+}
 
 
 
