@@ -684,7 +684,7 @@ func multiplyIndex2(_ array: [Int]) -> [Int] {
 
 
 
-// MARK: Task 24 ❌
+// MARK: Task 24 ✅
 
 /*
  24. Написать функцию которая возводит каждый элемент в степень по счету
@@ -696,15 +696,15 @@ func multiplyIndex2(_ array: [Int]) -> [Int] {
  }
  */
 
-//    func multiplyPower2(_ array: [Int]) -> [Int] {
-//        var index = 0
-//        var internalArray = [Int]()
-//        while index != array.count {
-//            internalArray.append(numberToPower2(array[index], index))
-//            index += 1
-//        }
-//        return internalArray
-//    }
+func multiplyPower2(_ array: [Int]) -> [Int] {
+    var index = 0
+    var internalArray = [Int]()
+    while index != array.count {
+        internalArray.append(numberToPower2(array[index], index + 1))
+        index += 1
+    }
+    return internalArray
+}
 
 
 
