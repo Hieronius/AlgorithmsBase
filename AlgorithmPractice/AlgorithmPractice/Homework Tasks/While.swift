@@ -381,9 +381,11 @@ func numberToPower2(_ number: Int, _ power: Int) -> Int {
     var degree = 1
     var result = number
     
-    while degree != power {
-        result *= number
-        degree += 1
+    if power > 0 {
+        while degree != power {
+            result *= number
+            degree += 1
+        }
     }
     return result
 }
@@ -736,7 +738,7 @@ func converToArray2(_ string: String) -> Array<Character> {
 
 
 
-// MARK: Task 26 ❌
+// MARK: Task 26 ✅
 
 /*
  (string.enumerated, удаление элементов)
