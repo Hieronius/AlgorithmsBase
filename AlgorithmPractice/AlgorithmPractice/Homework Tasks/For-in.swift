@@ -817,7 +817,7 @@ func consecutive1(_ array: [Int]) -> Int {
     return missedNumbers
 }
 
-// MARK: Task 32 ❌ Back later
+// MARK: Task 32 ✅ Back later | Try to replace "array.remove(at:) and array.append() with "for-in", "while" and "enumerated() ❗️
 
 /*
  32. Вытащить максимальные элементы из массива в заданном количестве
@@ -829,10 +829,9 @@ func consecutive1(_ array: [Int]) -> Int {
  */
 
 func largest1(count: Int, array: [Int]) -> [Int] {
-    // I can create a special array for all maximum values
     var internalArray = array
     var maxNumbers = [Int]()
-    var firstNumber = array[0]
+    var firstNumber = internalArray[0]
     
     for number in 0..<count {
         
@@ -841,10 +840,9 @@ func largest1(count: Int, array: [Int]) -> [Int] {
                 firstNumber = number
             }
         }
-        print("Remove highnest number from array and repeat search again")
         internalArray.remove(at: internalArray.firstIndex(of: firstNumber)!)
-        maxNumbers.append(firstNumber)
-        
+        maxNumbers.insert(firstNumber, at:0)
+        firstNumber = internalArray[0]
     }
     return maxNumbers
 }
