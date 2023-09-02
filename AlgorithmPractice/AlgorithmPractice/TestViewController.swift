@@ -36,9 +36,11 @@ class TestViewController: UIViewController {
         internalArray.map { value in
             if Int(String(value))! % 2 != 0 &&
                 Int(String(internalArray[internalArray.firstIndex(of: value)! + 1]))! % 2 != 0 &&
-                currentIndex != internalArray.count - 2 {
+                currentIndex < internalArray.count - 1{
                 print("Yo")
                 currentIndex += 1
+            } else {
+                print("wrong condition")
             }
         }
         
