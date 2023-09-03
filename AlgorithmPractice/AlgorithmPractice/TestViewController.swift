@@ -10,12 +10,44 @@ import Foundation
 
 class TestViewController: UIViewController {
     
+    // var letter = "".first!
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Int("5")
-        insertDash5(string: "454793")
+        
+        print("Введите первое значение")
+        // получение первого значения
+        var a = readLine()
+        print("Введите второе значение")
+        // Получение второго значения
+        var b = readLine()
+
+        let result = sum(a,b)
+        print("Результат сложения - \(result)")
+
+
+    }
+    
+    func sum(_ a: String?, _ b: String?) -> Int {
+        return Int(a!)! + Int(b!)!
+    }
+    
+    
+    
+    func programmingProblem() {
+        print("Введите число: ")
+        var firstNum = readLine()
+        var secondNum = readLine()
+        
+        if Int(firstNum!)! >= -32000 &&
+            Int(secondNum!)! >= -32000 &&
+            Int(firstNum!)! <= 32000 &&
+            Int(secondNum!)! <= 32000 {
+            
+            print(Int(firstNum!)! + Int(secondNum!)!)
+        }
     }
     
     /*
