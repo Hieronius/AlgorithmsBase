@@ -21,7 +21,20 @@
 		DD91DCE22A4C992100FFFE3A /* Bubble sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91DCE12A4C992100FFFE3A /* Bubble sort.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DD3A86D02AA416B500A97E41 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		DD3A86D22AA416B500A97E41 /* BasicInputAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BasicInputAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8882392A2E22FA00FA3C2E /* AlgorithmPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlgorithmPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD88823C2A2E22FA00FA3C2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD88823E2A2E22FA00FA3C2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +52,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DD3A86CF2AA416B500A97E41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD8882362A2E22FA00FA3C2E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				DD8882392A2E22FA00FA3C2E /* AlgorithmPractice.app */,
+				DD3A86D22AA416B500A97E41 /* BasicInputAlgorithms */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +133,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DD3A86D12AA416B500A97E41 /* BasicInputAlgorithms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD3A86D82AA416B500A97E41 /* Build configuration list for PBXNativeTarget "BasicInputAlgorithms" */;
+			buildPhases = (
+				DD3A86CE2AA416B500A97E41 /* Sources */,
+				DD3A86CF2AA416B500A97E41 /* Frameworks */,
+				DD3A86D02AA416B500A97E41 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BasicInputAlgorithms;
+			productName = BasicInputAlgorithms;
+			productReference = DD3A86D22AA416B500A97E41 /* BasicInputAlgorithms */;
+			productType = "com.apple.product-type.tool";
+		};
 		DD8882382A2E22FA00FA3C2E /* AlgorithmPractice */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD88824D2A2E22FE00FA3C2E /* Build configuration list for PBXNativeTarget "AlgorithmPractice" */;
@@ -139,6 +177,9 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					DD3A86D12AA416B500A97E41 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					DD8882382A2E22FA00FA3C2E = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -158,6 +199,7 @@
 			projectRoot = "";
 			targets = (
 				DD8882382A2E22FA00FA3C2E /* AlgorithmPractice */,
+				DD3A86D12AA416B500A97E41 /* BasicInputAlgorithms */,
 			);
 		};
 /* End PBXProject section */
@@ -176,6 +218,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DD3A86CE2AA416B500A97E41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD8882352A2E22FA00FA3C2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,6 +263,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DD3A86D62AA416B500A97E41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YW3V66545;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DD3A86D72AA416B500A97E41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YW3V66545;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		DD88824B2A2E22FE00FA3C2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -395,6 +470,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DD3A86D82AA416B500A97E41 /* Build configuration list for PBXNativeTarget "BasicInputAlgorithms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD3A86D62AA416B500A97E41 /* Debug */,
+				DD3A86D72AA416B500A97E41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DD8882342A2E22FA00FA3C2E /* Build configuration list for PBXProject "AlgorithmPractice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

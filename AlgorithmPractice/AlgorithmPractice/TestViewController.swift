@@ -12,27 +12,26 @@ class TestViewController: UIViewController {
     
     // var letter = "".first!
     
-    
+    let aYear = (0...3000).randomElement()! // Int(readLine()!)!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("Введите первое значение")
-        // получение первого значения
+        print(getData())
+        
+    }
+    func getData() -> Int {
+        print("Write first number")
         var a = readLine()
-        print("Введите второе значение")
-        // Получение второго значения
+        print("Write second number")
         var b = readLine()
-
-        let result = sum(a,b)
-        print("Результат сложения - \(result)")
-
-
+        var result = Int(a!)! + Int(b!)!
+        return result
     }
+
     
-    func sum(_ a: String?, _ b: String?) -> Int {
-        return Int(a!)! + Int(b!)!
-    }
+    
+
     
     
     
