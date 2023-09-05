@@ -17,6 +17,7 @@
 		DD8AC33B2A586B470074BB43 /* Higher order functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8AC33A2A586B470074BB43 /* Higher order functions.swift */; };
 		DD8AC33D2A586BAC0074BB43 /* While.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8AC33C2A586BAC0074BB43 /* While.swift */; };
 		DD8AC33F2A586BB60074BB43 /* For-in.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8AC33E2A586BB60074BB43 /* For-in.swift */; };
+		DD9074422AA56921002FE9F0 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9074412AA56921002FE9F0 /* LinkedList.swift */; };
 		DD9085522A30D6A300E872E7 /* TwoSumsLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9085512A30D6A300E872E7 /* TwoSumsLeetCode.swift */; };
 		DD91DCE22A4C992100FFFE3A /* Bubble sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91DCE12A4C992100FFFE3A /* Bubble sort.swift */; };
 /* End PBXBuildFile section */
@@ -47,6 +48,7 @@
 		DD8AC33A2A586B470074BB43 /* Higher order functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Higher order functions.swift"; sourceTree = "<group>"; };
 		DD8AC33C2A586BAC0074BB43 /* While.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = While.swift; sourceTree = "<group>"; };
 		DD8AC33E2A586BB60074BB43 /* For-in.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "For-in.swift"; sourceTree = "<group>"; };
+		DD9074412AA56921002FE9F0 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		DD9085512A30D6A300E872E7 /* TwoSumsLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumsLeetCode.swift; sourceTree = "<group>"; };
 		DD91DCE12A4C992100FFFE3A /* Bubble sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bubble sort.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +94,7 @@
 				DD8AC3412A586BCC0074BB43 /* Functions */,
 				DD8AC3402A586BC70074BB43 /* Other */,
 				DD8882402A2E22FA00FA3C2E /* TestViewController.swift */,
+				DD9074412AA56921002FE9F0 /* LinkedList.swift */,
 				DD8AC3422A586BF90074BB43 /* Homework Tasks */,
 				DD88824A2A2E22FE00FA3C2E /* Info.plist */,
 			);
@@ -231,6 +234,7 @@
 			files = (
 				DD8882512A2E236600FA3C2E /* BinarySearch.swift in Sources */,
 				DD8AC33B2A586B470074BB43 /* Higher order functions.swift in Sources */,
+				DD9074422AA56921002FE9F0 /* LinkedList.swift in Sources */,
 				DD8882412A2E22FA00FA3C2E /* TestViewController.swift in Sources */,
 				DD88823D2A2E22FA00FA3C2E /* AppDelegate.swift in Sources */,
 				DD88823F2A2E22FA00FA3C2E /* SceneDelegate.swift in Sources */,

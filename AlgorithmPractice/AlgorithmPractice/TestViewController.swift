@@ -17,7 +17,9 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(getData())
+        // print(getData())
+        print(list)
+        print(list.contains("A"))
         
     }
     func getData() -> Int {
