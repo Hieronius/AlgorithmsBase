@@ -20,6 +20,7 @@
 		DD9074422AA56921002FE9F0 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9074412AA56921002FE9F0 /* LinkedList.swift */; };
 		DD9085522A30D6A300E872E7 /* TwoSumsLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9085512A30D6A300E872E7 /* TwoSumsLeetCode.swift */; };
 		DD91DCE22A4C992100FFFE3A /* Bubble sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91DCE12A4C992100FFFE3A /* Bubble sort.swift */; };
+		DD95E1522AA6C2940088A3A8 /* isPalindromeLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD95E1512AA6C2940088A3A8 /* isPalindromeLeetCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +52,7 @@
 		DD9074412AA56921002FE9F0 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		DD9085512A30D6A300E872E7 /* TwoSumsLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumsLeetCode.swift; sourceTree = "<group>"; };
 		DD91DCE12A4C992100FFFE3A /* Bubble sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bubble sort.swift"; sourceTree = "<group>"; };
+		DD95E1512AA6C2940088A3A8 /* isPalindromeLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isPalindromeLeetCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				DD9085512A30D6A300E872E7 /* TwoSumsLeetCode.swift */,
+				DD95E1512AA6C2940088A3A8 /* isPalindromeLeetCode.swift */,
 				DD8882502A2E236600FA3C2E /* BinarySearch.swift */,
 				DD91DCE12A4C992100FFFE3A /* Bubble sort.swift */,
 			);
@@ -240,6 +243,7 @@
 				DD88823F2A2E22FA00FA3C2E /* SceneDelegate.swift in Sources */,
 				DD8AC33F2A586BB60074BB43 /* For-in.swift in Sources */,
 				DD91DCE22A4C992100FFFE3A /* Bubble sort.swift in Sources */,
+				DD95E1522AA6C2940088A3A8 /* isPalindromeLeetCode.swift in Sources */,
 				DD9085522A30D6A300E872E7 /* TwoSumsLeetCode.swift in Sources */,
 				DD8AC33D2A586BAC0074BB43 /* While.swift in Sources */,
 			);
