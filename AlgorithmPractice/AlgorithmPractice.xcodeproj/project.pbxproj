@@ -21,6 +21,7 @@
 		DD9085522A30D6A300E872E7 /* TwoSumsLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9085512A30D6A300E872E7 /* TwoSumsLeetCode.swift */; };
 		DD91DCE22A4C992100FFFE3A /* Bubble sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91DCE12A4C992100FFFE3A /* Bubble sort.swift */; };
 		DD95E1522AA6C2940088A3A8 /* isPalindromeLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD95E1512AA6C2940088A3A8 /* isPalindromeLeetCode.swift */; };
+		DD99E2AF2AA9549E000643D6 /* numJewelsInStonesLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD99E2AE2AA9549E000643D6 /* numJewelsInStonesLeetCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +54,7 @@
 		DD9085512A30D6A300E872E7 /* TwoSumsLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumsLeetCode.swift; sourceTree = "<group>"; };
 		DD91DCE12A4C992100FFFE3A /* Bubble sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bubble sort.swift"; sourceTree = "<group>"; };
 		DD95E1512AA6C2940088A3A8 /* isPalindromeLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isPalindromeLeetCode.swift; sourceTree = "<group>"; };
+		DD99E2AE2AA9549E000643D6 /* numJewelsInStonesLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numJewelsInStonesLeetCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				DD9085512A30D6A300E872E7 /* TwoSumsLeetCode.swift */,
 				DD95E1512AA6C2940088A3A8 /* isPalindromeLeetCode.swift */,
 				DD8882502A2E236600FA3C2E /* BinarySearch.swift */,
+				DD99E2AE2AA9549E000643D6 /* numJewelsInStonesLeetCode.swift */,
 				DD91DCE12A4C992100FFFE3A /* Bubble sort.swift */,
 			);
 			path = Functions;
@@ -235,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD99E2AF2AA9549E000643D6 /* numJewelsInStonesLeetCode.swift in Sources */,
 				DD8882512A2E236600FA3C2E /* BinarySearch.swift in Sources */,
 				DD8AC33B2A586B470074BB43 /* Higher order functions.swift in Sources */,
 				DD9074422AA56921002FE9F0 /* LinkedList.swift in Sources */,
