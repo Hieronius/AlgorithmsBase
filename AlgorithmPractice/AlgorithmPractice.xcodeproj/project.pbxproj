@@ -17,6 +17,7 @@
 		DD8AC33B2A586B470074BB43 /* Higher order functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8AC33A2A586B470074BB43 /* Higher order functions.swift */; };
 		DD8AC33D2A586BAC0074BB43 /* While.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8AC33C2A586BAC0074BB43 /* While.swift */; };
 		DD8AC33F2A586BB60074BB43 /* For-in.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8AC33E2A586BB60074BB43 /* For-in.swift */; };
+		DD8F09D62AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8F09D52AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift */; };
 		DD9074422AA56921002FE9F0 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9074412AA56921002FE9F0 /* LinkedList.swift */; };
 		DD9085522A30D6A300E872E7 /* TwoSumsLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9085512A30D6A300E872E7 /* TwoSumsLeetCode.swift */; };
 		DD91DCE22A4C992100FFFE3A /* Bubble sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91DCE12A4C992100FFFE3A /* Bubble sort.swift */; };
@@ -50,6 +51,7 @@
 		DD8AC33A2A586B470074BB43 /* Higher order functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Higher order functions.swift"; sourceTree = "<group>"; };
 		DD8AC33C2A586BAC0074BB43 /* While.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = While.swift; sourceTree = "<group>"; };
 		DD8AC33E2A586BB60074BB43 /* For-in.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "For-in.swift"; sourceTree = "<group>"; };
+		DD8F09D52AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalValueAfterOperationLeetCode.swift; sourceTree = "<group>"; };
 		DD9074412AA56921002FE9F0 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		DD9085512A30D6A300E872E7 /* TwoSumsLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumsLeetCode.swift; sourceTree = "<group>"; };
 		DD91DCE12A4C992100FFFE3A /* Bubble sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bubble sort.swift"; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				DD95E1512AA6C2940088A3A8 /* isPalindromeLeetCode.swift */,
 				DD8882502A2E236600FA3C2E /* BinarySearch.swift */,
 				DD99E2AE2AA9549E000643D6 /* numJewelsInStonesLeetCode.swift */,
+				DD8F09D52AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift */,
 				DD91DCE12A4C992100FFFE3A /* Bubble sort.swift */,
 			);
 			path = Functions;
@@ -249,6 +252,7 @@
 				DD91DCE22A4C992100FFFE3A /* Bubble sort.swift in Sources */,
 				DD95E1522AA6C2940088A3A8 /* isPalindromeLeetCode.swift in Sources */,
 				DD9085522A30D6A300E872E7 /* TwoSumsLeetCode.swift in Sources */,
+				DD8F09D62AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift in Sources */,
 				DD8AC33D2A586BAC0074BB43 /* While.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
