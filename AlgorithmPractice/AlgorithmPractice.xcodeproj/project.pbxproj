@@ -101,6 +101,7 @@
 		DD88823B2A2E22FA00FA3C2E /* AlgorithmPractice */ = {
 			isa = PBXGroup;
 			children = (
+				DD918AD72AAD686400AAB541 /* LeetCode */,
 				DD8AC3412A586BCC0074BB43 /* Functions */,
 				DD8AC3402A586BC70074BB43 /* Other */,
 				DD8882402A2E22FA00FA3C2E /* TestViewController.swift */,
@@ -126,13 +127,7 @@
 		DD8AC3412A586BCC0074BB43 /* Functions */ = {
 			isa = PBXGroup;
 			children = (
-				DD9085512A30D6A300E872E7 /* TwoSumsLeetCode.swift */,
-				DD95E1512AA6C2940088A3A8 /* isPalindromeLeetCode.swift */,
 				DD8882502A2E236600FA3C2E /* BinarySearch.swift */,
-				DD99E2AE2AA9549E000643D6 /* numJewelsInStonesLeetCode.swift */,
-				DD9C75A62AABF7CF007F6C35 /* 1221. Split a String in Balanced Strings LeetCode.swift */,
-				DD918AD32AAD651D00AAB541 /* 1816. Truncate Sentence. LeetCode.swift */,
-				DD8F09D52AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift */,
 				DD91DCE12A4C992100FFFE3A /* Bubble sort.swift */,
 			);
 			path = Functions;
@@ -146,6 +141,19 @@
 				DD8AC33E2A586BB60074BB43 /* For-in.swift */,
 			);
 			path = "Homework Tasks";
+			sourceTree = "<group>";
+		};
+		DD918AD72AAD686400AAB541 /* LeetCode */ = {
+			isa = PBXGroup;
+			children = (
+				DD9085512A30D6A300E872E7 /* TwoSumsLeetCode.swift */,
+				DD95E1512AA6C2940088A3A8 /* isPalindromeLeetCode.swift */,
+				DD99E2AE2AA9549E000643D6 /* numJewelsInStonesLeetCode.swift */,
+				DD9C75A62AABF7CF007F6C35 /* 1221. Split a String in Balanced Strings LeetCode.swift */,
+				DD918AD32AAD651D00AAB541 /* 1816. Truncate Sentence. LeetCode.swift */,
+				DD8F09D52AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift */,
+			);
+			path = LeetCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
