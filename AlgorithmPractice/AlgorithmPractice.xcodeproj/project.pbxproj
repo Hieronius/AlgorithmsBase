@@ -24,6 +24,7 @@
 		DD918AD92AADB41500AAB541 /* 709. To Lower Case. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD918AD82AADB41500AAB541 /* 709. To Lower Case. LeetCode.swift */; };
 		DD91DCE22A4C992100FFFE3A /* Bubble sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91DCE12A4C992100FFFE3A /* Bubble sort.swift */; };
 		DD95E1522AA6C2940088A3A8 /* isPalindromeLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD95E1512AA6C2940088A3A8 /* isPalindromeLeetCode.swift */; };
+		DD9861632AAFF06A00F0B267 /* 804. Unique Morse Code Words. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9861622AAFF06A00F0B267 /* 804. Unique Morse Code Words. LeetCode.swift */; };
 		DD99E2AF2AA9549E000643D6 /* numJewelsInStonesLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD99E2AE2AA9549E000643D6 /* numJewelsInStonesLeetCode.swift */; };
 		DD9C75A72AABF7CF007F6C35 /* 1221. Split a String in Balanced Strings LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9C75A62AABF7CF007F6C35 /* 1221. Split a String in Balanced Strings LeetCode.swift */; };
 /* End PBXBuildFile section */
@@ -61,6 +62,7 @@
 		DD918AD82AADB41500AAB541 /* 709. To Lower Case. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "709. To Lower Case. LeetCode.swift"; sourceTree = "<group>"; };
 		DD91DCE12A4C992100FFFE3A /* Bubble sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bubble sort.swift"; sourceTree = "<group>"; };
 		DD95E1512AA6C2940088A3A8 /* isPalindromeLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isPalindromeLeetCode.swift; sourceTree = "<group>"; };
+		DD9861622AAFF06A00F0B267 /* 804. Unique Morse Code Words. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "804. Unique Morse Code Words. LeetCode.swift"; sourceTree = "<group>"; };
 		DD99E2AE2AA9549E000643D6 /* numJewelsInStonesLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numJewelsInStonesLeetCode.swift; sourceTree = "<group>"; };
 		DD9C75A62AABF7CF007F6C35 /* 1221. Split a String in Balanced Strings LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1221. Split a String in Balanced Strings LeetCode.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +157,7 @@
 				DD918AD32AAD651D00AAB541 /* 1816. Truncate Sentence. LeetCode.swift */,
 				DD8F09D52AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift */,
 				DD918AD82AADB41500AAB541 /* 709. To Lower Case. LeetCode.swift */,
+				DD9861622AAFF06A00F0B267 /* 804. Unique Morse Code Words. LeetCode.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				DD8AC33F2A586BB60074BB43 /* For-in.swift in Sources */,
 				DD91DCE22A4C992100FFFE3A /* Bubble sort.swift in Sources */,
 				DD95E1522AA6C2940088A3A8 /* isPalindromeLeetCode.swift in Sources */,
+				DD9861632AAFF06A00F0B267 /* 804. Unique Morse Code Words. LeetCode.swift in Sources */,
 				DD9085522A30D6A300E872E7 /* TwoSumsLeetCode.swift in Sources */,
 				DD8F09D62AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift in Sources */,
 				DD918AD92AADB41500AAB541 /* 709. To Lower Case. LeetCode.swift in Sources */,
