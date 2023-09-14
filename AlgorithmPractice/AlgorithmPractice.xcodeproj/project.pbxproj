@@ -19,6 +19,7 @@
 		DD8AC33F2A586BB60074BB43 /* For-in.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8AC33E2A586BB60074BB43 /* For-in.swift */; };
 		DD8F09D62AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8F09D52AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift */; };
 		DD8FECB22AB13CDF00676CAE /* 2315. Count Asterisks. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8FECB12AB13CDF00676CAE /* 2315. Count Asterisks. LeetCode.swift */; };
+		DD8FECB82AB1472800676CAE /* Two Pointers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8FECB72AB1472800676CAE /* Two Pointers.swift */; };
 		DD9074422AA56921002FE9F0 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9074412AA56921002FE9F0 /* LinkedList.swift */; };
 		DD9085522A30D6A300E872E7 /* TwoSumsLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9085512A30D6A300E872E7 /* TwoSumsLeetCode.swift */; };
 		DD918AD42AAD651D00AAB541 /* 1816. Truncate Sentence. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD918AD32AAD651D00AAB541 /* 1816. Truncate Sentence. LeetCode.swift */; };
@@ -58,6 +59,7 @@
 		DD8AC33E2A586BB60074BB43 /* For-in.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "For-in.swift"; sourceTree = "<group>"; };
 		DD8F09D52AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalValueAfterOperationLeetCode.swift; sourceTree = "<group>"; };
 		DD8FECB12AB13CDF00676CAE /* 2315. Count Asterisks. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2315. Count Asterisks. LeetCode.swift"; sourceTree = "<group>"; };
+		DD8FECB72AB1472800676CAE /* Two Pointers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Two Pointers.swift"; sourceTree = "<group>"; };
 		DD9074412AA56921002FE9F0 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		DD9085512A30D6A300E872E7 /* TwoSumsLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumsLeetCode.swift; sourceTree = "<group>"; };
 		DD918AD32AAD651D00AAB541 /* 1816. Truncate Sentence. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1816. Truncate Sentence. LeetCode.swift"; sourceTree = "<group>"; };
@@ -107,11 +109,12 @@
 		DD88823B2A2E22FA00FA3C2E /* AlgorithmPractice */ = {
 			isa = PBXGroup;
 			children = (
+				DD8FECB62AB1471300676CAE /* Sorts */,
 				DD918AD72AAD686400AAB541 /* LeetCode */,
+				DD8FECB52AB1470500676CAE /* Algorithms */,
 				DD8AC3412A586BCC0074BB43 /* Functions */,
 				DD8AC3402A586BC70074BB43 /* Other */,
 				DD8882402A2E22FA00FA3C2E /* TestViewController.swift */,
-				DD9074412AA56921002FE9F0 /* LinkedList.swift */,
 				DD8AC3422A586BF90074BB43 /* Homework Tasks */,
 				DD88824A2A2E22FE00FA3C2E /* Info.plist */,
 			);
@@ -133,8 +136,6 @@
 		DD8AC3412A586BCC0074BB43 /* Functions */ = {
 			isa = PBXGroup;
 			children = (
-				DD8882502A2E236600FA3C2E /* BinarySearch.swift */,
-				DD91DCE12A4C992100FFFE3A /* Bubble sort.swift */,
 			);
 			path = Functions;
 			sourceTree = "<group>";
@@ -147,6 +148,24 @@
 				DD8AC33E2A586BB60074BB43 /* For-in.swift */,
 			);
 			path = "Homework Tasks";
+			sourceTree = "<group>";
+		};
+		DD8FECB52AB1470500676CAE /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				DD8FECB72AB1472800676CAE /* Two Pointers.swift */,
+				DD9074412AA56921002FE9F0 /* LinkedList.swift */,
+			);
+			path = Algorithms;
+			sourceTree = "<group>";
+		};
+		DD8FECB62AB1471300676CAE /* Sorts */ = {
+			isa = PBXGroup;
+			children = (
+				DD8882502A2E236600FA3C2E /* BinarySearch.swift */,
+				DD91DCE12A4C992100FFFE3A /* Bubble sort.swift */,
+			);
+			path = Sorts;
 			sourceTree = "<group>";
 		};
 		DD918AD72AAD686400AAB541 /* LeetCode */ = {
@@ -276,6 +295,7 @@
 				DD88823F2A2E22FA00FA3C2E /* SceneDelegate.swift in Sources */,
 				DD8AC33F2A586BB60074BB43 /* For-in.swift in Sources */,
 				DD91DCE22A4C992100FFFE3A /* Bubble sort.swift in Sources */,
+				DD8FECB82AB1472800676CAE /* Two Pointers.swift in Sources */,
 				DD95E1522AA6C2940088A3A8 /* isPalindromeLeetCode.swift in Sources */,
 				DD9861632AAFF06A00F0B267 /* 804. Unique Morse Code Words. LeetCode.swift in Sources */,
 				DD9085522A30D6A300E872E7 /* TwoSumsLeetCode.swift in Sources */,
