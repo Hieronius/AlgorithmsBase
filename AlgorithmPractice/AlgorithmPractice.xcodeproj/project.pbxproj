@@ -17,6 +17,7 @@
 		DD8AC33B2A586B470074BB43 /* Higher order functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8AC33A2A586B470074BB43 /* Higher order functions.swift */; };
 		DD8AC33D2A586BAC0074BB43 /* While.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8AC33C2A586BAC0074BB43 /* While.swift */; };
 		DD8AC33F2A586BB60074BB43 /* For-in.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8AC33E2A586BB60074BB43 /* For-in.swift */; };
+		DD8CBCF42AB6846800F73C0B /* 344. Reverse String. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8CBCF32AB6846800F73C0B /* 344. Reverse String. LeetCode.swift */; };
 		DD8F09D62AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8F09D52AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift */; };
 		DD8FECB22AB13CDF00676CAE /* 2315. Count Asterisks. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8FECB12AB13CDF00676CAE /* 2315. Count Asterisks. LeetCode.swift */; };
 		DD8FECB82AB1472800676CAE /* Two Pointers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8FECB72AB1472800676CAE /* Two Pointers.swift */; };
@@ -59,6 +60,7 @@
 		DD8AC33A2A586B470074BB43 /* Higher order functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Higher order functions.swift"; sourceTree = "<group>"; };
 		DD8AC33C2A586BAC0074BB43 /* While.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = While.swift; sourceTree = "<group>"; };
 		DD8AC33E2A586BB60074BB43 /* For-in.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "For-in.swift"; sourceTree = "<group>"; };
+		DD8CBCF32AB6846800F73C0B /* 344. Reverse String. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "344. Reverse String. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8F09D52AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalValueAfterOperationLeetCode.swift; sourceTree = "<group>"; };
 		DD8FECB12AB13CDF00676CAE /* 2315. Count Asterisks. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2315. Count Asterisks. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8FECB72AB1472800676CAE /* Two Pointers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Two Pointers.swift"; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				DD9861622AAFF06A00F0B267 /* 804. Unique Morse Code Words. LeetCode.swift */,
 				DD922EC92AB3E1C100CCB91B /* 2744. Find Maximum Number of String Pairs. LeetCode.swift */,
 				DD92C04F2AB535000045155B /* 2710. Remove Trailing Zeros From a String. LeetCode.swift */,
+				DD8CBCF32AB6846800F73C0B /* 344. Reverse String. LeetCode.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				DD8AC33B2A586B470074BB43 /* Higher order functions.swift in Sources */,
 				DD9074422AA56921002FE9F0 /* LinkedList.swift in Sources */,
 				DD9C75A72AABF7CF007F6C35 /* 1221. Split a String in Balanced Strings LeetCode.swift in Sources */,
+				DD8CBCF42AB6846800F73C0B /* 344. Reverse String. LeetCode.swift in Sources */,
 				DD922ECA2AB3E1C100CCB91B /* 2744. Find Maximum Number of String Pairs. LeetCode.swift in Sources */,
 				DD918AD42AAD651D00AAB541 /* 1816. Truncate Sentence. LeetCode.swift in Sources */,
 				DD8FECB22AB13CDF00676CAE /* 2315. Count Asterisks. LeetCode.swift in Sources */,
