@@ -19,6 +19,7 @@
 		DD8AC33F2A586BB60074BB43 /* For-in.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8AC33E2A586BB60074BB43 /* For-in.swift */; };
 		DD8CBCF42AB6846800F73C0B /* 344. Reverse String. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8CBCF32AB6846800F73C0B /* 344. Reverse String. LeetCode.swift */; };
 		DD8F09D62AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8F09D52AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift */; };
+		DD8F95F82AB7D653008FDADF /* 2278. Percentage of Letter in String. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8F95F72AB7D653008FDADF /* 2278. Percentage of Letter in String. LeetCode.swift */; };
 		DD8FECB22AB13CDF00676CAE /* 2315. Count Asterisks. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8FECB12AB13CDF00676CAE /* 2315. Count Asterisks. LeetCode.swift */; };
 		DD8FECB82AB1472800676CAE /* Two Pointers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8FECB72AB1472800676CAE /* Two Pointers.swift */; };
 		DD9074422AA56921002FE9F0 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9074412AA56921002FE9F0 /* LinkedList.swift */; };
@@ -62,6 +63,7 @@
 		DD8AC33E2A586BB60074BB43 /* For-in.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "For-in.swift"; sourceTree = "<group>"; };
 		DD8CBCF32AB6846800F73C0B /* 344. Reverse String. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "344. Reverse String. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8F09D52AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalValueAfterOperationLeetCode.swift; sourceTree = "<group>"; };
+		DD8F95F72AB7D653008FDADF /* 2278. Percentage of Letter in String. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2278. Percentage of Letter in String. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8FECB12AB13CDF00676CAE /* 2315. Count Asterisks. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2315. Count Asterisks. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8FECB72AB1472800676CAE /* Two Pointers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Two Pointers.swift"; sourceTree = "<group>"; };
 		DD9074412AA56921002FE9F0 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				DD922EC92AB3E1C100CCB91B /* 2744. Find Maximum Number of String Pairs. LeetCode.swift */,
 				DD92C04F2AB535000045155B /* 2710. Remove Trailing Zeros From a String. LeetCode.swift */,
 				DD8CBCF32AB6846800F73C0B /* 344. Reverse String. LeetCode.swift */,
+				DD8F95F72AB7D653008FDADF /* 2278. Percentage of Letter in String. LeetCode.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				DD9861632AAFF06A00F0B267 /* 804. Unique Morse Code Words. LeetCode.swift in Sources */,
 				DD9085522A30D6A300E872E7 /* TwoSumsLeetCode.swift in Sources */,
 				DD8F09D62AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift in Sources */,
+				DD8F95F82AB7D653008FDADF /* 2278. Percentage of Letter in String. LeetCode.swift in Sources */,
 				DD918AD92AADB41500AAB541 /* 709. To Lower Case. LeetCode.swift in Sources */,
 				DD8AC33D2A586BAC0074BB43 /* While.swift in Sources */,
 			);
