@@ -28,6 +28,7 @@
 		DD918AD92AADB41500AAB541 /* 709. To Lower Case. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD918AD82AADB41500AAB541 /* 709. To Lower Case. LeetCode.swift */; };
 		DD91DCE22A4C992100FFFE3A /* Bubble sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91DCE12A4C992100FFFE3A /* Bubble sort.swift */; };
 		DD922ECA2AB3E1C100CCB91B /* 2744. Find Maximum Number of String Pairs. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD922EC92AB3E1C100CCB91B /* 2744. Find Maximum Number of String Pairs. LeetCode.swift */; };
+		DD926C7E2AB9287F00D608B3 /* 1935. Maximum Number of Words You Can Type. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD926C7D2AB9287F00D608B3 /* 1935. Maximum Number of Words You Can Type. LeetCode.swift */; };
 		DD92C0502AB535000045155B /* 2710. Remove Trailing Zeros From a String. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92C04F2AB535000045155B /* 2710. Remove Trailing Zeros From a String. LeetCode.swift */; };
 		DD95E1522AA6C2940088A3A8 /* isPalindromeLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD95E1512AA6C2940088A3A8 /* isPalindromeLeetCode.swift */; };
 		DD9861632AAFF06A00F0B267 /* 804. Unique Morse Code Words. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9861622AAFF06A00F0B267 /* 804. Unique Morse Code Words. LeetCode.swift */; };
@@ -72,6 +73,7 @@
 		DD918AD82AADB41500AAB541 /* 709. To Lower Case. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "709. To Lower Case. LeetCode.swift"; sourceTree = "<group>"; };
 		DD91DCE12A4C992100FFFE3A /* Bubble sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bubble sort.swift"; sourceTree = "<group>"; };
 		DD922EC92AB3E1C100CCB91B /* 2744. Find Maximum Number of String Pairs. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2744. Find Maximum Number of String Pairs. LeetCode.swift"; sourceTree = "<group>"; };
+		DD926C7D2AB9287F00D608B3 /* 1935. Maximum Number of Words You Can Type. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1935. Maximum Number of Words You Can Type. LeetCode.swift"; sourceTree = "<group>"; };
 		DD92C04F2AB535000045155B /* 2710. Remove Trailing Zeros From a String. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2710. Remove Trailing Zeros From a String. LeetCode.swift"; sourceTree = "<group>"; };
 		DD95E1512AA6C2940088A3A8 /* isPalindromeLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isPalindromeLeetCode.swift; sourceTree = "<group>"; };
 		DD9861622AAFF06A00F0B267 /* 804. Unique Morse Code Words. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "804. Unique Morse Code Words. LeetCode.swift"; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				DD922EC92AB3E1C100CCB91B /* 2744. Find Maximum Number of String Pairs. LeetCode.swift */,
 				DD92C04F2AB535000045155B /* 2710. Remove Trailing Zeros From a String. LeetCode.swift */,
 				DD8CBCF32AB6846800F73C0B /* 344. Reverse String. LeetCode.swift */,
+				DD926C7D2AB9287F00D608B3 /* 1935. Maximum Number of Words You Can Type. LeetCode.swift */,
 				DD8F95F72AB7D653008FDADF /* 2278. Percentage of Letter in String. LeetCode.swift */,
 			);
 			path = LeetCode;
@@ -307,6 +310,7 @@
 				DD92C0502AB535000045155B /* 2710. Remove Trailing Zeros From a String. LeetCode.swift in Sources */,
 				DD8882412A2E22FA00FA3C2E /* TestViewController.swift in Sources */,
 				DD88823D2A2E22FA00FA3C2E /* AppDelegate.swift in Sources */,
+				DD926C7E2AB9287F00D608B3 /* 1935. Maximum Number of Words You Can Type. LeetCode.swift in Sources */,
 				DD88823F2A2E22FA00FA3C2E /* SceneDelegate.swift in Sources */,
 				DD8AC33F2A586BB60074BB43 /* For-in.swift in Sources */,
 				DD91DCE22A4C992100FFFE3A /* Bubble sort.swift in Sources */,
