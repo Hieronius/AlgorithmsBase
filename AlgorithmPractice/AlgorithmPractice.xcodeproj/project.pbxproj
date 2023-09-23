@@ -26,6 +26,7 @@
 		DD9074422AA56921002FE9F0 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9074412AA56921002FE9F0 /* LinkedList.swift */; };
 		DD9085522A30D6A300E872E7 /* TwoSumsLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9085512A30D6A300E872E7 /* TwoSumsLeetCode.swift */; };
 		DD90C82A2ABA80BE00807E0B /* 412. Fizz Buzz. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90C8292ABA80BE00807E0B /* 412. Fizz Buzz. LeetCode.swift */; };
+		DD90C8AF2ABE7091002AFA11 /* 389. Find the Difference. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90C8AE2ABE7091002AFA11 /* 389. Find the Difference. LeetCode.swift */; };
 		DD918AD42AAD651D00AAB541 /* 1816. Truncate Sentence. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD918AD32AAD651D00AAB541 /* 1816. Truncate Sentence. LeetCode.swift */; };
 		DD918AD92AADB41500AAB541 /* 709. To Lower Case. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD918AD82AADB41500AAB541 /* 709. To Lower Case. LeetCode.swift */; };
 		DD91DCE22A4C992100FFFE3A /* Bubble sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91DCE12A4C992100FFFE3A /* Bubble sort.swift */; };
@@ -74,6 +75,7 @@
 		DD9074412AA56921002FE9F0 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		DD9085512A30D6A300E872E7 /* TwoSumsLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumsLeetCode.swift; sourceTree = "<group>"; };
 		DD90C8292ABA80BE00807E0B /* 412. Fizz Buzz. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "412. Fizz Buzz. LeetCode.swift"; sourceTree = "<group>"; };
+		DD90C8AE2ABE7091002AFA11 /* 389. Find the Difference. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "389. Find the Difference. LeetCode.swift"; sourceTree = "<group>"; };
 		DD918AD32AAD651D00AAB541 /* 1816. Truncate Sentence. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1816. Truncate Sentence. LeetCode.swift"; sourceTree = "<group>"; };
 		DD918AD82AADB41500AAB541 /* 709. To Lower Case. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "709. To Lower Case. LeetCode.swift"; sourceTree = "<group>"; };
 		DD91DCE12A4C992100FFFE3A /* Bubble sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bubble sort.swift"; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				DD90C8292ABA80BE00807E0B /* 412. Fizz Buzz. LeetCode.swift */,
 				DD8D7C022ABBCEEF00A682D9 /* 500. Keyboard Row. LeetCode.swift */,
 				DD95233A2ABD1CBD00CA14F2 /* 1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence. LeetCode.swift */,
+				DD90C8AE2ABE7091002AFA11 /* 389. Find the Difference. LeetCode.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				DD8D7C032ABBCEEF00A682D9 /* 500. Keyboard Row. LeetCode.swift in Sources */,
 				DD926C7E2AB9287F00D608B3 /* 1935. Maximum Number of Words You Can Type. LeetCode.swift in Sources */,
 				DD88823F2A2E22FA00FA3C2E /* SceneDelegate.swift in Sources */,
+				DD90C8AF2ABE7091002AFA11 /* 389. Find the Difference. LeetCode.swift in Sources */,
 				DD8AC33F2A586BB60074BB43 /* For-in.swift in Sources */,
 				DD91DCE22A4C992100FFFE3A /* Bubble sort.swift in Sources */,
 				DD8FECB82AB1472800676CAE /* Two Pointers.swift in Sources */,
