@@ -38,6 +38,7 @@
 		DD95E1522AA6C2940088A3A8 /* isPalindromeLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD95E1512AA6C2940088A3A8 /* isPalindromeLeetCode.swift */; };
 		DD9861632AAFF06A00F0B267 /* 804. Unique Morse Code Words. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9861622AAFF06A00F0B267 /* 804. Unique Morse Code Words. LeetCode.swift */; };
 		DD99E2AF2AA9549E000643D6 /* numJewelsInStonesLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD99E2AE2AA9549E000643D6 /* numJewelsInStonesLeetCode.swift */; };
+		DD9BDC662AC1143A00E8BF97 /* 1556. Thousand Separator. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9BDC652AC1143A00E8BF97 /* 1556. Thousand Separator. LeetCode.swift */; };
 		DD9C75A72AABF7CF007F6C35 /* 1221. Split a String in Balanced Strings LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9C75A62AABF7CF007F6C35 /* 1221. Split a String in Balanced Strings LeetCode.swift */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,7 @@
 		DD95E1512AA6C2940088A3A8 /* isPalindromeLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isPalindromeLeetCode.swift; sourceTree = "<group>"; };
 		DD9861622AAFF06A00F0B267 /* 804. Unique Morse Code Words. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "804. Unique Morse Code Words. LeetCode.swift"; sourceTree = "<group>"; };
 		DD99E2AE2AA9549E000643D6 /* numJewelsInStonesLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numJewelsInStonesLeetCode.swift; sourceTree = "<group>"; };
+		DD9BDC652AC1143A00E8BF97 /* 1556. Thousand Separator. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1556. Thousand Separator. LeetCode.swift"; sourceTree = "<group>"; };
 		DD9C75A62AABF7CF007F6C35 /* 1221. Split a String in Balanced Strings LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1221. Split a String in Balanced Strings LeetCode.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -210,6 +212,7 @@
 				DD95233A2ABD1CBD00CA14F2 /* 1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence. LeetCode.swift */,
 				DD90C8AE2ABE7091002AFA11 /* 389. Find the Difference. LeetCode.swift */,
 				DD8E3B1A2ABFBE9C00DB28BD /* 796. Rotate String. LeeCode.swift */,
+				DD9BDC652AC1143A00E8BF97 /* 1556. Thousand Separator. LeetCode.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				DD926C7E2AB9287F00D608B3 /* 1935. Maximum Number of Words You Can Type. LeetCode.swift in Sources */,
 				DD88823F2A2E22FA00FA3C2E /* SceneDelegate.swift in Sources */,
 				DD8E3B1B2ABFBE9C00DB28BD /* 796. Rotate String. LeeCode.swift in Sources */,
+				DD9BDC662AC1143A00E8BF97 /* 1556. Thousand Separator. LeetCode.swift in Sources */,
 				DD90C8AF2ABE7091002AFA11 /* 389. Find the Difference. LeetCode.swift in Sources */,
 				DD8AC33F2A586BB60074BB43 /* For-in.swift in Sources */,
 				DD91DCE22A4C992100FFFE3A /* Bubble sort.swift in Sources */,
