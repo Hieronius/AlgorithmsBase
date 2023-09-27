@@ -29,6 +29,7 @@
 		DD90C82A2ABA80BE00807E0B /* 412. Fizz Buzz. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90C8292ABA80BE00807E0B /* 412. Fizz Buzz. LeetCode.swift */; };
 		DD90C8AF2ABE7091002AFA11 /* 389. Find the Difference. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90C8AE2ABE7091002AFA11 /* 389. Find the Difference. LeetCode.swift */; };
 		DD9136182AC2614800C9C969 /* 551. Student Attendance Record I. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9136172AC2614800C9C969 /* 551. Student Attendance Record I. LeetCode.swift */; };
+		DD913E872AC3B3A0001EF339 /* 392. Is Subsequence. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD913E862AC3B3A0001EF339 /* 392. Is Subsequence. LeetCode.swift */; };
 		DD918AD42AAD651D00AAB541 /* 1816. Truncate Sentence. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD918AD32AAD651D00AAB541 /* 1816. Truncate Sentence. LeetCode.swift */; };
 		DD918AD92AADB41500AAB541 /* 709. To Lower Case. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD918AD82AADB41500AAB541 /* 709. To Lower Case. LeetCode.swift */; };
 		DD91DCE22A4C992100FFFE3A /* Bubble sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91DCE12A4C992100FFFE3A /* Bubble sort.swift */; };
@@ -81,6 +82,7 @@
 		DD90C8292ABA80BE00807E0B /* 412. Fizz Buzz. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "412. Fizz Buzz. LeetCode.swift"; sourceTree = "<group>"; };
 		DD90C8AE2ABE7091002AFA11 /* 389. Find the Difference. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "389. Find the Difference. LeetCode.swift"; sourceTree = "<group>"; };
 		DD9136172AC2614800C9C969 /* 551. Student Attendance Record I. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "551. Student Attendance Record I. LeetCode.swift"; sourceTree = "<group>"; };
+		DD913E862AC3B3A0001EF339 /* 392. Is Subsequence. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "392. Is Subsequence. LeetCode.swift"; sourceTree = "<group>"; };
 		DD918AD32AAD651D00AAB541 /* 1816. Truncate Sentence. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1816. Truncate Sentence. LeetCode.swift"; sourceTree = "<group>"; };
 		DD918AD82AADB41500AAB541 /* 709. To Lower Case. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "709. To Lower Case. LeetCode.swift"; sourceTree = "<group>"; };
 		DD91DCE12A4C992100FFFE3A /* Bubble sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bubble sort.swift"; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				DD8E3B1A2ABFBE9C00DB28BD /* 796. Rotate String. LeeCode.swift */,
 				DD9BDC652AC1143A00E8BF97 /* 1556. Thousand Separator. LeetCode.swift */,
 				DD9136172AC2614800C9C969 /* 551. Student Attendance Record I. LeetCode.swift */,
+				DD913E862AC3B3A0001EF339 /* 392. Is Subsequence. LeetCode.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				DD9861632AAFF06A00F0B267 /* 804. Unique Morse Code Words. LeetCode.swift in Sources */,
 				DD9085522A30D6A300E872E7 /* TwoSumsLeetCode.swift in Sources */,
 				DD8F09D62AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift in Sources */,
+				DD913E872AC3B3A0001EF339 /* 392. Is Subsequence. LeetCode.swift in Sources */,
 				DD8F95F82AB7D653008FDADF /* 2278. Percentage of Letter in String. LeetCode.swift in Sources */,
 				DD918AD92AADB41500AAB541 /* 709. To Lower Case. LeetCode.swift in Sources */,
 				DD8AC33D2A586BAC0074BB43 /* While.swift in Sources */,
