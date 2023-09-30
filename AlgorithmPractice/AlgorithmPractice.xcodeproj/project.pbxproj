@@ -44,6 +44,7 @@
 		DD99E2AF2AA9549E000643D6 /* numJewelsInStonesLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD99E2AE2AA9549E000643D6 /* numJewelsInStonesLeetCode.swift */; };
 		DD9BDC662AC1143A00E8BF97 /* 1556. Thousand Separator. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9BDC652AC1143A00E8BF97 /* 1556. Thousand Separator. LeetCode.swift */; };
 		DD9C75A72AABF7CF007F6C35 /* 1221. Split a String in Balanced Strings LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9C75A62AABF7CF007F6C35 /* 1221. Split a String in Balanced Strings LeetCode.swift */; };
+		DD9DAB422AC7AB940073ADB9 /* 2185. Counting Words With a Given Prefix. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DAB412AC7AB940073ADB9 /* 2185. Counting Words With a Given Prefix. LeetCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -99,6 +100,7 @@
 		DD99E2AE2AA9549E000643D6 /* numJewelsInStonesLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numJewelsInStonesLeetCode.swift; sourceTree = "<group>"; };
 		DD9BDC652AC1143A00E8BF97 /* 1556. Thousand Separator. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1556. Thousand Separator. LeetCode.swift"; sourceTree = "<group>"; };
 		DD9C75A62AABF7CF007F6C35 /* 1221. Split a String in Balanced Strings LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1221. Split a String in Balanced Strings LeetCode.swift"; sourceTree = "<group>"; };
+		DD9DAB412AC7AB940073ADB9 /* 2185. Counting Words With a Given Prefix. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2185. Counting Words With a Given Prefix. LeetCode.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 				DD913E862AC3B3A0001EF339 /* 392. Is Subsequence. LeetCode.swift */,
 				DD8D4FBC2AC50AD30067A88F /* 844. Backspace String Compare. LeetCode.swift */,
 				DD8BBBB12AC65B790070E352 /* 1154. Day of the Year. LeetCode.swift */,
+				DD9DAB412AC7AB940073ADB9 /* 2185. Counting Words With a Given Prefix. LeetCode.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				DD8BBBB22AC65B790070E352 /* 1154. Day of the Year. LeetCode.swift in Sources */,
 				DD91DCE22A4C992100FFFE3A /* Bubble sort.swift in Sources */,
 				DD8FECB82AB1472800676CAE /* Two Pointers.swift in Sources */,
+				DD9DAB422AC7AB940073ADB9 /* 2185. Counting Words With a Given Prefix. LeetCode.swift in Sources */,
 				DD95E1522AA6C2940088A3A8 /* isPalindromeLeetCode.swift in Sources */,
 				DD9861632AAFF06A00F0B267 /* 804. Unique Morse Code Words. LeetCode.swift in Sources */,
 				DD9085522A30D6A300E872E7 /* TwoSumsLeetCode.swift in Sources */,
