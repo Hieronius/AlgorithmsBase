@@ -47,6 +47,7 @@
 		DD9BDC662AC1143A00E8BF97 /* 1556. Thousand Separator. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9BDC652AC1143A00E8BF97 /* 1556. Thousand Separator. LeetCode.swift */; };
 		DD9C75A72AABF7CF007F6C35 /* 1221. Split a String in Balanced Strings LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9C75A62AABF7CF007F6C35 /* 1221. Split a String in Balanced Strings LeetCode.swift */; };
 		DD9DAB422AC7AB940073ADB9 /* 2185. Counting Words With a Given Prefix. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DAB412AC7AB940073ADB9 /* 2185. Counting Words With a Given Prefix. LeetCode.swift */; };
+		DDC8EFBC2ACA4CD4005602A4 /* 125. Valid Palindrome. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8EFBB2ACA4CD4005602A4 /* 125. Valid Palindrome. LeetCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -105,6 +106,7 @@
 		DD9BDC652AC1143A00E8BF97 /* 1556. Thousand Separator. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1556. Thousand Separator. LeetCode.swift"; sourceTree = "<group>"; };
 		DD9C75A62AABF7CF007F6C35 /* 1221. Split a String in Balanced Strings LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1221. Split a String in Balanced Strings LeetCode.swift"; sourceTree = "<group>"; };
 		DD9DAB412AC7AB940073ADB9 /* 2185. Counting Words With a Given Prefix. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2185. Counting Words With a Given Prefix. LeetCode.swift"; sourceTree = "<group>"; };
+		DDC8EFBB2ACA4CD4005602A4 /* 125. Valid Palindrome. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "125. Valid Palindrome. LeetCode.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +236,7 @@
 				DD9DAB412AC7AB940073ADB9 /* 2185. Counting Words With a Given Prefix. LeetCode.swift */,
 				DD93B8902AC8FC2E007AE823 /* 383. Ransom Note. LeetCode.swift */,
 				DD883C552AC9D0F100042EC5 /* 2609. Find the Longest Balanced Substring of a Binary String. LeetCode.swift */,
+				DDC8EFBB2ACA4CD4005602A4 /* 125. Valid Palindrome. LeetCode.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				DD8882512A2E236600FA3C2E /* BinarySearch.swift in Sources */,
 				DD8AC33B2A586B470074BB43 /* Higher order functions.swift in Sources */,
 				DD9074422AA56921002FE9F0 /* LinkedList.swift in Sources */,
+				DDC8EFBC2ACA4CD4005602A4 /* 125. Valid Palindrome. LeetCode.swift in Sources */,
 				DD93B8912AC8FC2E007AE823 /* 383. Ransom Note. LeetCode.swift in Sources */,
 				DD9C75A72AABF7CF007F6C35 /* 1221. Split a String in Balanced Strings LeetCode.swift in Sources */,
 				DD95233B2ABD1CBD00CA14F2 /* 1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence. LeetCode.swift in Sources */,
