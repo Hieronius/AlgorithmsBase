@@ -40,6 +40,7 @@
 		DD926C7E2AB9287F00D608B3 /* 1935. Maximum Number of Words You Can Type. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD926C7D2AB9287F00D608B3 /* 1935. Maximum Number of Words You Can Type. LeetCode.swift */; };
 		DD92C0502AB535000045155B /* 2710. Remove Trailing Zeros From a String. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92C04F2AB535000045155B /* 2710. Remove Trailing Zeros From a String. LeetCode.swift */; };
 		DD93B8912AC8FC2E007AE823 /* 383. Ransom Note. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD93B8902AC8FC2E007AE823 /* 383. Ransom Note. LeetCode.swift */; };
+		DD93BA112ACBA037000F3F3F /* 2259. Remove Digit From Number to Maximize Result. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD93BA102ACBA037000F3F3F /* 2259. Remove Digit From Number to Maximize Result. LeetCode.swift */; };
 		DD95233B2ABD1CBD00CA14F2 /* 1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD95233A2ABD1CBD00CA14F2 /* 1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence. LeetCode.swift */; };
 		DD95E1522AA6C2940088A3A8 /* isPalindromeLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD95E1512AA6C2940088A3A8 /* isPalindromeLeetCode.swift */; };
 		DD9861632AAFF06A00F0B267 /* 804. Unique Morse Code Words. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9861622AAFF06A00F0B267 /* 804. Unique Morse Code Words. LeetCode.swift */; };
@@ -99,6 +100,7 @@
 		DD926C7D2AB9287F00D608B3 /* 1935. Maximum Number of Words You Can Type. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1935. Maximum Number of Words You Can Type. LeetCode.swift"; sourceTree = "<group>"; };
 		DD92C04F2AB535000045155B /* 2710. Remove Trailing Zeros From a String. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2710. Remove Trailing Zeros From a String. LeetCode.swift"; sourceTree = "<group>"; };
 		DD93B8902AC8FC2E007AE823 /* 383. Ransom Note. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "383. Ransom Note. LeetCode.swift"; sourceTree = "<group>"; };
+		DD93BA102ACBA037000F3F3F /* 2259. Remove Digit From Number to Maximize Result. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2259. Remove Digit From Number to Maximize Result. LeetCode.swift"; sourceTree = "<group>"; };
 		DD95233A2ABD1CBD00CA14F2 /* 1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence. LeetCode.swift"; sourceTree = "<group>"; };
 		DD95E1512AA6C2940088A3A8 /* isPalindromeLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isPalindromeLeetCode.swift; sourceTree = "<group>"; };
 		DD9861622AAFF06A00F0B267 /* 804. Unique Morse Code Words. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "804. Unique Morse Code Words. LeetCode.swift"; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 				DD93B8902AC8FC2E007AE823 /* 383. Ransom Note. LeetCode.swift */,
 				DD883C552AC9D0F100042EC5 /* 2609. Find the Longest Balanced Substring of a Binary String. LeetCode.swift */,
 				DDC8EFBB2ACA4CD4005602A4 /* 125. Valid Palindrome. LeetCode.swift */,
+				DD93BA102ACBA037000F3F3F /* 2259. Remove Digit From Number to Maximize Result. LeetCode.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD99E2AF2AA9549E000643D6 /* numJewelsInStonesLeetCode.swift in Sources */,
+				DD93BA112ACBA037000F3F3F /* 2259. Remove Digit From Number to Maximize Result. LeetCode.swift in Sources */,
 				DD8882512A2E236600FA3C2E /* BinarySearch.swift in Sources */,
 				DD8AC33B2A586B470074BB43 /* Higher order functions.swift in Sources */,
 				DD9074422AA56921002FE9F0 /* LinkedList.swift in Sources */,
