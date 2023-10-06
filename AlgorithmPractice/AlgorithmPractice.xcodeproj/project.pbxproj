@@ -42,6 +42,7 @@
 		DD92C0502AB535000045155B /* 2710. Remove Trailing Zeros From a String. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92C04F2AB535000045155B /* 2710. Remove Trailing Zeros From a String. LeetCode.swift */; };
 		DD93B8912AC8FC2E007AE823 /* 383. Ransom Note. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD93B8902AC8FC2E007AE823 /* 383. Ransom Note. LeetCode.swift */; };
 		DD93BA112ACBA037000F3F3F /* 2259. Remove Digit From Number to Maximize Result. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD93BA102ACBA037000F3F3F /* 2259. Remove Digit From Number to Maximize Result. LeetCode.swift */; };
+		DD94498F2ACF9A4400F6E1DF /* 168. Excel Sheet Column Title. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94498E2ACF9A4400F6E1DF /* 168. Excel Sheet Column Title. LeetCode.swift */; };
 		DD95233B2ABD1CBD00CA14F2 /* 1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD95233A2ABD1CBD00CA14F2 /* 1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence. LeetCode.swift */; };
 		DD9591FB2ACE3FA100D1E5CD /* 680. Valid Palindrome II. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9591FA2ACE3FA100D1E5CD /* 680. Valid Palindrome II. LeetCode.swift */; };
 		DD95E1522AA6C2940088A3A8 /* isPalindromeLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD95E1512AA6C2940088A3A8 /* isPalindromeLeetCode.swift */; };
@@ -104,6 +105,7 @@
 		DD92C04F2AB535000045155B /* 2710. Remove Trailing Zeros From a String. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2710. Remove Trailing Zeros From a String. LeetCode.swift"; sourceTree = "<group>"; };
 		DD93B8902AC8FC2E007AE823 /* 383. Ransom Note. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "383. Ransom Note. LeetCode.swift"; sourceTree = "<group>"; };
 		DD93BA102ACBA037000F3F3F /* 2259. Remove Digit From Number to Maximize Result. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2259. Remove Digit From Number to Maximize Result. LeetCode.swift"; sourceTree = "<group>"; };
+		DD94498E2ACF9A4400F6E1DF /* 168. Excel Sheet Column Title. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "168. Excel Sheet Column Title. LeetCode.swift"; sourceTree = "<group>"; };
 		DD95233A2ABD1CBD00CA14F2 /* 1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence. LeetCode.swift"; sourceTree = "<group>"; };
 		DD9591FA2ACE3FA100D1E5CD /* 680. Valid Palindrome II. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "680. Valid Palindrome II. LeetCode.swift"; sourceTree = "<group>"; };
 		DD95E1512AA6C2940088A3A8 /* isPalindromeLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isPalindromeLeetCode.swift; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 				DD93BA102ACBA037000F3F3F /* 2259. Remove Digit From Number to Maximize Result. LeetCode.swift */,
 				DD9045042ACCEE9E0038ADC1 /* 28. Find the Index of the First Occurrence in a String. LeetCode.swift */,
 				DD9591FA2ACE3FA100D1E5CD /* 680. Valid Palindrome II. LeetCode.swift */,
+				DD94498E2ACF9A4400F6E1DF /* 168. Excel Sheet Column Title. LeetCode.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				DD8882412A2E22FA00FA3C2E /* TestViewController.swift in Sources */,
 				DD90C82A2ABA80BE00807E0B /* 412. Fizz Buzz. LeetCode.swift in Sources */,
 				DD88823D2A2E22FA00FA3C2E /* AppDelegate.swift in Sources */,
+				DD94498F2ACF9A4400F6E1DF /* 168. Excel Sheet Column Title. LeetCode.swift in Sources */,
 				DD8D7C032ABBCEEF00A682D9 /* 500. Keyboard Row. LeetCode.swift in Sources */,
 				DD926C7E2AB9287F00D608B3 /* 1935. Maximum Number of Words You Can Type. LeetCode.swift in Sources */,
 				DD88823F2A2E22FA00FA3C2E /* SceneDelegate.swift in Sources */,
