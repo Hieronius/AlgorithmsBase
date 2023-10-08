@@ -40,6 +40,7 @@
 		DD91DCE22A4C992100FFFE3A /* Bubble sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91DCE12A4C992100FFFE3A /* Bubble sort.swift */; };
 		DD922ECA2AB3E1C100CCB91B /* 2744. Find Maximum Number of String Pairs. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD922EC92AB3E1C100CCB91B /* 2744. Find Maximum Number of String Pairs. LeetCode.swift */; };
 		DD926C7E2AB9287F00D608B3 /* 1935. Maximum Number of Words You Can Type. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD926C7D2AB9287F00D608B3 /* 1935. Maximum Number of Words You Can Type. LeetCode.swift */; };
+		DD92A6D12AD23319001C86B2 /* 434. Number of Segments in a String. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92A6D02AD23319001C86B2 /* 434. Number of Segments in a String. LeetCode.swift */; };
 		DD92C0502AB535000045155B /* 2710. Remove Trailing Zeros From a String. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92C04F2AB535000045155B /* 2710. Remove Trailing Zeros From a String. LeetCode.swift */; };
 		DD93B8912AC8FC2E007AE823 /* 383. Ransom Note. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD93B8902AC8FC2E007AE823 /* 383. Ransom Note. LeetCode.swift */; };
 		DD93BA112ACBA037000F3F3F /* 2259. Remove Digit From Number to Maximize Result. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD93BA102ACBA037000F3F3F /* 2259. Remove Digit From Number to Maximize Result. LeetCode.swift */; };
@@ -104,6 +105,7 @@
 		DD91DCE12A4C992100FFFE3A /* Bubble sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bubble sort.swift"; sourceTree = "<group>"; };
 		DD922EC92AB3E1C100CCB91B /* 2744. Find Maximum Number of String Pairs. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2744. Find Maximum Number of String Pairs. LeetCode.swift"; sourceTree = "<group>"; };
 		DD926C7D2AB9287F00D608B3 /* 1935. Maximum Number of Words You Can Type. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1935. Maximum Number of Words You Can Type. LeetCode.swift"; sourceTree = "<group>"; };
+		DD92A6D02AD23319001C86B2 /* 434. Number of Segments in a String. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "434. Number of Segments in a String. LeetCode.swift"; sourceTree = "<group>"; };
 		DD92C04F2AB535000045155B /* 2710. Remove Trailing Zeros From a String. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2710. Remove Trailing Zeros From a String. LeetCode.swift"; sourceTree = "<group>"; };
 		DD93B8902AC8FC2E007AE823 /* 383. Ransom Note. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "383. Ransom Note. LeetCode.swift"; sourceTree = "<group>"; };
 		DD93BA102ACBA037000F3F3F /* 2259. Remove Digit From Number to Maximize Result. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2259. Remove Digit From Number to Maximize Result. LeetCode.swift"; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 				DD9591FA2ACE3FA100D1E5CD /* 680. Valid Palindrome II. LeetCode.swift */,
 				DD94498E2ACF9A4400F6E1DF /* 168. Excel Sheet Column Title. LeetCode.swift */,
 				DD8F1F712AD0ECAE00EDBF28 /* 1784. Check if Binary String Has at Most One Segment of Ones. LeetCode.swift */,
+				DD92A6D02AD23319001C86B2 /* 434. Number of Segments in a String. LeetCode.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				DD913E872AC3B3A0001EF339 /* 392. Is Subsequence. LeetCode.swift in Sources */,
 				DD9045052ACCEE9E0038ADC1 /* 28. Find the Index of the First Occurrence in a String. LeetCode.swift in Sources */,
 				DD8F95F82AB7D653008FDADF /* 2278. Percentage of Letter in String. LeetCode.swift in Sources */,
+				DD92A6D12AD23319001C86B2 /* 434. Number of Segments in a String. LeetCode.swift in Sources */,
 				DD918AD92AADB41500AAB541 /* 709. To Lower Case. LeetCode.swift in Sources */,
 				DD8AC33D2A586BAC0074BB43 /* While.swift in Sources */,
 			);
