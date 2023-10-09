@@ -53,6 +53,7 @@
 		DD9BDC662AC1143A00E8BF97 /* 1556. Thousand Separator. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9BDC652AC1143A00E8BF97 /* 1556. Thousand Separator. LeetCode.swift */; };
 		DD9C75A72AABF7CF007F6C35 /* 1221. Split a String in Balanced Strings LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9C75A62AABF7CF007F6C35 /* 1221. Split a String in Balanced Strings LeetCode.swift */; };
 		DD9DAB422AC7AB940073ADB9 /* 2185. Counting Words With a Given Prefix. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DAB412AC7AB940073ADB9 /* 2185. Counting Words With a Given Prefix. LeetCode.swift */; };
+		DDA562162AD3877C00C0442A /* 859. Buddy Strings. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA562152AD3877C00C0442A /* 859. Buddy Strings. LeetCode.swift */; };
 		DDC8EFBC2ACA4CD4005602A4 /* 125. Valid Palindrome. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8EFBB2ACA4CD4005602A4 /* 125. Valid Palindrome. LeetCode.swift */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +119,7 @@
 		DD9BDC652AC1143A00E8BF97 /* 1556. Thousand Separator. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1556. Thousand Separator. LeetCode.swift"; sourceTree = "<group>"; };
 		DD9C75A62AABF7CF007F6C35 /* 1221. Split a String in Balanced Strings LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1221. Split a String in Balanced Strings LeetCode.swift"; sourceTree = "<group>"; };
 		DD9DAB412AC7AB940073ADB9 /* 2185. Counting Words With a Given Prefix. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2185. Counting Words With a Given Prefix. LeetCode.swift"; sourceTree = "<group>"; };
+		DDA562152AD3877C00C0442A /* 859. Buddy Strings. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "859. Buddy Strings. LeetCode.swift"; sourceTree = "<group>"; };
 		DDC8EFBB2ACA4CD4005602A4 /* 125. Valid Palindrome. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "125. Valid Palindrome. LeetCode.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -255,6 +257,7 @@
 				DD94498E2ACF9A4400F6E1DF /* 168. Excel Sheet Column Title. LeetCode.swift */,
 				DD8F1F712AD0ECAE00EDBF28 /* 1784. Check if Binary String Has at Most One Segment of Ones. LeetCode.swift */,
 				DD92A6D02AD23319001C86B2 /* 434. Number of Segments in a String. LeetCode.swift */,
+				DDA562152AD3877C00C0442A /* 859. Buddy Strings. LeetCode.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 				DD8AC33F2A586BB60074BB43 /* For-in.swift in Sources */,
 				DD883C562AC9D0F100042EC5 /* 2609. Find the Longest Balanced Substring of a Binary String. LeetCode.swift in Sources */,
 				DD8BBBB22AC65B790070E352 /* 1154. Day of the Year. LeetCode.swift in Sources */,
+				DDA562162AD3877C00C0442A /* 859. Buddy Strings. LeetCode.swift in Sources */,
 				DD91DCE22A4C992100FFFE3A /* Bubble sort.swift in Sources */,
 				DD8FECB82AB1472800676CAE /* Two Pointers.swift in Sources */,
 				DD9DAB422AC7AB940073ADB9 /* 2185. Counting Words With a Given Prefix. LeetCode.swift in Sources */,
