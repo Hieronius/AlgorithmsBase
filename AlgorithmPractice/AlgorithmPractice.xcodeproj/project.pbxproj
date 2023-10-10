@@ -22,6 +22,7 @@
 		DD8CBCF42AB6846800F73C0B /* 344. Reverse String. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8CBCF32AB6846800F73C0B /* 344. Reverse String. LeetCode.swift */; };
 		DD8D4FBD2AC50AD30067A88F /* 844. Backspace String Compare. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8D4FBC2AC50AD30067A88F /* 844. Backspace String Compare. LeetCode.swift */; };
 		DD8D7C032ABBCEEF00A682D9 /* 500. Keyboard Row. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8D7C022ABBCEEF00A682D9 /* 500. Keyboard Row. LeetCode.swift */; };
+		DD8E18122AD4D18400528D03 /* 925. Long Pressed Name. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8E18112AD4D18400528D03 /* 925. Long Pressed Name. LeetCode.swift */; };
 		DD8E3B1B2ABFBE9C00DB28BD /* 796. Rotate String. LeeCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8E3B1A2ABFBE9C00DB28BD /* 796. Rotate String. LeeCode.swift */; };
 		DD8F09D62AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8F09D52AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift */; };
 		DD8F1F722AD0ECAE00EDBF28 /* 1784. Check if Binary String Has at Most One Segment of Ones. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8F1F712AD0ECAE00EDBF28 /* 1784. Check if Binary String Has at Most One Segment of Ones. LeetCode.swift */; };
@@ -88,6 +89,7 @@
 		DD8CBCF32AB6846800F73C0B /* 344. Reverse String. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "344. Reverse String. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8D4FBC2AC50AD30067A88F /* 844. Backspace String Compare. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "844. Backspace String Compare. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8D7C022ABBCEEF00A682D9 /* 500. Keyboard Row. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "500. Keyboard Row. LeetCode.swift"; sourceTree = "<group>"; };
+		DD8E18112AD4D18400528D03 /* 925. Long Pressed Name. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "925. Long Pressed Name. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8E3B1A2ABFBE9C00DB28BD /* 796. Rotate String. LeeCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "796. Rotate String. LeeCode.swift"; sourceTree = "<group>"; };
 		DD8F09D52AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalValueAfterOperationLeetCode.swift; sourceTree = "<group>"; };
 		DD8F1F712AD0ECAE00EDBF28 /* 1784. Check if Binary String Has at Most One Segment of Ones. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1784. Check if Binary String Has at Most One Segment of Ones. LeetCode.swift"; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 				DD8F1F712AD0ECAE00EDBF28 /* 1784. Check if Binary String Has at Most One Segment of Ones. LeetCode.swift */,
 				DD92A6D02AD23319001C86B2 /* 434. Number of Segments in a String. LeetCode.swift */,
 				DDA562152AD3877C00C0442A /* 859. Buddy Strings. LeetCode.swift */,
+				DD8E18112AD4D18400528D03 /* 925. Long Pressed Name. LeetCode.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				DD90C82A2ABA80BE00807E0B /* 412. Fizz Buzz. LeetCode.swift in Sources */,
 				DD88823D2A2E22FA00FA3C2E /* AppDelegate.swift in Sources */,
 				DD94498F2ACF9A4400F6E1DF /* 168. Excel Sheet Column Title. LeetCode.swift in Sources */,
+				DD8E18122AD4D18400528D03 /* 925. Long Pressed Name. LeetCode.swift in Sources */,
 				DD8D7C032ABBCEEF00A682D9 /* 500. Keyboard Row. LeetCode.swift in Sources */,
 				DD926C7E2AB9287F00D608B3 /* 1935. Maximum Number of Words You Can Type. LeetCode.swift in Sources */,
 				DD88823F2A2E22FA00FA3C2E /* SceneDelegate.swift in Sources */,
