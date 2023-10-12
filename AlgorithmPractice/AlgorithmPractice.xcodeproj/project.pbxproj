@@ -20,6 +20,7 @@
 		DD8AC33F2A586BB60074BB43 /* For-in.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8AC33E2A586BB60074BB43 /* For-in.swift */; };
 		DD8BBBB22AC65B790070E352 /* 1154. Day of the Year. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8BBBB12AC65B790070E352 /* 1154. Day of the Year. LeetCode.swift */; };
 		DD8CBCF42AB6846800F73C0B /* 344. Reverse String. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8CBCF32AB6846800F73C0B /* 344. Reverse String. LeetCode.swift */; };
+		DD8D11342AD779CA0064DD40 /* 2824. Count Pairs Whose Sum is Less than Target. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8D11332AD779CA0064DD40 /* 2824. Count Pairs Whose Sum is Less than Target. LeetCode.swift */; };
 		DD8D4FBD2AC50AD30067A88F /* 844. Backspace String Compare. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8D4FBC2AC50AD30067A88F /* 844. Backspace String Compare. LeetCode.swift */; };
 		DD8D7C032ABBCEEF00A682D9 /* 500. Keyboard Row. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8D7C022ABBCEEF00A682D9 /* 500. Keyboard Row. LeetCode.swift */; };
 		DD8E18122AD4D18400528D03 /* 925. Long Pressed Name. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8E18112AD4D18400528D03 /* 925. Long Pressed Name. LeetCode.swift */; };
@@ -88,6 +89,7 @@
 		DD8AC33E2A586BB60074BB43 /* For-in.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "For-in.swift"; sourceTree = "<group>"; };
 		DD8BBBB12AC65B790070E352 /* 1154. Day of the Year. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1154. Day of the Year. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8CBCF32AB6846800F73C0B /* 344. Reverse String. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "344. Reverse String. LeetCode.swift"; sourceTree = "<group>"; };
+		DD8D11332AD779CA0064DD40 /* 2824. Count Pairs Whose Sum is Less than Target. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2824. Count Pairs Whose Sum is Less than Target. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8D4FBC2AC50AD30067A88F /* 844. Backspace String Compare. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "844. Backspace String Compare. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8D7C022ABBCEEF00A682D9 /* 500. Keyboard Row. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "500. Keyboard Row. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8E18112AD4D18400528D03 /* 925. Long Pressed Name. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "925. Long Pressed Name. LeetCode.swift"; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				DD8FECB62AB1471300676CAE /* Sorts */,
+				DD8E18182AD6280100528D03 /* TwoPointers. LeetCode */,
 				DD918AD72AAD686400AAB541 /* LeetCode */,
 				DD8FECB52AB1470500676CAE /* Algorithms */,
 				DD8AC3412A586BCC0074BB43 /* Functions */,
@@ -204,6 +207,14 @@
 				DD8AC33E2A586BB60074BB43 /* For-in.swift */,
 			);
 			path = "Homework Tasks";
+			sourceTree = "<group>";
+		};
+		DD8E18182AD6280100528D03 /* TwoPointers. LeetCode */ = {
+			isa = PBXGroup;
+			children = (
+				DD8D11332AD779CA0064DD40 /* 2824. Count Pairs Whose Sum is Less than Target. LeetCode.swift */,
+			);
+			path = "TwoPointers. LeetCode";
 			sourceTree = "<group>";
 		};
 		DD8FECB52AB1470500676CAE /* Algorithms */ = {
@@ -402,6 +413,7 @@
 				DDA562162AD3877C00C0442A /* 859. Buddy Strings. LeetCode.swift in Sources */,
 				DD91DCE22A4C992100FFFE3A /* Bubble sort.swift in Sources */,
 				DD8FECB82AB1472800676CAE /* Two Pointers.swift in Sources */,
+				DD8D11342AD779CA0064DD40 /* 2824. Count Pairs Whose Sum is Less than Target. LeetCode.swift in Sources */,
 				DD9DAB422AC7AB940073ADB9 /* 2185. Counting Words With a Given Prefix. LeetCode.swift in Sources */,
 				DD95E1522AA6C2940088A3A8 /* isPalindromeLeetCode.swift in Sources */,
 				DD9861632AAFF06A00F0B267 /* 804. Unique Morse Code Words. LeetCode.swift in Sources */,
