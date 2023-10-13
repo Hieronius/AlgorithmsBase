@@ -45,6 +45,7 @@
 		DD926C7E2AB9287F00D608B3 /* 1935. Maximum Number of Words You Can Type. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD926C7D2AB9287F00D608B3 /* 1935. Maximum Number of Words You Can Type. LeetCode.swift */; };
 		DD92A6D12AD23319001C86B2 /* 434. Number of Segments in a String. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92A6D02AD23319001C86B2 /* 434. Number of Segments in a String. LeetCode.swift */; };
 		DD92C0502AB535000045155B /* 2710. Remove Trailing Zeros From a String. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92C04F2AB535000045155B /* 2710. Remove Trailing Zeros From a String. LeetCode.swift */; };
+		DD936FEC2AD8D0AB0094257B /* 2367. Number of Arithmetic Triplets. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD936FEB2AD8D0AB0094257B /* 2367. Number of Arithmetic Triplets. LeetCode.swift */; };
 		DD93B8912AC8FC2E007AE823 /* 383. Ransom Note. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD93B8902AC8FC2E007AE823 /* 383. Ransom Note. LeetCode.swift */; };
 		DD93BA112ACBA037000F3F3F /* 2259. Remove Digit From Number to Maximize Result. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD93BA102ACBA037000F3F3F /* 2259. Remove Digit From Number to Maximize Result. LeetCode.swift */; };
 		DD94498F2ACF9A4400F6E1DF /* 168. Excel Sheet Column Title. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94498E2ACF9A4400F6E1DF /* 168. Excel Sheet Column Title. LeetCode.swift */; };
@@ -114,6 +115,7 @@
 		DD926C7D2AB9287F00D608B3 /* 1935. Maximum Number of Words You Can Type. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1935. Maximum Number of Words You Can Type. LeetCode.swift"; sourceTree = "<group>"; };
 		DD92A6D02AD23319001C86B2 /* 434. Number of Segments in a String. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "434. Number of Segments in a String. LeetCode.swift"; sourceTree = "<group>"; };
 		DD92C04F2AB535000045155B /* 2710. Remove Trailing Zeros From a String. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2710. Remove Trailing Zeros From a String. LeetCode.swift"; sourceTree = "<group>"; };
+		DD936FEB2AD8D0AB0094257B /* 2367. Number of Arithmetic Triplets. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2367. Number of Arithmetic Triplets. LeetCode.swift"; sourceTree = "<group>"; };
 		DD93B8902AC8FC2E007AE823 /* 383. Ransom Note. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "383. Ransom Note. LeetCode.swift"; sourceTree = "<group>"; };
 		DD93BA102ACBA037000F3F3F /* 2259. Remove Digit From Number to Maximize Result. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2259. Remove Digit From Number to Maximize Result. LeetCode.swift"; sourceTree = "<group>"; };
 		DD94498E2ACF9A4400F6E1DF /* 168. Excel Sheet Column Title. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "168. Excel Sheet Column Title. LeetCode.swift"; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				DD8D11332AD779CA0064DD40 /* 2824. Count Pairs Whose Sum is Less than Target. LeetCode.swift */,
+				DD936FEB2AD8D0AB0094257B /* 2367. Number of Arithmetic Triplets. LeetCode.swift */,
 			);
 			path = "TwoPointers. LeetCode";
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				DD8882412A2E22FA00FA3C2E /* TestViewController.swift in Sources */,
 				DD90C82A2ABA80BE00807E0B /* 412. Fizz Buzz. LeetCode.swift in Sources */,
 				DD88823D2A2E22FA00FA3C2E /* AppDelegate.swift in Sources */,
+				DD936FEC2AD8D0AB0094257B /* 2367. Number of Arithmetic Triplets. LeetCode.swift in Sources */,
 				DD94498F2ACF9A4400F6E1DF /* 168. Excel Sheet Column Title. LeetCode.swift in Sources */,
 				DD8E18172AD6277300528D03 /* 1805. Number of Different Integers in a String.swift in Sources */,
 				DD8E18122AD4D18400528D03 /* 925. Long Pressed Name. LeetCode.swift in Sources */,
