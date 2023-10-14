@@ -26,6 +26,7 @@
 		DD8E18122AD4D18400528D03 /* 925. Long Pressed Name. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8E18112AD4D18400528D03 /* 925. Long Pressed Name. LeetCode.swift */; };
 		DD8E18172AD6277300528D03 /* 1805. Number of Different Integers in a String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8E18162AD6277300528D03 /* 1805. Number of Different Integers in a String.swift */; };
 		DD8E3B1B2ABFBE9C00DB28BD /* 796. Rotate String. LeeCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8E3B1A2ABFBE9C00DB28BD /* 796. Rotate String. LeeCode.swift */; };
+		DD8E81E52ADA237900D4E721 /* 832. Flipping an Image. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8E81E42ADA237900D4E721 /* 832. Flipping an Image. LeetCode.swift */; };
 		DD8F09D62AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8F09D52AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift */; };
 		DD8F1F722AD0ECAE00EDBF28 /* 1784. Check if Binary String Has at Most One Segment of Ones. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8F1F712AD0ECAE00EDBF28 /* 1784. Check if Binary String Has at Most One Segment of Ones. LeetCode.swift */; };
 		DD8F95F82AB7D653008FDADF /* 2278. Percentage of Letter in String. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8F95F72AB7D653008FDADF /* 2278. Percentage of Letter in String. LeetCode.swift */; };
@@ -96,6 +97,7 @@
 		DD8E18112AD4D18400528D03 /* 925. Long Pressed Name. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "925. Long Pressed Name. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8E18162AD6277300528D03 /* 1805. Number of Different Integers in a String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1805. Number of Different Integers in a String.swift"; sourceTree = "<group>"; };
 		DD8E3B1A2ABFBE9C00DB28BD /* 796. Rotate String. LeeCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "796. Rotate String. LeeCode.swift"; sourceTree = "<group>"; };
+		DD8E81E42ADA237900D4E721 /* 832. Flipping an Image. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "832. Flipping an Image. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8F09D52AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalValueAfterOperationLeetCode.swift; sourceTree = "<group>"; };
 		DD8F1F712AD0ECAE00EDBF28 /* 1784. Check if Binary String Has at Most One Segment of Ones. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1784. Check if Binary String Has at Most One Segment of Ones. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8F95F72AB7D653008FDADF /* 2278. Percentage of Letter in String. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2278. Percentage of Letter in String. LeetCode.swift"; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 			children = (
 				DD8D11332AD779CA0064DD40 /* 2824. Count Pairs Whose Sum is Less than Target. LeetCode.swift */,
 				DD936FEB2AD8D0AB0094257B /* 2367. Number of Arithmetic Triplets. LeetCode.swift */,
+				DD8E81E42ADA237900D4E721 /* 832. Flipping an Image. LeetCode.swift */,
 			);
 			path = "TwoPointers. LeetCode";
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				DD8F95F82AB7D653008FDADF /* 2278. Percentage of Letter in String. LeetCode.swift in Sources */,
 				DD92A6D12AD23319001C86B2 /* 434. Number of Segments in a String. LeetCode.swift in Sources */,
 				DD918AD92AADB41500AAB541 /* 709. To Lower Case. LeetCode.swift in Sources */,
+				DD8E81E52ADA237900D4E721 /* 832. Flipping an Image. LeetCode.swift in Sources */,
 				DD8AC33D2A586BAC0074BB43 /* While.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
