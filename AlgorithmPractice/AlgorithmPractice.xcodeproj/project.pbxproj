@@ -54,6 +54,7 @@
 		DD95233B2ABD1CBD00CA14F2 /* 1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD95233A2ABD1CBD00CA14F2 /* 1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence. LeetCode.swift */; };
 		DD9591FB2ACE3FA100D1E5CD /* 680. Valid Palindrome II. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9591FA2ACE3FA100D1E5CD /* 680. Valid Palindrome II. LeetCode.swift */; };
 		DD95E1522AA6C2940088A3A8 /* isPalindromeLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD95E1512AA6C2940088A3A8 /* isPalindromeLeetCode.swift */; };
+		DD964F332ADCC7A70011481E /* 1768. Merge Strings Alternately. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD964F322ADCC7A70011481E /* 1768. Merge Strings Alternately. LeetCode.swift */; };
 		DD9861632AAFF06A00F0B267 /* 804. Unique Morse Code Words. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9861622AAFF06A00F0B267 /* 804. Unique Morse Code Words. LeetCode.swift */; };
 		DD99E2AF2AA9549E000643D6 /* numJewelsInStonesLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD99E2AE2AA9549E000643D6 /* numJewelsInStonesLeetCode.swift */; };
 		DD9BDC662AC1143A00E8BF97 /* 1556. Thousand Separator. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9BDC652AC1143A00E8BF97 /* 1556. Thousand Separator. LeetCode.swift */; };
@@ -126,6 +127,7 @@
 		DD95233A2ABD1CBD00CA14F2 /* 1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence. LeetCode.swift"; sourceTree = "<group>"; };
 		DD9591FA2ACE3FA100D1E5CD /* 680. Valid Palindrome II. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "680. Valid Palindrome II. LeetCode.swift"; sourceTree = "<group>"; };
 		DD95E1512AA6C2940088A3A8 /* isPalindromeLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isPalindromeLeetCode.swift; sourceTree = "<group>"; };
+		DD964F322ADCC7A70011481E /* 1768. Merge Strings Alternately. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1768. Merge Strings Alternately. LeetCode.swift"; sourceTree = "<group>"; };
 		DD9861622AAFF06A00F0B267 /* 804. Unique Morse Code Words. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "804. Unique Morse Code Words. LeetCode.swift"; sourceTree = "<group>"; };
 		DD99E2AE2AA9549E000643D6 /* numJewelsInStonesLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numJewelsInStonesLeetCode.swift; sourceTree = "<group>"; };
 		DD9BDC652AC1143A00E8BF97 /* 1556. Thousand Separator. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1556. Thousand Separator. LeetCode.swift"; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				DD936FEB2AD8D0AB0094257B /* 2367. Number of Arithmetic Triplets. LeetCode.swift */,
 				DD8E81E42ADA237900D4E721 /* 832. Flipping an Image. LeetCode.swift */,
 				DD8BF9C42ADB700F00D6CBBD /* 942. DI String Match. LeetCode.swift */,
+				DD964F322ADCC7A70011481E /* 1768. Merge Strings Alternately. LeetCode.swift */,
 			);
 			path = "TwoPointers. LeetCode";
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				DD8F95F82AB7D653008FDADF /* 2278. Percentage of Letter in String. LeetCode.swift in Sources */,
 				DD92A6D12AD23319001C86B2 /* 434. Number of Segments in a String. LeetCode.swift in Sources */,
 				DD918AD92AADB41500AAB541 /* 709. To Lower Case. LeetCode.swift in Sources */,
+				DD964F332ADCC7A70011481E /* 1768. Merge Strings Alternately. LeetCode.swift in Sources */,
 				DD8E81E52ADA237900D4E721 /* 832. Flipping an Image. LeetCode.swift in Sources */,
 				DD8AC33D2A586BAC0074BB43 /* While.swift in Sources */,
 			);
