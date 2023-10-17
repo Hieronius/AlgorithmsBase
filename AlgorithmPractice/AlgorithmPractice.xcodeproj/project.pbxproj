@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD812DCA2ADE1BFC00F26BF5 /* 1844. Replace All Digits with Characters. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD812DC92ADE1BFC00F26BF5 /* 1844. Replace All Digits with Characters. LeetCode.swift */; };
 		DD883C562AC9D0F100042EC5 /* 2609. Find the Longest Balanced Substring of a Binary String. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD883C552AC9D0F100042EC5 /* 2609. Find the Longest Balanced Substring of a Binary String. LeetCode.swift */; };
 		DD88823D2A2E22FA00FA3C2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD88823C2A2E22FA00FA3C2E /* AppDelegate.swift */; };
 		DD88823F2A2E22FA00FA3C2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD88823E2A2E22FA00FA3C2E /* SceneDelegate.swift */; };
@@ -78,6 +79,7 @@
 
 /* Begin PBXFileReference section */
 		DD3A86D22AA416B500A97E41 /* BasicInputAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BasicInputAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD812DC92ADE1BFC00F26BF5 /* 1844. Replace All Digits with Characters. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1844. Replace All Digits with Characters. LeetCode.swift"; sourceTree = "<group>"; };
 		DD883C552AC9D0F100042EC5 /* 2609. Find the Longest Balanced Substring of a Binary String. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2609. Find the Longest Balanced Substring of a Binary String. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8882392A2E22FA00FA3C2E /* AlgorithmPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlgorithmPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD88823C2A2E22FA00FA3C2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 				DDA562152AD3877C00C0442A /* 859. Buddy Strings. LeetCode.swift */,
 				DD8E18112AD4D18400528D03 /* 925. Long Pressed Name. LeetCode.swift */,
 				DD8E18162AD6277300528D03 /* 1805. Number of Different Integers in a String.swift */,
+				DD812DC92ADE1BFC00F26BF5 /* 1844. Replace All Digits with Characters. LeetCode.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				DD90C8AF2ABE7091002AFA11 /* 389. Find the Difference. LeetCode.swift in Sources */,
 				DD9136182AC2614800C9C969 /* 551. Student Attendance Record I. LeetCode.swift in Sources */,
 				DD8AC33F2A586BB60074BB43 /* For-in.swift in Sources */,
+				DD812DCA2ADE1BFC00F26BF5 /* 1844. Replace All Digits with Characters. LeetCode.swift in Sources */,
 				DD883C562AC9D0F100042EC5 /* 2609. Find the Longest Balanced Substring of a Binary String. LeetCode.swift in Sources */,
 				DD8BBBB22AC65B790070E352 /* 1154. Day of the Year. LeetCode.swift in Sources */,
 				DDA562162AD3877C00C0442A /* 859. Buddy Strings. LeetCode.swift in Sources */,
