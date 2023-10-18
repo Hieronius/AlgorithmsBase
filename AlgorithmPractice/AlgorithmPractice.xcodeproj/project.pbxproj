@@ -37,6 +37,7 @@
 		DD9045052ACCEE9E0038ADC1 /* 28. Find the Index of the First Occurrence in a String. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9045042ACCEE9E0038ADC1 /* 28. Find the Index of the First Occurrence in a String. LeetCode.swift */; };
 		DD9074422AA56921002FE9F0 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9074412AA56921002FE9F0 /* LinkedList.swift */; };
 		DD9085522A30D6A300E872E7 /* TwoSumsLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9085512A30D6A300E872E7 /* TwoSumsLeetCode.swift */; };
+		DD908CE62ADF638D000D389F /* 2496. Maximum Value of a String in an Array. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD908CE52ADF638D000D389F /* 2496. Maximum Value of a String in an Array. LeetCode.swift */; };
 		DD90C82A2ABA80BE00807E0B /* 412. Fizz Buzz. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90C8292ABA80BE00807E0B /* 412. Fizz Buzz. LeetCode.swift */; };
 		DD90C8AF2ABE7091002AFA11 /* 389. Find the Difference. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90C8AE2ABE7091002AFA11 /* 389. Find the Difference. LeetCode.swift */; };
 		DD9136182AC2614800C9C969 /* 551. Student Attendance Record I. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9136172AC2614800C9C969 /* 551. Student Attendance Record I. LeetCode.swift */; };
@@ -111,6 +112,7 @@
 		DD9045042ACCEE9E0038ADC1 /* 28. Find the Index of the First Occurrence in a String. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "28. Find the Index of the First Occurrence in a String. LeetCode.swift"; sourceTree = "<group>"; };
 		DD9074412AA56921002FE9F0 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		DD9085512A30D6A300E872E7 /* TwoSumsLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumsLeetCode.swift; sourceTree = "<group>"; };
+		DD908CE52ADF638D000D389F /* 2496. Maximum Value of a String in an Array. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2496. Maximum Value of a String in an Array. LeetCode.swift"; sourceTree = "<group>"; };
 		DD90C8292ABA80BE00807E0B /* 412. Fizz Buzz. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "412. Fizz Buzz. LeetCode.swift"; sourceTree = "<group>"; };
 		DD90C8AE2ABE7091002AFA11 /* 389. Find the Difference. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "389. Find the Difference. LeetCode.swift"; sourceTree = "<group>"; };
 		DD9136172AC2614800C9C969 /* 551. Student Attendance Record I. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "551. Student Attendance Record I. LeetCode.swift"; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 				DD8E18112AD4D18400528D03 /* 925. Long Pressed Name. LeetCode.swift */,
 				DD8E18162AD6277300528D03 /* 1805. Number of Different Integers in a String.swift */,
 				DD812DC92ADE1BFC00F26BF5 /* 1844. Replace All Digits with Characters. LeetCode.swift */,
+				DD908CE52ADF638D000D389F /* 2496. Maximum Value of a String in an Array. LeetCode.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				DD8D4FBD2AC50AD30067A88F /* 844. Backspace String Compare. LeetCode.swift in Sources */,
 				DD9BDC662AC1143A00E8BF97 /* 1556. Thousand Separator. LeetCode.swift in Sources */,
 				DD90C8AF2ABE7091002AFA11 /* 389. Find the Difference. LeetCode.swift in Sources */,
+				DD908CE62ADF638D000D389F /* 2496. Maximum Value of a String in an Array. LeetCode.swift in Sources */,
 				DD9136182AC2614800C9C969 /* 551. Student Attendance Record I. LeetCode.swift in Sources */,
 				DD8AC33F2A586BB60074BB43 /* For-in.swift in Sources */,
 				DD812DCA2ADE1BFC00F26BF5 /* 1844. Replace All Digits with Characters. LeetCode.swift in Sources */,
