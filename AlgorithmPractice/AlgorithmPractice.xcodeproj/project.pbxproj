@@ -27,6 +27,7 @@
 		DD8D7C032ABBCEEF00A682D9 /* 500. Keyboard Row. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8D7C022ABBCEEF00A682D9 /* 500. Keyboard Row. LeetCode.swift */; };
 		DD8E18122AD4D18400528D03 /* 925. Long Pressed Name. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8E18112AD4D18400528D03 /* 925. Long Pressed Name. LeetCode.swift */; };
 		DD8E18172AD6277300528D03 /* 1805. Number of Different Integers in a String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8E18162AD6277300528D03 /* 1805. Number of Different Integers in a String.swift */; };
+		DD8E2C662AE0B41500A4059C /* 905. Sort Array By Parity. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8E2C652AE0B41500A4059C /* 905. Sort Array By Parity. LeetCode.swift */; };
 		DD8E3B1B2ABFBE9C00DB28BD /* 796. Rotate String. LeeCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8E3B1A2ABFBE9C00DB28BD /* 796. Rotate String. LeeCode.swift */; };
 		DD8E81E52ADA237900D4E721 /* 832. Flipping an Image. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8E81E42ADA237900D4E721 /* 832. Flipping an Image. LeetCode.swift */; };
 		DD8F09D62AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8F09D52AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift */; };
@@ -102,6 +103,7 @@
 		DD8D7C022ABBCEEF00A682D9 /* 500. Keyboard Row. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "500. Keyboard Row. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8E18112AD4D18400528D03 /* 925. Long Pressed Name. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "925. Long Pressed Name. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8E18162AD6277300528D03 /* 1805. Number of Different Integers in a String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1805. Number of Different Integers in a String.swift"; sourceTree = "<group>"; };
+		DD8E2C652AE0B41500A4059C /* 905. Sort Array By Parity. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "905. Sort Array By Parity. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8E3B1A2ABFBE9C00DB28BD /* 796. Rotate String. LeeCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "796. Rotate String. LeeCode.swift"; sourceTree = "<group>"; };
 		DD8E81E42ADA237900D4E721 /* 832. Flipping an Image. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "832. Flipping an Image. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8F09D52AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalValueAfterOperationLeetCode.swift; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				DD8E81E42ADA237900D4E721 /* 832. Flipping an Image. LeetCode.swift */,
 				DD8BF9C42ADB700F00D6CBBD /* 942. DI String Match. LeetCode.swift */,
 				DD964F322ADCC7A70011481E /* 1768. Merge Strings Alternately. LeetCode.swift */,
+				DD8E2C652AE0B41500A4059C /* 905. Sort Array By Parity. LeetCode.swift */,
 			);
 			path = "TwoPointers. LeetCode";
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD99E2AF2AA9549E000643D6 /* numJewelsInStonesLeetCode.swift in Sources */,
+				DD8E2C662AE0B41500A4059C /* 905. Sort Array By Parity. LeetCode.swift in Sources */,
 				DD93BA112ACBA037000F3F3F /* 2259. Remove Digit From Number to Maximize Result. LeetCode.swift in Sources */,
 				DD8882512A2E236600FA3C2E /* BinarySearch.swift in Sources */,
 				DD8AC33B2A586B470074BB43 /* Higher order functions.swift in Sources */,
