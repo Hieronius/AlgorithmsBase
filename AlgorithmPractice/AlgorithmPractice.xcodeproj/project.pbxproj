@@ -16,6 +16,7 @@
 		DD8882462A2E22FE00FA3C2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD8882452A2E22FE00FA3C2E /* Assets.xcassets */; };
 		DD8882492A2E22FE00FA3C2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD8882472A2E22FE00FA3C2E /* LaunchScreen.storyboard */; };
 		DD8882512A2E236600FA3C2E /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8882502A2E236600FA3C2E /* BinarySearch.swift */; };
+		DD88E2192AE749CA00F7C66B /* 922. Sort Array By Parity II. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD88E2182AE749CA00F7C66B /* 922. Sort Array By Parity II. LeetCode.swift */; };
 		DD896BED2AE5F754003BE371 /* 349. Intersection of Two Arrays. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD896BEC2AE5F754003BE371 /* 349. Intersection of Two Arrays. LeetCode.swift */; };
 		DD8AC33B2A586B470074BB43 /* Higher order functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8AC33A2A586B470074BB43 /* Higher order functions.swift */; };
 		DD8AC33D2A586BAC0074BB43 /* While.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8AC33C2A586BAC0074BB43 /* While.swift */; };
@@ -96,6 +97,7 @@
 		DD8882482A2E22FE00FA3C2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD88824A2A2E22FE00FA3C2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD8882502A2E236600FA3C2E /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
+		DD88E2182AE749CA00F7C66B /* 922. Sort Array By Parity II. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "922. Sort Array By Parity II. LeetCode.swift"; sourceTree = "<group>"; };
 		DD896BEC2AE5F754003BE371 /* 349. Intersection of Two Arrays. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "349. Intersection of Two Arrays. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8AC33A2A586B470074BB43 /* Higher order functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Higher order functions.swift"; sourceTree = "<group>"; };
 		DD8AC33C2A586BAC0074BB43 /* While.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = While.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				DDBCCEDA2AE3654C00937917 /* 2570. Merge Two 2D Arrays by Summing Values. LeetCode.swift */,
 				DD8DD1862AE4B14D001D030E /* 977. Squares of a Sorted Array. LeetCode.swift */,
 				DD896BEC2AE5F754003BE371 /* 349. Intersection of Two Arrays. LeetCode.swift */,
+				DD88E2182AE749CA00F7C66B /* 922. Sort Array By Parity II. LeetCode.swift */,
 			);
 			path = "TwoPointers. LeetCode";
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				DD94498F2ACF9A4400F6E1DF /* 168. Excel Sheet Column Title. LeetCode.swift in Sources */,
 				DD8E18172AD6277300528D03 /* 1805. Number of Different Integers in a String.swift in Sources */,
 				DD8E18122AD4D18400528D03 /* 925. Long Pressed Name. LeetCode.swift in Sources */,
+				DD88E2192AE749CA00F7C66B /* 922. Sort Array By Parity II. LeetCode.swift in Sources */,
 				DD8D7C032ABBCEEF00A682D9 /* 500. Keyboard Row. LeetCode.swift in Sources */,
 				DD926C7E2AB9287F00D608B3 /* 1935. Maximum Number of Words You Can Type. LeetCode.swift in Sources */,
 				DD88823F2A2E22FA00FA3C2E /* SceneDelegate.swift in Sources */,
