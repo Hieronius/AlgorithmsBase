@@ -33,6 +33,7 @@
 		DD8E2C662AE0B41500A4059C /* 905. Sort Array By Parity. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8E2C652AE0B41500A4059C /* 905. Sort Array By Parity. LeetCode.swift */; };
 		DD8E3B1B2ABFBE9C00DB28BD /* 796. Rotate String. LeeCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8E3B1A2ABFBE9C00DB28BD /* 796. Rotate String. LeeCode.swift */; };
 		DD8E81E52ADA237900D4E721 /* 832. Flipping an Image. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8E81E42ADA237900D4E721 /* 832. Flipping an Image. LeetCode.swift */; };
+		DD8EF6F22AE8A0EC00C03476 /* 2562. Find the Array Concatenation Value. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8EF6F12AE8A0EC00C03476 /* 2562. Find the Array Concatenation Value. LeetCode.swift */; };
 		DD8F09D62AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8F09D52AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift */; };
 		DD8F1F722AD0ECAE00EDBF28 /* 1784. Check if Binary String Has at Most One Segment of Ones. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8F1F712AD0ECAE00EDBF28 /* 1784. Check if Binary String Has at Most One Segment of Ones. LeetCode.swift */; };
 		DD8F95F82AB7D653008FDADF /* 2278. Percentage of Letter in String. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8F95F72AB7D653008FDADF /* 2278. Percentage of Letter in String. LeetCode.swift */; };
@@ -114,6 +115,7 @@
 		DD8E2C652AE0B41500A4059C /* 905. Sort Array By Parity. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "905. Sort Array By Parity. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8E3B1A2ABFBE9C00DB28BD /* 796. Rotate String. LeeCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "796. Rotate String. LeeCode.swift"; sourceTree = "<group>"; };
 		DD8E81E42ADA237900D4E721 /* 832. Flipping an Image. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "832. Flipping an Image. LeetCode.swift"; sourceTree = "<group>"; };
+		DD8EF6F12AE8A0EC00C03476 /* 2562. Find the Array Concatenation Value. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2562. Find the Array Concatenation Value. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8F09D52AAAA786007CAD35 /* FinalValueAfterOperationLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalValueAfterOperationLeetCode.swift; sourceTree = "<group>"; };
 		DD8F1F712AD0ECAE00EDBF28 /* 1784. Check if Binary String Has at Most One Segment of Ones. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1784. Check if Binary String Has at Most One Segment of Ones. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8F95F72AB7D653008FDADF /* 2278. Percentage of Letter in String. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2278. Percentage of Letter in String. LeetCode.swift"; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 				DD8DD1862AE4B14D001D030E /* 977. Squares of a Sorted Array. LeetCode.swift */,
 				DD896BEC2AE5F754003BE371 /* 349. Intersection of Two Arrays. LeetCode.swift */,
 				DD88E2182AE749CA00F7C66B /* 922. Sort Array By Parity II. LeetCode.swift */,
+				DD8EF6F12AE8A0EC00C03476 /* 2562. Find the Array Concatenation Value. LeetCode.swift */,
 			);
 			path = "TwoPointers. LeetCode";
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				DD8D7C032ABBCEEF00A682D9 /* 500. Keyboard Row. LeetCode.swift in Sources */,
 				DD926C7E2AB9287F00D608B3 /* 1935. Maximum Number of Words You Can Type. LeetCode.swift in Sources */,
 				DD88823F2A2E22FA00FA3C2E /* SceneDelegate.swift in Sources */,
+				DD8EF6F22AE8A0EC00C03476 /* 2562. Find the Array Concatenation Value. LeetCode.swift in Sources */,
 				DD8E3B1B2ABFBE9C00DB28BD /* 796. Rotate String. LeeCode.swift in Sources */,
 				DD8D4FBD2AC50AD30067A88F /* 844. Backspace String Compare. LeetCode.swift in Sources */,
 				DD9BDC662AC1143A00E8BF97 /* 1556. Thousand Separator. LeetCode.swift in Sources */,
