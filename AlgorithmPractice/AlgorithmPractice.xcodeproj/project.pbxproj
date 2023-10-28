@@ -24,6 +24,7 @@
 		DD8BBBB22AC65B790070E352 /* 1154. Day of the Year. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8BBBB12AC65B790070E352 /* 1154. Day of the Year. LeetCode.swift */; };
 		DD8BF9C52ADB700F00D6CBBD /* 942. DI String Match. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8BF9C42ADB700F00D6CBBD /* 942. DI String Match. LeetCode.swift */; };
 		DD8C374C2AEB9414006B3536 /*  283. Move Zeroes. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C374B2AEB9414006B3536 /*  283. Move Zeroes. LeetCode.swift */; };
+		DD8C374E2AEC93DD006B3536 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C374D2AEC93DD006B3536 /* MergeSort.swift */; };
 		DD8CBCF42AB6846800F73C0B /* 344. Reverse String. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8CBCF32AB6846800F73C0B /* 344. Reverse String. LeetCode.swift */; };
 		DD8D11342AD779CA0064DD40 /* 2824. Count Pairs Whose Sum is Less than Target. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8D11332AD779CA0064DD40 /* 2824. Count Pairs Whose Sum is Less than Target. LeetCode.swift */; };
 		DD8D4FBD2AC50AD30067A88F /* 844. Backspace String Compare. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8D4FBC2AC50AD30067A88F /* 844. Backspace String Compare. LeetCode.swift */; };
@@ -108,6 +109,7 @@
 		DD8BBBB12AC65B790070E352 /* 1154. Day of the Year. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1154. Day of the Year. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8BF9C42ADB700F00D6CBBD /* 942. DI String Match. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "942. DI String Match. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8C374B2AEB9414006B3536 /*  283. Move Zeroes. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " 283. Move Zeroes. LeetCode.swift"; sourceTree = "<group>"; };
+		DD8C374D2AEC93DD006B3536 /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
 		DD8CBCF32AB6846800F73C0B /* 344. Reverse String. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "344. Reverse String. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8D11332AD779CA0064DD40 /* 2824. Count Pairs Whose Sum is Less than Target. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2824. Count Pairs Whose Sum is Less than Target. LeetCode.swift"; sourceTree = "<group>"; };
 		DD8D4FBC2AC50AD30067A88F /* 844. Backspace String Compare. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "844. Backspace String Compare. LeetCode.swift"; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 			children = (
 				DD8FECB72AB1472800676CAE /* Two Pointers.swift */,
 				DD9074412AA56921002FE9F0 /* LinkedList.swift */,
+				DD8C374D2AEC93DD006B3536 /* MergeSort.swift */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 			files = (
 				DD896BED2AE5F754003BE371 /* 349. Intersection of Two Arrays. LeetCode.swift in Sources */,
 				DD99E2AF2AA9549E000643D6 /* numJewelsInStonesLeetCode.swift in Sources */,
+				DD8C374E2AEC93DD006B3536 /* MergeSort.swift in Sources */,
 				DD8E2C662AE0B41500A4059C /* 905. Sort Array By Parity. LeetCode.swift in Sources */,
 				DD93BA112ACBA037000F3F3F /* 2259. Remove Digit From Number to Maximize Result. LeetCode.swift in Sources */,
 				DD8882512A2E236600FA3C2E /* BinarySearch.swift in Sources */,
