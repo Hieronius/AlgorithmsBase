@@ -34,29 +34,25 @@ import Foundation
  Follow up: Could you minimize the total number of operations done?
  */
 func moveZeroes(_ nums: inout [Int]) {
-    var i = 0
-    var j = nums.count - 1
+    var i = 0 // increment value with every iteration
+    var j = 0 // used to store the index of the first non-swapped zero.
     
-    while i < nums.count - 1 {
-        while j < nums.count {
-            
-            if nums[i] == 0 {
-                let hub = nums[j]
-                nums[j] = 0
-                nums[i] = hub
+    if nums.count > 1 {
+        while i < nums.count-1 {
+            if nums[i] == 0 && nums [i+1] != 0 {
+                nums.swapAt(j, i+1)
+                i += 1
+                j += 1
+            } else if nums[i] == 0 && nums[i+1] == 0 {
+                i += 1 //j is not increased, because no swap occurs yet even if we have zero elements.
+            } else if nums[i] != 0 && nums[i+1] != 0 {
+                i += 2 //jump the next element since it is not 0
+                j += 2
+            } else {
+                i += 1
+                j += 1
             }
             
-            if nums[i] > nums[j] && nums[j] != 0 {
-                let hub = nums[i]
-                nums[i] = nums[j]
-                nums[j] = hub
-                print(hub)
-            }
-            
-            j += 1
         }
-        i += 1
-        j = i + 1
     }
-    print(nums)
 }
