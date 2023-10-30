@@ -47,6 +47,7 @@
 		DD908CE62ADF638D000D389F /* 2496. Maximum Value of a String in an Array. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD908CE52ADF638D000D389F /* 2496. Maximum Value of a String in an Array. LeetCode.swift */; };
 		DD90C82A2ABA80BE00807E0B /* 412. Fizz Buzz. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90C8292ABA80BE00807E0B /* 412. Fizz Buzz. LeetCode.swift */; };
 		DD90C8AF2ABE7091002AFA11 /* 389. Find the Difference. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90C8AE2ABE7091002AFA11 /* 389. Find the Difference. LeetCode.swift */; };
+		DD90FB372AEF680C002BAA85 /* 2465. Number of Distinct Averages.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90FB362AEF680C002BAA85 /* 2465. Number of Distinct Averages.swift */; };
 		DD9136182AC2614800C9C969 /* 551. Student Attendance Record I. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9136172AC2614800C9C969 /* 551. Student Attendance Record I. LeetCode.swift */; };
 		DD913E872AC3B3A0001EF339 /* 392. Is Subsequence. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD913E862AC3B3A0001EF339 /* 392. Is Subsequence. LeetCode.swift */; };
 		DD9165A92AE9EDE000D661B2 /* 2441. Largest Positive Integer That Exists With Its Negative. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9165A82AE9EDE000D661B2 /* 2441. Largest Positive Integer That Exists With Its Negative. LeetCode.swift */; };
@@ -132,6 +133,7 @@
 		DD908CE52ADF638D000D389F /* 2496. Maximum Value of a String in an Array. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2496. Maximum Value of a String in an Array. LeetCode.swift"; sourceTree = "<group>"; };
 		DD90C8292ABA80BE00807E0B /* 412. Fizz Buzz. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "412. Fizz Buzz. LeetCode.swift"; sourceTree = "<group>"; };
 		DD90C8AE2ABE7091002AFA11 /* 389. Find the Difference. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "389. Find the Difference. LeetCode.swift"; sourceTree = "<group>"; };
+		DD90FB362AEF680C002BAA85 /* 2465. Number of Distinct Averages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2465. Number of Distinct Averages.swift"; sourceTree = "<group>"; };
 		DD9136172AC2614800C9C969 /* 551. Student Attendance Record I. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "551. Student Attendance Record I. LeetCode.swift"; sourceTree = "<group>"; };
 		DD913E862AC3B3A0001EF339 /* 392. Is Subsequence. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "392. Is Subsequence. LeetCode.swift"; sourceTree = "<group>"; };
 		DD9165A82AE9EDE000D661B2 /* 2441. Largest Positive Integer That Exists With Its Negative. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2441. Largest Positive Integer That Exists With Its Negative. LeetCode.swift"; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				DD8EF6F12AE8A0EC00C03476 /* 2562. Find the Array Concatenation Value. LeetCode.swift */,
 				DD9165A82AE9EDE000D661B2 /* 2441. Largest Positive Integer That Exists With Its Negative. LeetCode.swift */,
 				DD8C374B2AEB9414006B3536 /*  283. Move Zeroes. LeetCode.swift */,
+				DD90FB362AEF680C002BAA85 /* 2465. Number of Distinct Averages.swift */,
 			);
 			path = "TwoPointers. LeetCode";
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				DDC8EFBC2ACA4CD4005602A4 /* 125. Valid Palindrome. LeetCode.swift in Sources */,
 				DD9591FB2ACE3FA100D1E5CD /* 680. Valid Palindrome II. LeetCode.swift in Sources */,
 				DD93B8912AC8FC2E007AE823 /* 383. Ransom Note. LeetCode.swift in Sources */,
+				DD90FB372AEF680C002BAA85 /* 2465. Number of Distinct Averages.swift in Sources */,
 				DD9C75A72AABF7CF007F6C35 /* 1221. Split a String in Balanced Strings LeetCode.swift in Sources */,
 				DDBCCEDB2AE3654C00937917 /* 2570. Merge Two 2D Arrays by Summing Values. LeetCode.swift in Sources */,
 				DD95233B2ABD1CBD00CA14F2 /* 1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence. LeetCode.swift in Sources */,
