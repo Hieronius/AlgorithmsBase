@@ -58,6 +58,8 @@
 		DD922ECA2AB3E1C100CCB91B /* 2744. Find Maximum Number of String Pairs. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD922EC92AB3E1C100CCB91B /* 2744. Find Maximum Number of String Pairs. LeetCode.swift */; };
 		DD926C7E2AB9287F00D608B3 /* 1935. Maximum Number of Words You Can Type. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD926C7D2AB9287F00D608B3 /* 1935. Maximum Number of Words You Can Type. LeetCode.swift */; };
 		DD92A6D12AD23319001C86B2 /* 434. Number of Segments in a String. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92A6D02AD23319001C86B2 /* 434. Number of Segments in a String. LeetCode.swift */; };
+		DD92B2222B75B5070025425D /* TestTask from Incetro N1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92B2212B75B5070025425D /* TestTask from Incetro N1.swift */; };
+		DD92B2242B75B5630025425D /* TestTask from Incetro N2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92B2232B75B5630025425D /* TestTask from Incetro N2.swift */; };
 		DD92C0502AB535000045155B /* 2710. Remove Trailing Zeros From a String. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92C04F2AB535000045155B /* 2710. Remove Trailing Zeros From a String. LeetCode.swift */; };
 		DD936FEC2AD8D0AB0094257B /* 2367. Number of Arithmetic Triplets. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD936FEB2AD8D0AB0094257B /* 2367. Number of Arithmetic Triplets. LeetCode.swift */; };
 		DD93B8912AC8FC2E007AE823 /* 383. Ransom Note. LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD93B8902AC8FC2E007AE823 /* 383. Ransom Note. LeetCode.swift */; };
@@ -144,6 +146,8 @@
 		DD922EC92AB3E1C100CCB91B /* 2744. Find Maximum Number of String Pairs. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2744. Find Maximum Number of String Pairs. LeetCode.swift"; sourceTree = "<group>"; };
 		DD926C7D2AB9287F00D608B3 /* 1935. Maximum Number of Words You Can Type. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1935. Maximum Number of Words You Can Type. LeetCode.swift"; sourceTree = "<group>"; };
 		DD92A6D02AD23319001C86B2 /* 434. Number of Segments in a String. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "434. Number of Segments in a String. LeetCode.swift"; sourceTree = "<group>"; };
+		DD92B2212B75B5070025425D /* TestTask from Incetro N1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestTask from Incetro N1.swift"; sourceTree = "<group>"; };
+		DD92B2232B75B5630025425D /* TestTask from Incetro N2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestTask from Incetro N2.swift"; sourceTree = "<group>"; };
 		DD92C04F2AB535000045155B /* 2710. Remove Trailing Zeros From a String. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2710. Remove Trailing Zeros From a String. LeetCode.swift"; sourceTree = "<group>"; };
 		DD936FEB2AD8D0AB0094257B /* 2367. Number of Arithmetic Triplets. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2367. Number of Arithmetic Triplets. LeetCode.swift"; sourceTree = "<group>"; };
 		DD93B8902AC8FC2E007AE823 /* 383. Ransom Note. LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "383. Ransom Note. LeetCode.swift"; sourceTree = "<group>"; };
@@ -239,6 +243,8 @@
 				DD8AC33A2A586B470074BB43 /* Higher order functions.swift */,
 				DD8AC33C2A586BAC0074BB43 /* While.swift */,
 				DD8AC33E2A586BB60074BB43 /* For-in.swift */,
+				DD92B2212B75B5070025425D /* TestTask from Incetro N1.swift */,
+				DD92B2232B75B5630025425D /* TestTask from Incetro N2.swift */,
 			);
 			path = "Homework Tasks";
 			sourceTree = "<group>";
@@ -440,6 +446,7 @@
 				DDC8EFBC2ACA4CD4005602A4 /* 125. Valid Palindrome. LeetCode.swift in Sources */,
 				DD9591FB2ACE3FA100D1E5CD /* 680. Valid Palindrome II. LeetCode.swift in Sources */,
 				DD93B8912AC8FC2E007AE823 /* 383. Ransom Note. LeetCode.swift in Sources */,
+				DD92B2242B75B5630025425D /* TestTask from Incetro N2.swift in Sources */,
 				DD90FB372AEF680C002BAA85 /* 2465. Number of Distinct Averages.swift in Sources */,
 				DD9C75A72AABF7CF007F6C35 /* 1221. Split a String in Balanced Strings LeetCode.swift in Sources */,
 				DDBCCEDB2AE3654C00937917 /* 2570. Merge Two 2D Arrays by Summing Values. LeetCode.swift in Sources */,
@@ -474,6 +481,7 @@
 				DD812DCA2ADE1BFC00F26BF5 /* 1844. Replace All Digits with Characters. LeetCode.swift in Sources */,
 				DD883C562AC9D0F100042EC5 /* 2609. Find the Longest Balanced Substring of a Binary String. LeetCode.swift in Sources */,
 				DD8BBBB22AC65B790070E352 /* 1154. Day of the Year. LeetCode.swift in Sources */,
+				DD92B2222B75B5070025425D /* TestTask from Incetro N1.swift in Sources */,
 				DDA562162AD3877C00C0442A /* 859. Buddy Strings. LeetCode.swift in Sources */,
 				DD91DCE22A4C992100FFFE3A /* Bubble sort.swift in Sources */,
 				DD8BF9C52ADB700F00D6CBBD /* 942. DI String Match. LeetCode.swift in Sources */,
